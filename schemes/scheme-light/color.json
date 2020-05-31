@@ -2,8 +2,12 @@
   "alias": {
     "color": {
       "scheme": {
-        "primary": { "value": "{alias.color.palette.blue.500.value}" },
-        "secondary": {  "value": "{alias.color.palette.green.500.value}" }
+        "base": {
+          "background": { "value": "#c1c1c1" },
+          "foreground": { "value": "black" }
+        },
+        "primary": { "value": "{alias.color.palette.green.600.value}" },
+        "secondary": { "value": "{alias.color.palette.blue.600.value}" }
       }
     }
   }

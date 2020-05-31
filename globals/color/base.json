@@ -1,21 +1,23 @@
 {
   "color": {
     "base": {
-      "black"     : { "value": "#000000" },
+      "background": { "value": "{alias.color.scheme.base.background.value}" },
+      "foreground": { "value": "{alias.color.scheme.base.foreground.value}" },
+      "black": { "value": "#000000" },
       "gray": {
-        "light"   : { "value": "#CCCCCC" },
-        "medium"  : { "value": "#999999" },
-        "dark"    : { "value": "#111111" }
+        "light": { "value": "#CCCCCC" },
+        "medium": { "value": "#999999" },
+        "dark": { "value": "#111111" }
       },
-      "red"       : { "value": "#FF0000" },
-      "green"     : { "value": "#00FF00" }
+      "red": { "value": "#FF0000" },
+      "green": { "value": "#00FF00" }
     },
-    "primary"     : { "value": "{alias.color.scheme.primary.value}" },
-    "secondary"   : { "value": "{alias.color.scheme.secondary.value}" },
+    "primary": { "value": "{alias.color.scheme.primary.value}" },
+    "secondary": { "value": "{alias.color.scheme.secondary.value}" },
     "action": {
-      "primary"   : { "value": "{color.primary.value}" },
-      "secondary" : { "value": "{color.secondary.value}" },
-      "tertiary"  : { "value": "{color.base.gray.medium.value}" }
+      "primary": { "value": "{color.primary.value}" },
+      "secondary": { "value": "{color.secondary.value}" },
+      "tertiary": { "value": "{color.base.gray.medium.value}" }
     }
   }
 }
