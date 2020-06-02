@@ -1,0 +1,14 @@
+{
+  "alias": {
+    "color": {
+      "scheme": {
+				"base": {
+          "background": { "value": "black" },
+          "foreground": { "value": "#c1c1c1" }
+        },
+        "primary": { "value": "{alias.color.palette.green.300.value}" },
+        "secondary": {  "value": "{alias.color.palette.blue.300.value}" }
+      }
+    }
+  }
+}
