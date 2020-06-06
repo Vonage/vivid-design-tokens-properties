@@ -2,27 +2,21 @@
   "alias": {
     "color": {
       "scheme": {
-        "background": {
-          "base": { "value": "#c0c0c0" },
-          "on": {
-            "base": { "value": "black" },
-            "dim": { "value": "gray" }
-          }
+        "base": {
+          "background": { "value": "#c0c0c0" },
+          "foreground": { "value": "black" }
         },
         "surface": {
-          "base": { "value": "#c0c0c0" },
-          "on": {
-            "base": { "value": "black" },
-            "dim": { "value": "gray" }
-          }
+          "background": { "value": "#c0c0c0" },
+          "foreground": { "value": "black" }
         },
         "primary": {
-          "base": { "value": "{alias.color.palette.green.600.value}" },
-          "on": { "value": "black" }
+          "background": { "value": "{alias.color.palette.green.600.value}" },
+          "foreground": { "value": "white" }
         },
         "secondary": {
-          "base": { "value": "{alias.color.palette.blue.600.value}" },
-          "on": { "value": "black" }
+          "background": { "value": "{alias.color.palette.blue.600.value}" },
+          "foreground": { "value": "white" }
         }
       }
     }

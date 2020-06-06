@@ -2,13 +2,22 @@
   "alias": {
     "color": {
       "scheme": {
-        "background": { "base": { "value": "black" } },
-        "foreground": {
-          "base": { "value": "white" },
-          "dim": { "value": "lightgray" }
+        "base": {
+          "background": { "value": "black" },
+          "foreground": { "value": "#c0c0c0" }
         },
-        "primary": { "value": "{alias.color.palette.green.300.value}" },
-        "secondary": { "value": "{alias.color.palette.blue.300.value}" }
+        "surface": {
+          "background": { "value": "black" },
+          "foreground": { "value": "#c0c0c0" }
+        },
+        "primary": {
+          "background": { "value": "{alias.color.palette.green.300.value}" },
+          "foreground": { "value": "black" }
+        },
+        "secondary": {
+          "background": { "value": "{alias.color.palette.green.300.value}" },
+          "foreground": { "value": "black" }
+        }
       }
     }
   }
