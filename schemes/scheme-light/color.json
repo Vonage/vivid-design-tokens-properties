@@ -3,8 +3,9 @@
     "color": {
       "scheme": {
         "base": {
-          "background": { "value": "#c0c0c0" },
-          "foreground": { "value": "black" }
+          "background": { "value": "#e8e8e8" },
+          "foreground": { "value": "black" },
+          "dim": { "value": "#bbbbbb" }
         },
         "surface": {
           "background": { "value": "#c0c0c0" },
