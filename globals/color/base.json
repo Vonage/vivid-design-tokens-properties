@@ -1,23 +1,26 @@
 {
   "color": {
-    "base": {
-      "background": { "value": "{alias.color.scheme.base.background.value}" },
-      "foreground": { "value": "{alias.color.scheme.base.foreground.value}" },
-      "black": { "value": "#000000" },
-      "gray": {
-        "light": { "value": "#CCCCCC" },
-        "medium": { "value": "#999999" },
-        "dark": { "value": "#111111" }
-      },
-      "red": { "value": "#FF0000" },
-      "green": { "value": "#00FF00" }
+    "background": {
+      "base": { "value": "{alias.color.scheme.background.base.value}" },
+      "on": {
+        "base": { "value": "{alias.color.scheme.background.on.base.value}" },
+        "dim": { "value": "{alias.color.scheme.background.on.dim.value}" }
+      }
     },
-    "primary": { "value": "{alias.color.scheme.primary.value}" },
-    "secondary": { "value": "{alias.color.scheme.secondary.value}" },
-    "action": {
-      "primary": { "value": "{color.primary.value}" },
-      "secondary": { "value": "{color.secondary.value}" },
-      "tertiary": { "value": "{color.base.gray.medium.value}" }
-    }
+    "surface": {
+      "base": { "value": "{alias.color.scheme.surface.base.value}" },
+      "on": {
+        "base": { "value": "{alias.color.scheme.surface.on.base.value}" },
+        "dim": { "value": "{alias.color.scheme.surface.on.dim.value}" }
+      }
+    },
+    "primary": {
+      "base": { "value": "{alias.color.scheme.primary.base.value}" },
+      "on": { "value": "{alias.color.scheme.primary.on.value}" }
+    },
+    "secondary": {
+			"base": { "value": "{alias.color.scheme.secondary.base.value}" },
+      "on":  { "value": "{alias.color.scheme.secondary.on.value}" }
+		 }
   }
 }

@@ -2,12 +2,13 @@
   "alias": {
     "color": {
       "scheme": {
-				"base": {
-          "background": { "value": "black" },
-          "foreground": { "value": "#c1c1c1" }
+        "background": { "base": { "value": "black" } },
+        "foreground": {
+          "base": { "value": "white" },
+          "dim": { "value": "lightgray" }
         },
         "primary": { "value": "{alias.color.palette.green.300.value}" },
-        "secondary": {  "value": "{alias.color.palette.blue.300.value}" }
+        "secondary": { "value": "{alias.color.palette.blue.300.value}" }
       }
     }
   }
