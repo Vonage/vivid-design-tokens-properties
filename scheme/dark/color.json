@@ -1,0 +1,19 @@
+{
+  "alias": {
+    "color": {
+      "base": {
+        "background": { "value": "black" },
+        "foreground": { "value": "white" },
+        "dim": { "value": "#c0c0c0" }
+      },
+      "surface": {
+        "background": { "value": "black" },
+        "foreground": { "value": "#c0c0c0" }
+      },
+      "inverse": {
+        "background": { "value": "{alias.color.base.foreground.value}" },
+        "foreground": { "value": "{alias.color.base.background.value}" }
+      }
+    }
+  }
+}
