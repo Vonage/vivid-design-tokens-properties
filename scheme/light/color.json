@@ -13,7 +13,11 @@
       "inverse": {
 				"background": { "value": "{alias.color.base.foreground.value}" },
         "foreground": { "value": "{alias.color.base.background.value}" }
-      }
+      },
+			"success": {
+				"background": { "value": "#1d7e67" },
+				"foreground": { "value": "black" }
+			}
     }
   }
 }

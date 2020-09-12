@@ -16,6 +16,10 @@
     "primary": {
       "background": { "value": "{alias.color.inverse.background.value}" },
       "foreground": { "value": "{alias.color.inverse.foreground.value}" }
+    },
+    "success": {
+      "background": { "value": "{alias.color.success.background.value}" },
+      "foreground": { "value": "{alias.color.success.foreground.value}" }
     }
   }
 }
