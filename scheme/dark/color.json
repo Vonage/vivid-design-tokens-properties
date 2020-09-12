@@ -14,9 +14,25 @@
         "background": { "value": "{alias.color.base.foreground.value}" },
         "foreground": { "value": "{alias.color.base.background.value}" }
 			},
+			"cta": {
+				"background": { "value": "{alias.color.palette.purple.400.value}" },
+				"foreground": { "value": "{alias.color.base.background.value}" }
+			},
 			"success": {
 				"background": { "value": "#1d7e67" },
-				"foreground": { "value": "white" }
+				"foreground": { "value": "black" }
+			},
+			"error": {
+				"background": { "value": "#992B2B" },
+				"foreground": { "value": "black" }
+			},
+			"info": {
+				"background": { "value": "#008AE5" },
+				"foreground": { "value": "black" }
+			},
+			"announcement": {
+				"background": { "value": "#d6219c" },
+				"foreground": { "value": "black" }
 			}
     }
   }

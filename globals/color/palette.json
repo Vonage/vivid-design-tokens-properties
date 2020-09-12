@@ -2,39 +2,17 @@
   "alias": {
     "color": {
       "palette": {
-        "blue": {
-          "100": { "value": "#D6E4FF" },
-          "200": { "value": "#ADC8FF" },
-          "300": { "value": "#84A9FF" },
-          "400": { "value": "#6690FF" },
-          "500": { "value": "#3366FF" },
-          "600": { "value": "#254EDB" },
-          "700": { "value": "#1939B7" },
-          "800": { "value": "#102693" },
-          "900": { "value": "#091A7A" },
-          "transparent-100": { "value": "rgba(51, 102, 255, 0.08)" },
-          "transparent-200": { "value": "rgba(51, 102, 255, 0.16)" },
-          "transparent-300": { "value": "rgba(51, 102, 255, 0.24)" },
-          "transparent-400": { "value": "rgba(51, 102, 255, 0.32)" },
-          "transparent-500": { "value": "rgba(51, 102, 255, 0.4)" },
-          "transparent-600": { "value": "rgba(51, 102, 255, 0.48)" }
-        },
-        "green": {
-          "100": { "value": "#D0FDD0" },
-          "200": { "value": "#A2FBAB" },
-          "300": { "value": "#72F38C" },
-          "400": { "value": "#4EE77C" },
-          "500": { "value": "#1AD866" },
-          "600": { "value": "#13B966" },
-          "700": { "value": "#0D9B62" },
-          "800": { "value": "#087D59" },
-          "900": { "value": "#046753" },
-          "transparent-100": { "value": "rgba(26, 216, 102, 0.08)" },
-          "transparent-200": { "value": "rgba(26, 216, 102, 0.16)" },
-          "transparent-300": { "value": "rgba(26, 216, 102, 0.24)" },
-          "transparent-400": { "value": "rgba(26, 216, 102, 0.32)" },
-          "transparent-500": { "value": "rgba(26, 216, 102, 0.4)" },
-          "transparent-600": { "value": "rgba(26, 216, 102, 0.48)" }
+        "purple": {
+          "50": { "value": "#f0e6fc" },
+          "100": { "value": "#d8c1f6" },
+          "200": { "value": "#be97f1" },
+          "300": { "value": "#a369ed","comment":"for dark mode" },
+          "400": { "value": "#8d43e9" },
+          "500": { "value": "#750ee3" },
+          "600": { "value": "#6a05dd", "comment":"for light mode" },
+          "700": { "value": "#5900d5" },
+          "800": { "value": "#4800cf" },
+          "900": { "value": "#2300c8" }
         }
       }
     }
