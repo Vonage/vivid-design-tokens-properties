@@ -2,38 +2,38 @@
   "alias": {
     "color": {
       "base": {
-        "background": { "value": "#e8e8e8" },
-        "foreground": { "value": "black" },
-        "dim": { "value": "#bbbbbb" }
+        "background": { "value": "{alias.color.palette.white.value}" },
+        "foreground": { "value": "{alias.color.palette.black.value}" },
+        "dim": { "value": "{alias.color.palette.grey.400.value}" }
       },
       "surface": {
         "background": { "value": "#c0c0c0" },
         "foreground": { "value": "black" }
       },
       "inverse": {
-				"background": { "value": "{alias.color.base.foreground.value}" },
+        "background": { "value": "{alias.color.base.foreground.value}" },
         "foreground": { "value": "{alias.color.base.background.value}" }
       },
-			"cta": {
-				"background": { "value": "{alias.color.palette.purple.600.value}" },
-				"foreground": { "value": "{alias.color.base.background.value}" }
-			},
-			"success": {
-				"background": { "value": "#1d7e67" },
-				"foreground": { "value": "black" }
-			},
-			"error": {
-				"background": { "value": "#992B2B" },
-				"foreground": { "value": "black" }
-			},
-			"info": {
-				"background": { "value": "#008AE5" },
-				"foreground": { "value": "black" }
-			},
-			"announcement": {
-				"background": { "value": "#d6219c" },
-				"foreground": { "value": "black" }
-			}
+      "cta": {
+        "background": { "value": "{alias.color.palette.purple.500.value}" },
+        "foreground": { "value": "{alias.color.palette.white.value}" }
+      },
+      "success": {
+        "background": { "value": "alias.color.palette.green.500.value" },
+        "foreground": { "value": "alias.color.palette.white.value" }
+      },
+      "error": {
+        "background": { "value": "alias.color.palette.red.500.value" },
+        "foreground": { "value": "alias.color.palette.white.value" }
+      },
+      "info": {
+        "background": { "value": "alias.color.palette.blue.500.value" },
+        "foreground": { "value": "alias.color.palette.white.value" }
+      },
+      "announcement": {
+        "background": { "value": "alias.color.palette.magenta.500.value" },
+        "foreground": { "value": "alias.color.palette.white.value" }
+      }
     }
   }
 }
