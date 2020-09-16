@@ -1,3 +1,4 @@
+npm install
 git add --all
 git commit -m 'release design tokens'
 git push
