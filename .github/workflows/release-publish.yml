@@ -12,12 +12,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          ref: master
 
       - name: Extract release version
         id: extractVersion
         run: echo "::set-output name=version::$(echo ${GITHUB_REF##*/v})"
 
       - name: Publish design tokens
-        run: echo ${{ steps.extractVersion.outputs.version }}
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
