@@ -1,0 +1,20 @@
+{
+	"name": "@vonage/vivid-design-tokens-properties",
+	"version": "0.0.1",
+	"description": "Vivid Design System - Design Tokens",
+	"homepage": "https://github.com/Vonage/vivid-design-tokens-properties",
+	"license": "ISC",
+	"files": [
+		"assets",
+		"globals",
+		"platfroms",
+		"scheme"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Vonage/vivid-design-tokens-properties.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Vonage/vivid-design-tokens-properties/issues"
+	}
+}
