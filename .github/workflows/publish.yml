@@ -1,0 +1,22 @@
+name: Publish Design Token Properties
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Setup NodeJS 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: 'https://npm.pkg.github.com'
+
+      - name: Publish design tokens
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
