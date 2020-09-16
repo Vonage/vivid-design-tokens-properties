@@ -6,4 +6,4 @@ In order to release a new version of the package do:
 - update the version in `package.json`
 - run in the command line `npm install`
 - run in the command line the following commands:
-	- `release.sh`
+	- `sh release.sh`
