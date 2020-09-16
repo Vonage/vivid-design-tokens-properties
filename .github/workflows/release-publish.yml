@@ -15,6 +15,12 @@ jobs:
         with:
           ref: master
 
+      - name: Setup NodeJS 14
+		uses: actions/setup-node@v1
+        with:
+          node-version: 14
+		  registry-url: 'https://npm.pkg.github.com'
+
       - name: Extract release version
         id: extractVersion
         run: echo "::set-output name=version::$(echo ${GITHUB_REF##*/v})"
