@@ -1,4 +1,4 @@
-# vivid-design-tokens
+# vivid-design-tokens-properties
 
 Design tokens are the prime dependency of our design system
 
