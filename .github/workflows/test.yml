@@ -1,0 +1,25 @@
+name: Test Design Token Properties Flow
+
+on:
+  push:
+    tags:
+      - test*
+  
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Setup NodeJS 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: 'https://npm.pkg.github.com'
+
+      - name: Fetch data
+        run: npm run fetch
