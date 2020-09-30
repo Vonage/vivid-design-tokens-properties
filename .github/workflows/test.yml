@@ -23,3 +23,6 @@ jobs:
 
       - name: Fetch data
         run: npm run fetch
+        env:
+		  FIGMA_FILE_TOKEN: ${{ secrets.FIGMA_FILE_TOKEN }}
+          FIGMA_AUTH_TOKEN: ${{ secrets.FIGMA_AUTH_TOKEN }}
