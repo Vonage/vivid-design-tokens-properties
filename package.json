@@ -1,20 +1,21 @@
 {
-  "name": "@vonage/vvd-design-tokens-properties",
-  "version": "0.1.7",
-  "description": "Vivid Design System - Design Tokens",
-  "homepage": "https://github.com/Vonage/vivid-design-tokens-properties",
-  "license": "ISC",
-  "files": [
-    "assets",
-    "globals",
-    "platfroms",
-    "scheme"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Vonage/vivid-design-tokens-properties.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Vonage/vivid-design-tokens-properties/issues"
-  }
+	"name": "@vonage/vvd-design-tokens-properties",
+	"version": "0.1.7",
+	"description": "Vivid Design System - Design Tokens",
+	"homepage": "https://github.com/Vonage/vivid-design-tokens-properties",
+	"license": "ISC",
+	"files": [
+		"assets",
+		"globals",
+		"platfroms",
+		"scheme"
+	],
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Vonage/vivid-design-tokens-properties.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Vonage/vivid-design-tokens-properties/issues"
+	}
 }
