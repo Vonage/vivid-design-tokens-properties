@@ -21,14 +21,45 @@ function loadData() {
 }
 
 function dumpGlobalColors(data) {
-	walkDFS(data, node => {
-		if (!node.name || !/^scheme\s*\/.+/i.test(node.name)) {
+	const result = {
+		alias: {
+			color: {
+				palette: {}
+			}
+		}
+	};
+	walkDFS(data, scheme => {
+		if (!scheme.name || !/^scheme\s*\/.+/i.test(scheme.name)) {
 			return;
 		}
-		const schemeName = node.name.match(/\/\s*(?<schemeName>\w*)/).groups.schemeName?.toLowerCase();
+		const schemeName = scheme.name.match(/\/\s*(?<schemeName>\w*)/).groups.schemeName?.toLowerCase();
+		const tmp = result.alias.color.palette[schemeName] = {};
 
-		console.log(schemeName);
+		const uiColors = scheme.children.find(c => c.name && c.name.toLowerCase().trim() === 'ui colors');
+		uiColors.children.forEach(color => {
+			if (color.name.trim().indexOf(' ') > 0) {
+				//	TOOD: black and white
+			} else {
+				const colorName = color.name.trim().toLowerCase();
+				const tmpC = tmp[colorName] = {};
+
+				color.children.forEach(grade => {
+					const gradeName = grade.name.trim();
+					let { r, g, b, a } = grade.children
+						.find(c => c.type === 'RECTANGLE')
+						.fills[0].color;
+					r = Math.round(r * 255);
+					g = Math.round(g * 255);
+					b = Math.round(b * 255);
+
+					tmpC[gradeName] = { value: `rgba(${r}, ${g}, ${b}, ${a})` };
+				});
+			}
+		});
 	});
+
+	const output = JSON.stringify(result);
+	fs.writeFileSync('./globals/color/palette.gen.json', output, { encoding: 'utf-8' });
 }
 
 function dumpTypography(data) {
