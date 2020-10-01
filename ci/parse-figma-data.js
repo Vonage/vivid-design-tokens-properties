@@ -28,12 +28,14 @@ function dumpGlobalColors(data) {
 			}
 		}
 	};
+	const schemesMap = {};
 	walkDFS(data, scheme => {
 		if (!scheme.name || !/^scheme\s*\/.+/i.test(scheme.name)) {
 			return;
 		}
 		const schemeName = scheme.name.match(/\/\s*(?<schemeName>\w*)/).groups.schemeName?.toLowerCase();
-		const tmp = result.alias.color.palette[schemeName] = {};
+		schemesMap[schemeName] = {};
+		const colorsMap = {};
 
 		const uiColors = scheme.children.find(c => c.name && c.name.toLowerCase().trim() === 'ui colors');
 		uiColors.children.forEach(color => {
@@ -41,7 +43,8 @@ function dumpGlobalColors(data) {
 				//	TOOD: black and white
 			} else {
 				const colorName = color.name.trim().toLowerCase();
-				const tmpC = tmp[colorName] = {};
+				colorsMap[colorName] = {};
+				const gradesMap = {};
 
 				color.children.forEach(grade => {
 					const gradeName = grade.name.trim();
@@ -52,11 +55,17 @@ function dumpGlobalColors(data) {
 					g = Math.round(g * 255);
 					b = Math.round(b * 255);
 
-					tmpC[gradeName] = { value: `rgba(${r}, ${g}, ${b}, ${a})` };
+					gradesMap[gradeName] = { value: `rgba(${r}, ${g}, ${b}, ${a})` };
 				});
+				Object.keys(gradesMap).sort()
+					.forEach(gradeName => colorsMap[colorName][gradeName] = gradesMap[gradeName]);
 			}
 		});
+		Object.keys(colorsMap).sort()
+			.forEach(colorName => schemesMap[schemeName][colorName] = colorsMap[colorName]);
 	});
+	Object.keys(schemesMap).sort()
+		.forEach(schemeName => result.alias.color.palette[schemeName] = schemesMap[schemeName]);
 
 	const output = JSON.stringify(result);
 	fs.writeFileSync('./globals/color/palette.gen.json', output, { encoding: 'utf-8' });
