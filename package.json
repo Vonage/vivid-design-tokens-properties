@@ -19,6 +19,7 @@
 		"url": "https://github.com/Vonage/vivid-design-tokens-properties/issues"
 	},
 	"scripts": {
-		"fetch": "node ./ci/fetch-figma-data.js"
+		"fetch": "node ./ci/fetch-figma-data.js",
+		"parse": "node ./ci/parse-figma-data.js"
 	}
 }
