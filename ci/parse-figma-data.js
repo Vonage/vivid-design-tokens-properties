@@ -1,0 +1,91 @@
+import fs from 'fs';
+import { RAW_DATA_PATH } from './commons.js';
+
+//	main flow start
+//
+console.info('parsing data...');
+const data = loadData();
+dumpGlobalColors(data);
+dumpTypography(data);
+
+//	private functions
+//
+function loadData() {
+	const data = fs.readFileSync(RAW_DATA_PATH, { encoding: 'utf-8' });
+	if (!data) {
+		throw ('no raw data found');
+	} else {
+		const result = JSON.parse(data);
+		return result;
+	}
+}
+
+function dumpGlobalColors(data) {
+	const result = {
+		alias: {
+			color: {
+				palette: {}
+			}
+		}
+	};
+	const schemesMap = {};
+	walkDFS(data, scheme => {
+		if (!scheme.name || !/^scheme\s*\/.+/i.test(scheme.name)) {
+			return;
+		}
+		const schemeName = scheme.name.match(/\/\s*(?<schemeName>\w*)/).groups.schemeName?.toLowerCase();
+		schemesMap[schemeName] = {};
+		const colorsMap = {};
+
+		const uiColors = scheme.children.find(c => c.name && c.name.toLowerCase().trim() === 'ui colors');
+		uiColors.children.forEach(color => {
+			if (color.name.trim().indexOf(' ') > 0) {
+				//	TOOD: black and white
+			} else {
+				const colorName = color.name.trim().toLowerCase();
+				colorsMap[colorName] = {};
+				const gradesMap = {};
+
+				color.children.forEach(grade => {
+					const gradeName = grade.name.trim();
+					let { r, g, b, a } = grade.children
+						.find(c => c.type === 'RECTANGLE')
+						.fills[0].color;
+					r = Math.round(r * 255);
+					g = Math.round(g * 255);
+					b = Math.round(b * 255);
+
+					gradesMap[gradeName] = { value: `rgba(${r}, ${g}, ${b}, ${a})` };
+				});
+				Object.keys(gradesMap).sort()
+					.forEach(gradeName => colorsMap[colorName][gradeName] = gradesMap[gradeName]);
+			}
+		});
+		Object.keys(colorsMap).sort()
+			.forEach(colorName => schemesMap[schemeName][colorName] = colorsMap[colorName]);
+	});
+	Object.keys(schemesMap).sort()
+		.forEach(schemeName => result.alias.color.palette[schemeName] = schemesMap[schemeName]);
+
+	const output = JSON.stringify(result);
+	fs.writeFileSync('./globals/color/palette.gen.json', output, { encoding: 'utf-8' });
+}
+
+function dumpTypography(data) {
+	//	TODO
+}
+
+function walkDFS(tree, f) {
+	if (!tree || typeof tree !== 'object') {
+		throw new Error(`non-null object expected, got ${tree}`);
+	}
+	if (!f || typeof f !== 'function') {
+		throw new Error(`function expected, got ${f}`);
+	}
+	for (const childKey in tree) {
+		if (tree[childKey] && typeof tree[childKey] === 'object') {
+			f(tree[childKey]);
+			walkDFS(tree[childKey], f);
+		}
+	}
+}

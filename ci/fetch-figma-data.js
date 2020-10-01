@@ -1,8 +1,9 @@
 import fs from 'fs';
 import https from 'https';
+import process from 'process';
+import { RAW_DATA_PATH } from './commons.js';
 
 const
-	RAW_DATA_PATH = './raw-data/raw.json',
 	FILE_TOKEN_KEY = 'FIGMA_FILE_TOKEN',
 	AUTH_TOKEN_KEY = 'FIGMA_AUTH_TOKEN';
 const fileToken = process.env[FILE_TOKEN_KEY];
@@ -18,18 +19,14 @@ if (!authToken) {
 }
 
 //	main flow
+console.info('fetching data...');
 fetchData()
-	.then(() => parseData())
-	.then(data => {
-		//	TODO: process the raw data here and spread to the sub objects if needed
-		console.log(Object.keys(data));
-	})
 	.catch(e => {
 		console.error(e);
 		process.exitCode = 1;
 	})
 	.finally(() => {
-		console.info('data fetch done');
+		console.info('... data fetch done');
 	});
 
 async function fetchData() {
@@ -44,11 +41,12 @@ async function fetchData() {
 				reject(`data retrieval failed with ${response.statusCode}: ${response.statusMessage}`);
 			}
 
-			const receiver = fs.createWriteStream(RAW_DATA_PATH, { encoding: 'utf-8' });
-			response.on('data', chunk => receiver.write(chunk));
+			let receiver = '';
+			response.on('data', chunk => receiver += chunk);
 			response.on('end', () => {
 				if (response.complete) {
-					receiver.end(resolve);
+					fs.writeFileSync(RAW_DATA_PATH, receiver, { encoding: 'utf-8' });
+					resolve(receiver);
 				} else {
 					reject('data retrieval prematurely terminated');
 				}
@@ -57,20 +55,5 @@ async function fetchData() {
 
 		request.on('error', e => reject(`data retrieval failed with ${e}`));
 		request.end();
-	});
-}
-
-async function parseData() {
-	return new Promise((resolve, reject) => {
-		fs.readFile(RAW_DATA_PATH, { encoding: 'utf-8' }, (error, data) => {
-			if (error) {
-				reject(error);
-			} else if (!data) {
-				reject(`expected to get raw data, found ${data}`);
-			} else {
-				const result = JSON.parse(data);
-				resolve(result);
-			}
-		});
 	});
 }
