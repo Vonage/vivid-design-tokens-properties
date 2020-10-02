@@ -30,7 +30,7 @@ function dumpGlobalColors(data) {
 	};
 	const schemesMap = {};
 	walkDFS(data, scheme => {
-		if (!scheme.name || !/^scheme\s*\/.+/i.test(scheme.name)) {
+		if (!scheme.name || !/^scheme\s*\/.*light/i.test(scheme.name)) {
 			return;
 		}
 		const schemeName = scheme.name.match(/\/\s*(?<schemeName>\w*)/).groups.schemeName?.toLowerCase();
@@ -61,11 +61,10 @@ function dumpGlobalColors(data) {
 					.forEach(gradeName => colorsMap[colorName][gradeName] = gradesMap[gradeName]);
 			}
 		});
+		//	taking the single scheme right now
 		Object.keys(colorsMap).sort()
-			.forEach(colorName => schemesMap[schemeName][colorName] = colorsMap[colorName]);
+			.forEach(colorName => result.alias.color.palette[colorName] = colorsMap[colorName]);
 	});
-	Object.keys(schemesMap).sort()
-		.forEach(schemeName => result.alias.color.palette[schemeName] = schemesMap[schemeName]);
 
 	const output = JSON.stringify(result);
 	fs.writeFileSync('./globals/color/palette.gen.json', output, { encoding: 'utf-8' });
