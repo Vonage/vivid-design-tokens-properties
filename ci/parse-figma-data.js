@@ -6,8 +6,9 @@ import extractPalette from './extractors/palette-data-extractor.js';
 //
 console.info('parsing data...');
 const data = loadData();
-dumpGlobalColors(data);
+dumpPalette(data);
 dumpTypography(data);
+console.info('... parse done');
 
 //	private functions
 //
@@ -21,7 +22,7 @@ function loadData() {
 	}
 }
 
-function dumpGlobalColors(data) {
+function dumpPalette(data) {
 	console.log('\textracting palette...');
 	const palette = extractPalette(data);
 	const output = JSON.stringify(palette);
