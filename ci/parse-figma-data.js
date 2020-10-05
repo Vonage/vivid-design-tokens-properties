@@ -1,6 +1,7 @@
 import fs from 'fs';
 import { RAW_DATA_PATH } from './commons.js';
 import extractPalette from './extractors/palette-data-extractor.js';
+import extractTypography from './extractors/typography-data-extractor.js';
 
 //	main flow start
 //
@@ -31,5 +32,9 @@ function dumpPalette(data) {
 }
 
 function dumpTypography(data) {
-	//	TODO
+	console.log('\textracting typography...');
+	const typography = extractTypography(data);
+	const output = JSON.stringify(typography);
+	fs.writeFileSync('./globals/font/typography.json', output, { encoding: 'utf-8' });
+	console.log('\t... typography done');
 }
