@@ -1,1 +1,1 @@
-export const RAW_DATA_PATH = './raw-data/raw.json';
+export const RAW_DATA_PATH = './tmp/raw-data.json';
