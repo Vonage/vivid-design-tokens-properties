@@ -66,7 +66,7 @@ async function loadParsers() {
 function parseAndWrite(data, parser) {
 	console.log(`\tparsing with '${parser.name}' ...`);
 	const parsed = parser.parse(data);
-	const output = JSON.stringify(parsed);
+	const output = JSON.stringify(parsed, null, 2);
 	fs.writeFileSync(parser.target, output, { encoding: 'utf-8' });
 	console.log(`\t... '${parser.name}' done`);
 }
