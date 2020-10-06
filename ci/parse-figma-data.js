@@ -1,13 +1,17 @@
 import fs from 'fs';
 import { RAW_DATA_PATH } from './commons.js';
 
+const PARSERS_DIR = './parsers/';
+
 //	main flow start
 //
 console.info('parsing data...');
-const PARSERS_DIR = './parsers/';
-const data = loadData();
-loadParsers()
-	.then(parsers => {
+Promise
+	.all([
+		loadData(),
+		loadParsers()
+	])
+	.then(([data, parsers]) => {
 		parsers.forEach(parser => {
 			parseAndWrite(data, parser);
 		});
@@ -21,14 +25,17 @@ loadParsers()
 
 //	private functions
 //
-function loadData() {
-	const data = fs.readFileSync(RAW_DATA_PATH, { encoding: 'utf-8' });
-	if (!data) {
-		throw ('no raw data found');
-	} else {
-		const result = JSON.parse(data);
-		return result;
-	}
+async function loadData() {
+	return new Promise((resolve, reject) => {
+		fs.readFile(RAW_DATA_PATH, { encoding: 'utf-8' }, (error, data) => {
+			if (error || !data) {
+				reject(error ? error : 'no raw data found');
+			} else {
+				const result = JSON.parse(data);
+				resolve(result);
+			}
+		});
+	});
 }
 
 async function loadParsers() {
