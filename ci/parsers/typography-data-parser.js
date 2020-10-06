@@ -10,7 +10,13 @@ const
 		600: 50
 	});
 
-export default function extractTypography(data) {
+export default Object.freeze({
+	name: 'Typography parser',
+	parse: extractTypography,
+	target: './globals/font/typography.json'
+});
+
+function extractTypography(data) {
 	const result = {
 		alias: {
 			font: {

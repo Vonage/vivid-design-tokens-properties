@@ -5,7 +5,13 @@ const
 	COLOR_PREFIX = 'palette.',
 	COLOR_KEY_SPLITTER = '.';
 
-export default function extractPalette(data) {
+export default Object.freeze({
+	name: 'Palette parser',
+	parse: extractPalette,
+	target: './globals/color/palette.gen.json'
+});
+
+function extractPalette(data) {
 	const result = {
 		alias: {
 			color: {
