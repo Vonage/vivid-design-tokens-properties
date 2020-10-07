@@ -21,6 +21,7 @@ try {
 	console.info('\tpackage.json updated');
 } catch (e) {
 	console.info('version update failed', e);
+	process.exitCode = 1;
 } finally {
 	console.info('... package version update DONE');
 }
