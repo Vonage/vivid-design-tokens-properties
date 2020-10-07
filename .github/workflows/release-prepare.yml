@@ -1,0 +1,51 @@
+name: Prepare Design Token Properties for Release
+
+on:
+  push:
+    tags:
+      - release-*
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Setup NodeJS 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Extract release version
+        id: extractVersion
+        run: echo "::set-output name=version::$(echo ${GITHUB_REF##*/release-})"
+
+      - name: Update tokens data & bump package version to ${{ steps.extractVersion.outputs.version }}
+        run: |
+          npm run fetch
+          npm run parse
+          npm run bump ${{ steps.extractVersion.outputs.version }}
+        env:
+          FIGMA_FILE_TOKEN: ${{ secrets.FIGMA_FILE_TOKEN }}
+          FIGMA_AUTH_TOKEN: ${{ secrets.FIGMA_AUTH_TOKEN }}
+
+      - name: Delete temporary trigger tag
+        run: git push origin --delete release-${{ steps.extractVersion.outputs.version }}
+
+      - name: Push changes
+        run: |
+          git fetch
+          git config user.email "vivid.ci@vonage.com"
+          git config user.name "Vivid CI"
+          git add --all
+          git commit -m "update versions to ${{ steps.extractVersion.outputs.version }}"
+          git push
+
+      - name: Tag release
+        run: |
+          git tag -a v${{ steps.extractVersion.outputs.version }} -m "tag release v${{ steps.extractVersion.outputs.version }}"
+          git push origin v${{ steps.extractVersion.outputs.version }}

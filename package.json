@@ -20,6 +20,7 @@
 	},
 	"scripts": {
 		"lint": "eslint -c .eslintrc.json ./ci/**/*.js",
+		"bump": "node ./ci/bump-version.js",
 		"fetch": "node ./ci/fetch-figma-data.js",
 		"parse": "node ./ci/parse-figma-data.js"
 	},

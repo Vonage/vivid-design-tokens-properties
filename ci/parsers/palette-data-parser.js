@@ -8,7 +8,7 @@ const
 export default Object.freeze({
 	name: 'Palette parser',
 	parse: extractPalette,
-	target: './globals/color/palette.gen.json'
+	target: './globals/color/palette.json'
 });
 
 function extractPalette(data) {

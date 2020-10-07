@@ -1,4 +1,4 @@
-name: Publish Design Token Properties
+name: Release Design Token Properties
 
 on:
   push:
