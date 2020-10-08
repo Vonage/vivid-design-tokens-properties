@@ -14,7 +14,7 @@ Below is a description of the whole lifecycle end to end.
 	- see how to create tag/release in GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository)
 	- our convention MUST have a tag version in the following format: `release-x.y.z`, where `x`, `y` and `z` are version numbers or your choice
 	- the version MUST be higher than the existing one
-	- do not change any other field, do `Publish release`
+	- do not change any other field, do `publish release`
 - automated phase will pick up from here and do as below
 
 ### Automated phase:
