@@ -3,13 +3,8 @@
     "base": {
       "background": { "value": "{alias.color.base.background.value}" },
       "foreground": { "value": "{alias.color.base.foreground.value}" },
-      "distinct": { "value": "{alias.color.base.distinct.value}" },
       "faint": { "value": "{alias.color.palette.faint.value}" },
-      "soft": { "value": "{alias.color.palette.soft.value}" },
-      "idle": { "value": "{alias.color.palette.idle.value}" },
-      "dim": { "value": "{alias.color.palette.dim.value}" },
-      "neutral": { "value": "{alias.color.palette.neutral.value}" },
-      "tinted": { "value": "{alias.color.palette.tinted.value}" }
+      "dim": { "value": "{alias.color.palette.dim.value}" }
     },
     "surface": {
       "background": {
@@ -17,6 +12,12 @@
       },
       "foreground": {
         "value": "{alias.color.surface.foreground.value}"
+      },
+      "border": {
+        "value": "{alias.color.surface.border.value}"
+      },
+      "border-hovered": {
+        "value": "{alias.color.surface.border-hovered.value}"
       }
     },
     "primary": {
@@ -29,11 +30,16 @@
     },
     "success": {
       "background": { "value": "{alias.color.success.background.value}" },
-      "foreground": { "value": "{alias.color.success.foreground.value}" }
+      "foreground": { "value": "{alias.color.success.foreground.value}" },
+      "border": { "value": "{alias.color.success.border.value}" }
     },
     "error": {
       "background": { "value": "{alias.color.error.background.value}" },
-      "foreground": { "value": "{alias.color.error.foreground.value}" }
+      "background-subdued": {
+        "value": "{alias.color.error.background-subdued.value}"
+      },
+      "foreground": { "value": "{alias.color.error.foreground.value}" },
+      "border": { "value": "{alias.color.error.border.value}" }
     },
     "info": {
       "background": { "value": "{alias.color.info.background.value}" },
