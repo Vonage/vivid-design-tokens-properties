@@ -17,10 +17,10 @@
           "value": "{alias.color.palette.grey.900.value}"
         },
         "foreground": { "value": "{alias.color.palette.white.value}" },
-        "foreground-subdued": {
+        "foreground-disabled": {
           "value": "{alias.color.palette.grey.600.value}"
         },
-        "foreground-disabled": {
+        "foreground-subdued": {
           "value": "{alias.color.palette.grey.600.value}"
         },
         "border": { "value": "{alias.color.palette.grey.600.value}" },
