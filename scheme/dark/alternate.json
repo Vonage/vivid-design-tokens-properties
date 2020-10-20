@@ -4,14 +4,28 @@
       "base": {
         "background": { "value": "{alias.color.palette.white.value}" },
         "foreground": { "value": "{alias.color.palette.black.value}" },
-        "faint": { "value": "{alias.color.palette.grey.100.value}" },
         "dim": { "value": "{alias.color.palette.grey.400.value}" }
       },
       "surface": {
         "background": { "value": "{alias.color.palette.white.value}" },
         "foreground": { "value": "{alias.color.palette.black.value}" },
+        "border": { "value": "{alias.color.palette.grey.300.value}" }
+      },
+      "on-surface": {
+        "background": { "value": "{alias.color.palette.white.value}" },
+        "background-disabled": {
+          "value": "{alias.color.palette.grey.100.value}"
+        },
+        "foreground": { "value": "{alias.color.palette.black.value}" },
+        "foreground-subdued": {
+          "value": "{alias.color.palette.grey.400.value}"
+        },
+        "foreground-disabled": {
+          "value": "{alias.color.palette.grey.400.value}"
+        },
         "border": { "value": "{alias.color.palette.grey.400.value}" },
-        "border-hovered": { "value": "{alias.color.palette.black.value}" }
+        "border-hovered": { "value": "{alias.color.palette.black.value}" },
+        "border-disabled": { "value": "{alias.color.palette.grey.400.value}" }
       },
       "inverse": {
         "background": { "value": "{alias.color.base.foreground.value}" },
