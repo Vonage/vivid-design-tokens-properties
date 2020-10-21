@@ -33,9 +33,6 @@
     },
     "error": {
       "background": { "value": "{alias.color.error.background.value}" },
-      "background-subdued": {
-        "value": "{alias.color.error.background-subdued.value}"
-      },
       "foreground": { "value": "{alias.color.error.foreground.value}" }
     },
     "info": {
