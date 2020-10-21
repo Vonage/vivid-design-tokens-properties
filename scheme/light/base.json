@@ -14,8 +14,7 @@
       },
       "surface": {
         "background": { "value": "{alias.color.palette.white.value}" },
-        "foreground": { "value": "{alias.color.palette.black.value}" },
-        "border": { "value": "{alias.color.palette.grey.300.value}" }
+        "foreground": { "value": "{alias.color.palette.black.value}" }
       },
       "inverse": {
         "background": { "value": "{alias.color.base.foreground.value}" },
