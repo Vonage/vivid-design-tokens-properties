@@ -21,24 +21,19 @@
         "foreground": { "value": "{alias.color.base.background.value}" }
       },
       "cta": {
-        "background": { "value": "{alias.color.palette.purple.500.value}" },
-        "foreground": { "value": "{alias.color.palette.white.value}" }
+        "background": { "value": "{alias.color.palette.purple.400.value}" }
       },
       "success": {
-        "background": { "value": "{alias.color.palette.green.500.value}" },
-        "foreground": { "value": "{alias.color.palette.white.value}" }
+        "background": { "value": "{alias.color.palette.green.400.value}" }
       },
       "error": {
-        "background": { "value": "{alias.color.palette.red.500.value}" },
-        "foreground": { "value": "{alias.color.palette.white.value}" }
+        "background": { "value": "{alias.color.palette.red.400.value}" }
       },
       "info": {
-        "background": { "value": "{alias.color.palette.blue.500.value}" },
-        "foreground": { "value": "{alias.color.palette.white.value}" }
+        "background": { "value": "{alias.color.palette.blue.400.value}" }
       },
       "announcement": {
-        "background": { "value": "{alias.color.palette.magenta.500.value}" },
-        "foreground": { "value": "{alias.color.palette.white.value}" }
+        "background": { "value": "{alias.color.palette.magenta.400.value}" }
       }
     }
   }
