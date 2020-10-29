@@ -3,7 +3,6 @@
     "base": {
       "background": { "value": "{alias.color.base.background.value}" },
       "foreground": { "value": "{alias.color.base.foreground.value}" },
-      "indistinct": { "value": "{alias.color.base.indistinct.value}" },
       "faint": { "value": "{alias.color.base.faint.value}" },
       "soft": { "value": "{alias.color.base.soft.value}" },
       "tinged": { "value": "{alias.color.base.tinged.value}" },

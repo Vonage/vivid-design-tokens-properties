@@ -4,7 +4,6 @@
       "base": {
         "background": { "value": "{alias.color.palette.white.value}" },
         "foreground": { "value": "{alias.color.palette.black.value}" },
-        "indistinct": { "value": "{alias.color.palette.grey.50.value}" },
         "faint": { "value": "{alias.color.palette.grey.100.value}" },
         "soft": { "value": "{alias.color.palette.grey.200.value}" },
         "tinged": { "value": "{alias.color.palette.grey.300.value}" },
@@ -13,7 +12,7 @@
         "tinted": { "value": "{alias.color.palette.grey.600.value}" }
       },
       "surface": {
-        "background": { "value": "{alias.color.palette.white.value}" },
+        "background": { "value": "{alias.color.palette.grey.50.value}" },
         "foreground": { "value": "{alias.color.palette.black.value}" }
       },
       "inverse": {
