@@ -47,7 +47,7 @@ async function loadParsers() {
 		.then(modules => {
 			return modules.map((m, i) => {
 				if (!m || typeof m.default !== 'object') {
-					throw new Error(`parser '${parserPaths[i]}' is invalid`);
+					throw new Error(`parser '${parserPaths[i]}' is invalid, default export of type object expected`);
 				}
 				if (!m.default.name || typeof m.default.name !== 'string') {
 					throw new Error(`parser '${parserPaths[i]}' has no valid name (${m.default.name})`);

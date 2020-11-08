@@ -25,3 +25,24 @@ Below is a description of the whole lifecycle end to end.
 - automation will commit and push those changes to the repository
 - the manual trigger tag, `release-x.y.z`, will be removed and new release tag will be added with the specified version
 - finally, the package will be published and ready to use by Vivid or other consumers
+
+# Contributor guide
+
+This section is for anyone willing to contribute to Vivid Design Tokens automation.
+
+### Figma automation
+
+Part of our automation process we __fetch__ data from Figma.
+This one is pretty straight forward process. It's whole logic is found [here](./ci/fetch-figma-data.js).
+
+Next step is __parsing__ and transfromation to our own data structures.
+The parsers manager script is found [here](./ci/parse-figma-data.js) and in general is not expected to be toughed much.
+It's concern is to:
+* scan `ci/parsers` folder
+* import each script from there and validate it is a well-formed parser (see below)
+* execute all of the parsers
+
+Well formed parser is expected to have a `default` export of type `object` having the following properties at the least:
+* `name` - string - parser name
+* `parse` - function - actual parsing function
+* `target` - string - path to write the parse result
