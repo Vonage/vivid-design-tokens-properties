@@ -12,7 +12,7 @@
         "tinted": { "value": "{alias.color.palette.grey.400.value}" }
       },
       "surface": {
-        "background": { "value": "{alias.color.base.grey.950.value}" },
+        "background": { "value": "{alias.color.palette.grey.950.value}" },
         "foreground": { "value": "{alias.color.base.foreground.value}" }
       },
       "inverse": {
