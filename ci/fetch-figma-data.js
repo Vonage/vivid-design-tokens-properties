@@ -45,6 +45,8 @@ async function fetchData() {
 			response.on('data', chunk => receiver += chunk);
 			response.on('end', () => {
 				if (response.complete) {
+					fs.rmdirSync(RAW_DATA_PATH, { recursive: true });
+					fs.mkdirSync('./tmp', { recursive: true });
 					fs.writeFileSync(RAW_DATA_PATH, receiver, { encoding: 'utf-8' });
 					resolve(receiver);
 				} else {
