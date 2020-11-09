@@ -8,7 +8,8 @@
           "fontStretch": "50%",
           "fontWeight": 400,
           "letterSpacing": "0px",
-          "lineHeight": "24px"
+          "lineHeight": "24px",
+          "textTransform": "none"
         },
         "body-1-bold": {
           "fontFamily": "SpeziaWebVariable",
@@ -16,7 +17,8 @@
           "fontStretch": "50%",
           "fontWeight": 600,
           "letterSpacing": "0px",
-          "lineHeight": "24px"
+          "lineHeight": "24px",
+          "textTransform": "none"
         },
         "body-1-link": {
           "fontFamily": "SpeziaWebVariable",
@@ -25,7 +27,8 @@
           "fontWeight": 400,
           "letterSpacing": "0px",
           "lineHeight": "24px",
-          "textDecoration": "underline"
+          "textDecoration": "underline",
+          "textTransform": "none"
         },
         "body-2": {
           "fontFamily": "SpeziaWebVariable",
@@ -33,7 +36,8 @@
           "fontStretch": "50%",
           "fontWeight": 400,
           "letterSpacing": "0px",
-          "lineHeight": "20px"
+          "lineHeight": "20px",
+          "textTransform": "none"
         },
         "body-2-bold": {
           "fontFamily": "SpeziaWebVariable",
@@ -41,7 +45,8 @@
           "fontStretch": "50%",
           "fontWeight": 600,
           "letterSpacing": "0px",
-          "lineHeight": "20px"
+          "lineHeight": "20px",
+          "textTransform": "none"
         },
         "body-2-code": {
           "fontFamily": "SpeziaMonoWebVariable",
@@ -49,7 +54,8 @@
           "fontStretch": "50%",
           "fontWeight": 400,
           "letterSpacing": "0px",
-          "lineHeight": "20px"
+          "lineHeight": "20px",
+          "textTransform": "none"
         },
         "body-2-link": {
           "fontFamily": "SpeziaWebVariable",
@@ -58,7 +64,8 @@
           "fontWeight": 400,
           "letterSpacing": "0px",
           "lineHeight": "20px",
-          "textDecoration": "underline"
+          "textDecoration": "underline",
+          "textTransform": "none"
         },
         "body-code": {
           "fontFamily": "SpeziaMonoWebVariable",
@@ -66,7 +73,8 @@
           "fontStretch": "50%",
           "fontWeight": 400,
           "letterSpacing": "0px",
-          "lineHeight": "24px"
+          "lineHeight": "24px",
+          "textTransform": "none"
         },
         "button-default": {
           "fontFamily": "SpeziaWebVariable",
@@ -74,7 +82,8 @@
           "fontStretch": "50%",
           "fontWeight": 600,
           "letterSpacing": "0px",
-          "lineHeight": "100%"
+          "lineHeight": "100%",
+          "textTransform": "none"
         },
         "button-dense": {
           "fontFamily": "SpeziaWebVariable",
@@ -82,7 +91,8 @@
           "fontStretch": "50%",
           "fontWeight": 600,
           "letterSpacing": "0px",
-          "lineHeight": "100%"
+          "lineHeight": "100%",
+          "textTransform": "none"
         },
         "button-enlarge": {
           "fontFamily": "SpeziaWebVariable",
@@ -90,7 +100,8 @@
           "fontStretch": "50%",
           "fontWeight": 600,
           "letterSpacing": "0px",
-          "lineHeight": "100%"
+          "lineHeight": "100%",
+          "textTransform": "none"
         },
         "caption": {
           "fontFamily": "SpeziaWebVariable",
@@ -98,7 +109,8 @@
           "fontStretch": "50%",
           "fontWeight": 400,
           "letterSpacing": "0px",
-          "lineHeight": "16px"
+          "lineHeight": "16px",
+          "textTransform": "none"
         },
         "caption-bold": {
           "fontFamily": "SpeziaWebVariable",
@@ -106,7 +118,8 @@
           "fontStretch": "50%",
           "fontWeight": 600,
           "letterSpacing": "0px",
-          "lineHeight": "16px"
+          "lineHeight": "16px",
+          "textTransform": "none"
         },
         "caption-code": {
           "fontFamily": "SpeziaMonoWebVariable",
@@ -114,7 +127,8 @@
           "fontStretch": "50%",
           "fontWeight": 400,
           "letterSpacing": "0px",
-          "lineHeight": "16px"
+          "lineHeight": "16px",
+          "textTransform": "none"
         },
         "caption-link": {
           "fontFamily": "SpeziaWebVariable",
@@ -123,7 +137,8 @@
           "fontWeight": 400,
           "letterSpacing": "0px",
           "lineHeight": "16px",
-          "textDecoration": "underline"
+          "textDecoration": "underline",
+          "textTransform": "none"
         },
         "headline": {
           "fontFamily": "SpeziaWebVariable",
@@ -131,7 +146,8 @@
           "fontStretch": "75%",
           "fontWeight": 500,
           "letterSpacing": "0px",
-          "lineHeight": "68px"
+          "lineHeight": "68px",
+          "textTransform": "none"
         },
         "subtitle": {
           "fontFamily": "SpeziaWebVariable",
@@ -139,7 +155,8 @@
           "fontStretch": "75%",
           "fontWeight": 500,
           "letterSpacing": "0px",
-          "lineHeight": "44px"
+          "lineHeight": "44px",
+          "textTransform": "none"
         },
         "subtitle-2": {
           "fontFamily": "SpeziaWebVariable",
@@ -147,7 +164,8 @@
           "fontStretch": "75%",
           "fontWeight": 500,
           "letterSpacing": "0px",
-          "lineHeight": "36px"
+          "lineHeight": "36px",
+          "textTransform": "none"
         },
         "subtitle-3": {
           "fontFamily": "SpeziaWebVariable",
@@ -155,7 +173,8 @@
           "fontStretch": "75%",
           "fontWeight": 500,
           "letterSpacing": "0px",
-          "lineHeight": "28px"
+          "lineHeight": "28px",
+          "textTransform": "none"
         },
         "title": {
           "fontFamily": "SpeziaWebVariable",
@@ -163,7 +182,8 @@
           "fontStretch": "75%",
           "fontWeight": 500,
           "letterSpacing": "0px",
-          "lineHeight": "52px"
+          "lineHeight": "52px",
+          "textTransform": "none"
         }
       }
     }

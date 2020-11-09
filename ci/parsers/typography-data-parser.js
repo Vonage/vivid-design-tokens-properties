@@ -25,6 +25,12 @@ const
 			fontStretch: '75%',
 			fontWeight: 500
 		}
+	}),
+	TEXT_CASE_MAP = Object.freeze({
+		'ORIGINAL': 'none',
+		'UPPER': 'uppercase',
+		'LOWER': 'lowercase',
+		'TITLE': 'capitalize'
 	});
 
 export default Object.freeze({
@@ -60,6 +66,7 @@ function extractTypography(data) {
 			if (styleData.textDecoration) {
 				typographyMap[categoryKey].textDecoration = styleData.textDecoration.toLowerCase();
 			}
+			translateTextCase(styleData, typographyMap[categoryKey]);
 		});
 
 	copySorted(typographyMap, result.alias.font.typography);
@@ -73,4 +80,12 @@ function translateFontVariant(source, target) {
 	} else {
 		console.warn(source.fontPostScriptName);
 	}
+}
+
+function translateTextCase(source, target) {
+	let tt = 'none';
+	if (source.textCase in TEXT_CASE_MAP) {
+		tt = TEXT_CASE_MAP[source.textCase];
+	}
+	target.textTransform = tt;
 }
