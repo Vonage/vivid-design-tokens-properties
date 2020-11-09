@@ -2,7 +2,8 @@
   "alias": {
     "font": {
       "typography": {
-        "body": {
+        "body-1": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "16px",
           "fontStretch": "50%",
           "fontWeight": 400,
@@ -10,7 +11,27 @@
           "lineHeight": "24px",
           "textTransform": "none"
         },
+        "body-1-bold": {
+          "fontFamily": "SpeziaWebVariable",
+          "fontSize": "16px",
+          "fontStretch": "50%",
+          "fontWeight": 600,
+          "letterSpacing": "0px",
+          "lineHeight": "24px",
+          "textTransform": "none"
+        },
+        "body-1-link": {
+          "fontFamily": "SpeziaWebVariable",
+          "fontSize": "16px",
+          "fontStretch": "50%",
+          "fontWeight": 400,
+          "letterSpacing": "0px",
+          "lineHeight": "24px",
+          "textDecoration": "underline",
+          "textTransform": "none"
+        },
         "body-2": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "14px",
           "fontStretch": "50%",
           "fontWeight": 400,
@@ -19,6 +40,7 @@
           "textTransform": "none"
         },
         "body-2-bold": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "14px",
           "fontStretch": "50%",
           "fontWeight": 600,
@@ -27,6 +49,7 @@
           "textTransform": "none"
         },
         "body-2-code": {
+          "fontFamily": "SpeziaMonoWebVariable",
           "fontSize": "14px",
           "fontStretch": "50%",
           "fontWeight": 400,
@@ -35,30 +58,17 @@
           "textTransform": "none"
         },
         "body-2-link": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "14px",
           "fontStretch": "50%",
           "fontWeight": 400,
           "letterSpacing": "0px",
           "lineHeight": "20px",
-          "textTransform": "none"
-        },
-        "body-bold": {
-          "fontSize": "16px",
-          "fontStretch": "50%",
-          "fontWeight": 600,
-          "letterSpacing": "0px",
-          "lineHeight": "24px",
+          "textDecoration": "underline",
           "textTransform": "none"
         },
         "body-code": {
-          "fontSize": "16px",
-          "fontStretch": "50%",
-          "fontWeight": 400,
-          "letterSpacing": "0px",
-          "lineHeight": "24px",
-          "textTransform": "none"
-        },
-        "body-link": {
+          "fontFamily": "SpeziaMonoWebVariable",
           "fontSize": "16px",
           "fontStretch": "50%",
           "fontWeight": 400,
@@ -67,30 +77,34 @@
           "textTransform": "none"
         },
         "button-default": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "14px",
           "fontStretch": "50%",
           "fontWeight": 600,
           "letterSpacing": "0px",
-          "lineHeight": "14px",
+          "lineHeight": "100%",
           "textTransform": "none"
         },
         "button-dense": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "12px",
           "fontStretch": "50%",
           "fontWeight": 600,
           "letterSpacing": "0px",
-          "lineHeight": "12px",
+          "lineHeight": "100%",
           "textTransform": "none"
         },
         "button-enlarge": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "16px",
           "fontStretch": "50%",
           "fontWeight": 600,
           "letterSpacing": "0px",
-          "lineHeight": "16px",
+          "lineHeight": "100%",
           "textTransform": "none"
         },
         "caption": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "12px",
           "fontStretch": "50%",
           "fontWeight": 400,
@@ -99,6 +113,7 @@
           "textTransform": "none"
         },
         "caption-bold": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "12px",
           "fontStretch": "50%",
           "fontWeight": 600,
@@ -107,6 +122,7 @@
           "textTransform": "none"
         },
         "caption-code": {
+          "fontFamily": "SpeziaMonoWebVariable",
           "fontSize": "12px",
           "fontStretch": "50%",
           "fontWeight": 400,
@@ -115,49 +131,56 @@
           "textTransform": "none"
         },
         "caption-link": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "12px",
           "fontStretch": "50%",
           "fontWeight": 400,
           "letterSpacing": "0px",
           "lineHeight": "16px",
+          "textDecoration": "underline",
           "textTransform": "none"
         },
         "headline": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "52px",
-          "fontStretch": "50%",
-          "fontWeight": 400,
+          "fontStretch": "75%",
+          "fontWeight": 500,
           "letterSpacing": "0px",
           "lineHeight": "68px",
           "textTransform": "none"
         },
         "subtitle": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "32px",
-          "fontStretch": "50%",
-          "fontWeight": 400,
+          "fontStretch": "75%",
+          "fontWeight": 500,
           "letterSpacing": "0px",
           "lineHeight": "44px",
           "textTransform": "none"
         },
         "subtitle-2": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "26px",
-          "fontStretch": "50%",
-          "fontWeight": 400,
+          "fontStretch": "75%",
+          "fontWeight": 500,
           "letterSpacing": "0px",
           "lineHeight": "36px",
           "textTransform": "none"
         },
         "subtitle-3": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "20px",
-          "fontStretch": "50%",
-          "fontWeight": 400,
+          "fontStretch": "75%",
+          "fontWeight": 500,
           "letterSpacing": "0px",
           "lineHeight": "28px",
           "textTransform": "none"
         },
         "title": {
+          "fontFamily": "SpeziaWebVariable",
           "fontSize": "40px",
-          "fontStretch": "50%",
-          "fontWeight": 400,
+          "fontStretch": "75%",
+          "fontWeight": 500,
           "letterSpacing": "0px",
           "lineHeight": "52px",
           "textTransform": "none"

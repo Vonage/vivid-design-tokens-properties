@@ -1,3 +1,10 @@
+/**
+ * this module
+ * - ASSUMES that raw-data.json is already found and up to date in the tmp folder
+ * - READS the raw data
+ * - LOADS the parsers from ci/parsers folder
+ * - RUNS all of the parsers with the data and dumps their output as per config
+ */
 import fs from 'fs';
 import { RAW_DATA_PATH } from './commons.js';
 
@@ -47,7 +54,7 @@ async function loadParsers() {
 		.then(modules => {
 			return modules.map((m, i) => {
 				if (!m || typeof m.default !== 'object') {
-					throw new Error(`parser '${parserPaths[i]}' is invalid`);
+					throw new Error(`parser '${parserPaths[i]}' is invalid, default export of type object expected`);
 				}
 				if (!m.default.name || typeof m.default.name !== 'string') {
 					throw new Error(`parser '${parserPaths[i]}' has no valid name (${m.default.name})`);
