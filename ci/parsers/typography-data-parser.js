@@ -4,10 +4,27 @@ const
 	TYPOGRAPHY_FRAME_NAME = 'design.tokens.typography',
 	TYPOGRAPHY_PREFIX = 'typography.',
 	TYPOGRAPHY_KEY_SPLITTER = '.',
-	WEIGHT_STRETCH_MAP = Object.freeze({
-		400: 50,
-		500: 75,
-		600: 50
+	FONT_FAMILY_MAP = Object.freeze({
+		'Spezia-SemiMonoRegular': {
+			fontFamily: 'SpeziaMonoWebVariable',
+			fontStretch: '50%',
+			fontWeight: 400
+		},
+		'Spezia-Regular': {
+			fontFamily: 'SpeziaWebVariable',
+			fontStretch: '50%',
+			fontWeight: 400
+		},
+		'Spezia-SemiBold': {
+			fontFamily: 'SpeziaWebVariable',
+			fontStretch: '50%',
+			fontWeight: 600
+		},
+		'Spezia-WideMedium': {
+			fontFamily: 'SpeziaWebVariable',
+			fontStretch: '75%',
+			fontWeight: 500
+		}
 	});
 
 export default Object.freeze({
@@ -33,16 +50,27 @@ function extractTypography(data) {
 			const categoryKey = typography.name.replace(TYPOGRAPHY_PREFIX, '').split(TYPOGRAPHY_KEY_SPLITTER);
 			const styleData = typography.style;
 			typographyMap[categoryKey] = {
-				fontWeight: styleData.fontWeight,
-				fontStretch: WEIGHT_STRETCH_MAP[styleData.fontWeight] + '%',
 				fontSize: styleData.fontSize + 'px',
-				lineHeight: styleData.lineHeightPx + 'px',
 				letterSpacing: styleData.letterSpacing + 'px',
-				textTransform: 'none',
+				lineHeight: styleData.lineHeightUnit.toLowerCase() === 'pixels'
+					? `${styleData.lineHeightPx}px`
+					: `${styleData.lineHeightPercentFontSize}%`
 			};
+			translateFontVariant(styleData, typographyMap[categoryKey]);
+			if (styleData.textDecoration) {
+				typographyMap[categoryKey].textDecoration = styleData.textDecoration.toLowerCase();
+			}
 		});
 
 	copySorted(typographyMap, result.alias.font.typography);
 
 	return result;
+}
+
+function translateFontVariant(source, target) {
+	if (source.fontPostScriptName in FONT_FAMILY_MAP) {
+		Object.assign(target, FONT_FAMILY_MAP[source.fontPostScriptName]);
+	} else {
+		console.warn(source.fontPostScriptName);
+	}
 }

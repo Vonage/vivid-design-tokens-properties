@@ -1,3 +1,10 @@
+/**
+ * this module
+ * - ASSUMES that raw-data.json is already found and up to date in the tmp folder
+ * - READS the raw data
+ * - LOADS the parsers from ci/parsers folder
+ * - RUNS all of the parsers with the data and dumps their output as per config
+ */
 import fs from 'fs';
 import { RAW_DATA_PATH } from './commons.js';
 
