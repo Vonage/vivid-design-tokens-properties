@@ -32,12 +32,7 @@ const
 		'UPPER': 'uppercase',
 		'LOWER': 'lowercase',
 		'TITLE': 'capitalize'
-	}),
-	TYPOGRAPHY_OUTPUT_TEMPLATE = {
-		alias: {
-			typography: {}
-		}
-	};
+	});
 
 export default Object.freeze({
 	name: 'Typography parser',
@@ -66,7 +61,7 @@ function extractTypography(data) {
 			}
 			translateTextCase(styleData, categoryData);
 
-			const result = Object.assign({}, TYPOGRAPHY_OUTPUT_TEMPLATE);
+			const result = { alias: { typography: {} } };
 			copySorted(categoryData, result.alias.typography);
 			writeJson(result, `${TYPOGRAPHY_OUTPUT_FOLDER}/${categoryKey}.json`);
 		});

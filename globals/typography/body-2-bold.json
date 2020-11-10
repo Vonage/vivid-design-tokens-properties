@@ -7,8 +7,7 @@
       "fontWeight": 600,
       "letterSpacing": "0px",
       "lineHeight": "20px",
-      "textTransform": "none",
-      "textDecoration": "underline"
+      "textTransform": "none"
     }
   }
 }
