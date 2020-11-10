@@ -7,24 +7,24 @@ const
 	TYPOGRAPHY_KEY_SPLITTER = '.',
 	FONT_FAMILY_MAP = Object.freeze({
 		'Spezia-SemiMonoRegular': {
-			fontFamily: 'SpeziaMonoWebVariable',
-			fontStretch: '50%',
-			fontWeight: 400
+			fontFamily: { value: 'SpeziaMonoWebVariable' },
+			fontStretch: { value: '50%' },
+			fontWeight: { value: 400 }
 		},
 		'Spezia-Regular': {
-			fontFamily: 'SpeziaWebVariable',
-			fontStretch: '50%',
-			fontWeight: 400
+			fontFamily: { value: 'SpeziaWebVariable' },
+			fontStretch: { value: '50%' },
+			fontWeight: { value: 400 }
 		},
 		'Spezia-SemiBold': {
-			fontFamily: 'SpeziaWebVariable',
-			fontStretch: '50%',
-			fontWeight: 600
+			fontFamily: { value: 'SpeziaWebVariable' },
+			fontStretch: { value: '50%' },
+			fontWeight: { value: 600 }
 		},
 		'Spezia-WideMedium': {
-			fontFamily: 'SpeziaWebVariable',
-			fontStretch: '75%',
-			fontWeight: 500
+			fontFamily: { value: 'SpeziaWebVariable' },
+			fontStretch: { value: '75%' },
+			fontWeight: { value: 500 }
 		}
 	}),
 	TEXT_CASE_MAP = Object.freeze({
@@ -49,17 +49,21 @@ function extractTypography(data) {
 			const categoryKey = typography.name.replace(TYPOGRAPHY_PREFIX, '').split(TYPOGRAPHY_KEY_SPLITTER);
 			const styleData = typography.style;
 			const categoryData = {
-				fontSize: styleData.fontSize + 'px',
-				letterSpacing: styleData.letterSpacing + 'px',
-				lineHeight: styleData.lineHeightUnit.toLowerCase() === 'pixels'
-					? `${styleData.lineHeightPx}px`
-					: `${styleData.lineHeightPercentFontSize}%`
+				fontSize: {
+					value: styleData.fontSize + 'px'
+				},
+				letterSpacing: {
+					value: styleData.letterSpacing + 'px'
+				},
+				lineHeight: {
+					value: styleData.lineHeightUnit.toLowerCase() === 'pixels'
+						? `${styleData.lineHeightPx}px`
+						: `${styleData.lineHeightPercentFontSize}%`
+				}
 			};
 			translateFontVariant(styleData, categoryData);
-			if (styleData.textDecoration) {
-				categoryData.textDecoration = styleData.textDecoration.toLowerCase();
-			}
 			translateTextCase(styleData, categoryData);
+			translateTextDecoration(styleData, categoryData);
 
 			const result = { alias: { typography: {} } };
 			copySorted(categoryData, result.alias.typography);
@@ -80,5 +84,15 @@ function translateTextCase(source, target) {
 	if (source.textCase in TEXT_CASE_MAP) {
 		tt = TEXT_CASE_MAP[source.textCase];
 	}
-	target.textTransform = tt;
+	target.textTransform = {
+		value: tt
+	};
+}
+
+function translateTextDecoration(source, target) {
+	if (source.textDecoration) {
+		target.textDecoration = {
+			value: source.textDecoration.toLowerCase()
+		};
+	}
 }

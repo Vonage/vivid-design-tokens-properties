@@ -1,13 +1,27 @@
 {
   "alias": {
     "typography": {
-      "fontFamily": "SpeziaWebVariable",
-      "fontSize": "20px",
-      "fontStretch": "75%",
-      "fontWeight": 500,
-      "letterSpacing": "0px",
-      "lineHeight": "28px",
-      "textTransform": "none"
+      "fontFamily": {
+        "value": "SpeziaWebVariable"
+      },
+      "fontSize": {
+        "value": "20px"
+      },
+      "fontStretch": {
+        "value": "75%"
+      },
+      "fontWeight": {
+        "value": 500
+      },
+      "letterSpacing": {
+        "value": "0px"
+      },
+      "lineHeight": {
+        "value": "28px"
+      },
+      "textTransform": {
+        "value": "none"
+      }
     }
   }
 }
