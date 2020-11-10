@@ -25,6 +25,7 @@ Promise
 	})
 	.catch(e => {
 		console.error(e);
+		throw e;
 	})
 	.finally(() => {
 		console.info('... parse done');
