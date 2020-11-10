@@ -5,10 +5,9 @@
   "homepage": "https://github.com/Vonage/vivid-design-tokens-properties",
   "license": "ISC",
   "files": [
-    "assets",
     "globals",
     "platfroms",
-    "scheme"
+    "schemes"
   ],
   "type": "module",
   "repository": {
