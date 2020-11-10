@@ -1,3 +1,9 @@
+import fs from 'fs';
+
+export function clearFolder(path) {
+	fs.rmdirSync(path, { recursive: true });
+}
+
 export function copySorted(source, target) {
 	if (!source || typeof source !== 'object') {
 		throw new Error(`source parameter MUST be an non-null object; got '${source}'`);
@@ -15,4 +21,12 @@ export function copySorted(source, target) {
 	});
 
 	return target;
+}
+
+export function writeJson(data, path) {
+	const folder = path.replace(/\/[^\/]+\.[\w]+$/, '');
+	fs.mkdirSync(folder, { recursive: true });
+
+	const output = JSON.stringify(data, null, 2);
+	fs.writeFileSync(path, output, { encoding: 'utf-8' });
 }

@@ -1,0 +1,13 @@
+{
+  "alias": {
+    "typography": {
+      "fontFamily": "SpeziaWebVariable",
+      "fontSize": "14px",
+      "fontStretch": "50%",
+      "fontWeight": 600,
+      "letterSpacing": "0px",
+      "lineHeight": "100%",
+      "textTransform": "none"
+    }
+  }
+}

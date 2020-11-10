@@ -1,4 +1,4 @@
-import { copySorted } from '../utils.js';
+import { copySorted, writeJson } from '../utils.js';
 
 const
 	COLOR_FRAME_NAME = 'design.tokens.color',
@@ -7,8 +7,7 @@ const
 
 export default Object.freeze({
 	name: 'Palette parser',
-	parse: extractPalette,
-	target: './globals/color/palette.json'
+	parse: extractPalette
 });
 
 function extractPalette(data) {
@@ -41,6 +40,5 @@ function extractPalette(data) {
 		});
 
 	copySorted(colorsMap, result.alias.color.palette);
-
-	return result;
+	writeJson(result, './globals/color/palette.json');
 }

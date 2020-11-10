@@ -62,9 +62,6 @@ async function loadParsers() {
 				if (!m.default.parse || typeof m.default.parse !== 'function') {
 					throw new Error(`parser '${parserPaths[i]}' has no valid parse method (${m.default.parse})`);
 				}
-				if (!m.default.target || typeof m.default.target !== 'string') {
-					throw new Error(`parser '${parserPaths[i]}' has no valid target (${m.default.target})`);
-				}
 				return m.default;
 			});
 		});
@@ -72,8 +69,6 @@ async function loadParsers() {
 
 function parseAndWrite(data, parser) {
 	console.log(`\tparsing with '${parser.name}' ...`);
-	const parsed = parser.parse(data);
-	const output = JSON.stringify(parsed, null, 2);
-	fs.writeFileSync(parser.target, output, { encoding: 'utf-8' });
+	parser.parse(data);
 	console.log(`\t... '${parser.name}' done`);
 }
