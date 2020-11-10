@@ -65,7 +65,7 @@ function extractTypography(data) {
 			translateTextCase(styleData, categoryData);
 			translateTextDecoration(styleData, categoryData);
 
-			const result = { alias: { typography: {} } };
+			const result = { typography: {} };
 			copySorted(categoryData, result.alias.typography);
 			writeJson(result, `${TYPOGRAPHY_OUTPUT_FOLDER}/${categoryKey}.json`);
 		});
