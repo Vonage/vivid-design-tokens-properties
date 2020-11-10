@@ -1,0 +1,25 @@
+{
+  "typography": {
+    "fontFamily": {
+      "value": "SpeziaWebVariable"
+    },
+    "fontSize": {
+      "value": "14px"
+    },
+    "fontStretch": {
+      "value": "50%"
+    },
+    "fontWeight": {
+      "value": 600
+    },
+    "letterSpacing": {
+      "value": "0px"
+    },
+    "lineHeight": {
+      "value": "100%"
+    },
+    "textTransform": {
+      "value": "none"
+    }
+  }
+}
