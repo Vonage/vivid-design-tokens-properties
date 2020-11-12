@@ -3,680 +3,680 @@
     "body-1": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.2.value"
+          "value": "{alias.font.size.2.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.1.value"
+          "value": "{alias.font.weight.1.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.3.value"
+          "value": "{alias.line.height.3.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "body-1-bold": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.2.value"
+          "value": "{alias.font.size.2.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.0.value"
+          "value": "{alias.font.weight.0.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.3.value"
+          "value": "{alias.line.height.3.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "body-1-code": {
       "font": {
         "family": {
-          "value": "alias.font.family.1.value"
+          "value": "{alias.font.family.1.value}"
         },
         "size": {
-          "value": "alias.font.size.2.value"
+          "value": "{alias.font.size.2.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.1.value"
+          "value": "{alias.font.weight.1.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.3.value"
+          "value": "{alias.line.height.3.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "body-1-link": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.2.value"
+          "value": "{alias.font.size.2.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.1.value"
+          "value": "{alias.font.weight.1.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.3.value"
+          "value": "{alias.line.height.3.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.1.value"
+          "value": "{alias.text.decoration.1.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "body-2": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.1.value"
+          "value": "{alias.font.size.1.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.1.value"
+          "value": "{alias.font.weight.1.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.2.value"
+          "value": "{alias.line.height.2.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "body-2-bold": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.1.value"
+          "value": "{alias.font.size.1.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.0.value"
+          "value": "{alias.font.weight.0.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.2.value"
+          "value": "{alias.line.height.2.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "body-2-code": {
       "font": {
         "family": {
-          "value": "alias.font.family.1.value"
+          "value": "{alias.font.family.1.value}"
         },
         "size": {
-          "value": "alias.font.size.1.value"
+          "value": "{alias.font.size.1.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.1.value"
+          "value": "{alias.font.weight.1.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.2.value"
+          "value": "{alias.line.height.2.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "body-2-link": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.1.value"
+          "value": "{alias.font.size.1.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.1.value"
+          "value": "{alias.font.weight.1.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.2.value"
+          "value": "{alias.line.height.2.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.1.value"
+          "value": "{alias.text.decoration.1.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "button": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.1.value"
+          "value": "{alias.font.size.1.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.0.value"
+          "value": "{alias.font.weight.0.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.0.value"
+          "value": "{alias.line.height.0.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "button-dense": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.0.value"
+          "value": "{alias.font.size.0.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.0.value"
+          "value": "{alias.font.weight.0.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.0.value"
+          "value": "{alias.line.height.0.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "button-enlarge": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.2.value"
+          "value": "{alias.font.size.2.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.0.value"
+          "value": "{alias.font.weight.0.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.0.value"
+          "value": "{alias.line.height.0.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "caption": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.0.value"
+          "value": "{alias.font.size.0.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.1.value"
+          "value": "{alias.font.weight.1.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.1.value"
+          "value": "{alias.line.height.1.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "caption-bold": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.0.value"
+          "value": "{alias.font.size.0.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.0.value"
+          "value": "{alias.font.weight.0.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.1.value"
+          "value": "{alias.line.height.1.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "caption-code": {
       "font": {
         "family": {
-          "value": "alias.font.family.1.value"
+          "value": "{alias.font.family.1.value}"
         },
         "size": {
-          "value": "alias.font.size.0.value"
+          "value": "{alias.font.size.0.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.1.value"
+          "value": "{alias.font.weight.1.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.1.value"
+          "value": "{alias.line.height.1.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "caption-link": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.0.value"
+          "value": "{alias.font.size.0.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.0.value"
+          "value": "{alias.font.stretch.0.value}"
         },
         "weight": {
-          "value": "alias.font.weight.1.value"
+          "value": "{alias.font.weight.1.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.1.value"
+          "value": "{alias.line.height.1.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.1.value"
+          "value": "{alias.text.decoration.1.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "headline": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.7.value"
+          "value": "{alias.font.size.7.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.1.value"
+          "value": "{alias.font.stretch.1.value}"
         },
         "weight": {
-          "value": "alias.font.weight.2.value"
+          "value": "{alias.font.weight.2.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.8.value"
+          "value": "{alias.line.height.8.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "subtitle-1": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.5.value"
+          "value": "{alias.font.size.5.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.1.value"
+          "value": "{alias.font.stretch.1.value}"
         },
         "weight": {
-          "value": "alias.font.weight.2.value"
+          "value": "{alias.font.weight.2.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.6.value"
+          "value": "{alias.line.height.6.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "subtitle-2": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.4.value"
+          "value": "{alias.font.size.4.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.1.value"
+          "value": "{alias.font.stretch.1.value}"
         },
         "weight": {
-          "value": "alias.font.weight.2.value"
+          "value": "{alias.font.weight.2.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.5.value"
+          "value": "{alias.line.height.5.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "subtitle-3": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.3.value"
+          "value": "{alias.font.size.3.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.1.value"
+          "value": "{alias.font.stretch.1.value}"
         },
         "weight": {
-          "value": "alias.font.weight.2.value"
+          "value": "{alias.font.weight.2.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.4.value"
+          "value": "{alias.line.height.4.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     },
     "title": {
       "font": {
         "family": {
-          "value": "alias.font.family.0.value"
+          "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "alias.font.size.6.value"
+          "value": "{alias.font.size.6.value}"
         },
         "stretch": {
-          "value": "alias.font.stretch.1.value"
+          "value": "{alias.font.stretch.1.value}"
         },
         "weight": {
-          "value": "alias.font.weight.2.value"
+          "value": "{alias.font.weight.2.value}"
         }
       },
       "letter": {
         "spacing": {
-          "value": "alias.letter.spacing.0.value"
+          "value": "{alias.letter.spacing.0.value}"
         }
       },
       "line": {
         "height": {
-          "value": "alias.line.height.7.value"
+          "value": "{alias.line.height.7.value}"
         }
       },
       "text": {
         "decoration": {
-          "value": "alias.text.decoration.0.value"
+          "value": "{alias.text.decoration.0.value}"
         },
         "transform": {
-          "value": "alias.text.transform.0.value"
+          "value": "{alias.text.transform.0.value}"
         }
       }
     }
