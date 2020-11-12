@@ -19,13 +19,9 @@ Promise
 		loadParsers()
 	])
 	.then(([data, parsers]) => {
-		parsers.forEach(parser => {
+		for (const parser of parsers) {
 			parseAndWrite(data, parser);
-		});
-	})
-	.catch(e => {
-		console.error(e);
-		throw e;
+		}
 	})
 	.finally(() => {
 		console.info('... parse done');
@@ -47,7 +43,7 @@ async function loadData() {
 }
 
 async function loadParsers() {
-	const parserPaths = fs.readdirSync('./ci/' + PARSERS_DIR);
+	const parserPaths = fs.readdirSync('./ci/' + PARSERS_DIR).filter(parserPath => parserPath.endsWith('.js'));
 	console.info(`\tfound ${parserPaths.length} parser/s, loading...`)
 	const parserReadyPromises = parserPaths.map(pp => import(PARSERS_DIR + pp));
 	return Promise
