@@ -1,0 +1,112 @@
+{
+  "alias": {
+    "font": {
+      "family": {
+        "0": {
+          "value": "SpeziaWebVariable"
+        },
+        "1": {
+          "value": "SpeziaMonoWebVariable"
+        }
+      },
+      "size": {
+        "0": {
+          "value": "12px"
+        },
+        "1": {
+          "value": "14px"
+        },
+        "2": {
+          "value": "16px"
+        },
+        "3": {
+          "value": "20px"
+        },
+        "4": {
+          "value": "26px"
+        },
+        "5": {
+          "value": "32px"
+        },
+        "6": {
+          "value": "40px"
+        },
+        "7": {
+          "value": "52px"
+        }
+      },
+      "stretch": {
+        "0": {
+          "value": "50%"
+        },
+        "1": {
+          "value": "75%"
+        }
+      },
+      "weight": {
+        "0": {
+          "value": 600
+        },
+        "1": {
+          "value": 400
+        },
+        "2": {
+          "value": 500
+        }
+      }
+    },
+    "letter": {
+      "spacing": {
+        "0": {
+          "value": "0px"
+        }
+      }
+    },
+    "line": {
+      "height": {
+        "0": {
+          "value": "100%"
+        },
+        "1": {
+          "value": "16px"
+        },
+        "2": {
+          "value": "20px"
+        },
+        "3": {
+          "value": "24px"
+        },
+        "4": {
+          "value": "28px"
+        },
+        "5": {
+          "value": "36px"
+        },
+        "6": {
+          "value": "44px"
+        },
+        "7": {
+          "value": "52px"
+        },
+        "8": {
+          "value": "68px"
+        }
+      }
+    },
+    "text": {
+      "decoration": {
+        "0": {
+          "value": "none"
+        },
+        "1": {
+          "value": "underline"
+        }
+      },
+      "transform": {
+        "0": {
+          "value": "none"
+        }
+      }
+    }
+  }
+}
