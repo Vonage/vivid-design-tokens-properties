@@ -134,7 +134,8 @@ function mergeReplace(aliases, values, path = []) {
 		const ownPath = [...path, key];
 		if (key in aliases) {
 			if ('value' in values[key]) {
-				values[key].value = ['alias', ...ownPath, mergeValueToSet(aliases[key], values[key]), 'value'].join('.');
+				const aliasPath = ['alias', ...ownPath, mergeValueToSet(aliases[key], values[key]), 'value'].join('.');
+				values[key].value = `{${aliasPath}}`;
 			} else {
 				mergeReplace(aliases[key], values[key], ownPath);
 			}
