@@ -102,7 +102,7 @@ function extractTypography(data) {
 	copySorted(tmpCategories, tCategories.typography);
 
 	writeJson(tDefinitions, `${TYPOGRAPHY_GLOBAL_OUTPUT_FOLDER}/definitions.json`);
-	writeJson(tCategories, `${TYPOGRAPHY_VALUES_OUTPUT_FOLDER}/base.json`);
+	writeJson(tCategories, `${TYPOGRAPHY_VALUES_OUTPUT_FOLDER}/web.json`);
 }
 
 function translateFontVariant(source) {
