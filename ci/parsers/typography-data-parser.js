@@ -4,7 +4,6 @@ const
 	TYPOGRAPHY_OUTPUT_FOLDER = './globals/typography',
 	TYPOGRAPHY_FRAME_NAME = 'design.tokens.typography',
 	TYPOGRAPHY_PREFIX = 'typography.',
-	TYPOGRAPHY_KEY_SPLITTER = '.',
 	FONT_FAMILY_MAP = Object.freeze({
 		'Spezia-SemiMonoRegular': {
 			fontFamily: { value: 'SpeziaMonoWebVariable' },
@@ -46,7 +45,7 @@ function extractTypography(data) {
 	typographyData.children
 		.filter(c => c.name.startsWith(TYPOGRAPHY_PREFIX))
 		.forEach(typography => {
-			const categoryKey = typography.name.replace(TYPOGRAPHY_PREFIX, '').split(TYPOGRAPHY_KEY_SPLITTER);
+			const categoryKey = typography.name.replace(TYPOGRAPHY_PREFIX, '');
 			const styleData = typography.style;
 			const categoryData = {
 				fontSize: {
