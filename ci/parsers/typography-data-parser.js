@@ -50,10 +50,10 @@ function extractTypography(data) {
 			const styleData = typography.style;
 			const categoryData = {
 				fontSize: {
-					value: styleData.fontSize + 'px'
+					value: `${styleData.fontSize}px`
 				},
 				letterSpacing: {
-					value: styleData.letterSpacing + 'px'
+					value: `${styleData.letterSpacing}px`
 				},
 				lineHeight: {
 					value: styleData.lineHeightUnit.toLowerCase() === 'pixels'
