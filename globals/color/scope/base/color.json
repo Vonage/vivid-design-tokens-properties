@@ -30,9 +30,9 @@
       "background": { "value": "{alias.color.success.background.value}" },
       "foreground": { "value": "{alias.color.success.foreground.value}" }
     },
-    "error": {
-      "background": { "value": "{alias.color.error.background.value}" },
-      "foreground": { "value": "{alias.color.error.foreground.value}" }
+    "alert": {
+      "background": { "value": "{alias.color.alert.background.value}" },
+      "foreground": { "value": "{alias.color.alert.foreground.value}" }
     },
     "info": {
       "background": { "value": "{alias.color.info.background.value}" },

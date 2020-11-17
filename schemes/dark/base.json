@@ -27,7 +27,7 @@
         "background": { "value": "{alias.color.palette.green.500.value}" },
         "foreground": { "value": "{alias.color.palette.white.value}" }
       },
-      "error": {
+      "alert": {
         "background": { "value": "{alias.color.palette.red.500.value}" },
         "foreground": { "value": "{alias.color.palette.white.value}" }
       },
