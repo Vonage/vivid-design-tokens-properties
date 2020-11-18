@@ -68,24 +68,27 @@
           "value": "100%"
         },
         "1": {
-          "value": "20px"
+          "value": "16px"
         },
         "2": {
-          "value": "24px"
+          "value": "20px"
         },
         "3": {
-          "value": "28px"
+          "value": "24px"
         },
         "4": {
-          "value": "36px"
+          "value": "28px"
         },
         "5": {
-          "value": "44px"
+          "value": "36px"
         },
         "6": {
-          "value": "52px"
+          "value": "44px"
         },
         "7": {
+          "value": "52px"
+        },
+        "8": {
           "value": "68px"
         }
       }
