@@ -1,11 +1,5 @@
 {
   "color": {
-    "faint": { "value": "{alias.color.base.faint.value}" },
-    "soft": { "value": "{alias.color.base.soft.value}" },
-    "tinged": { "value": "{alias.color.base.tinged.value}" },
-    "dim": { "value": "{alias.color.base.dim.value}" },
-    "neutral": { "value": "{alias.color.base.neutral.value}" },
-    "tinted": { "value": "{alias.color.base.tinted.value}" },
     "base": {
       "value": "{alias.color.base.background.value}"
     },
@@ -53,6 +47,14 @@
     },
     "on-announcement": {
       "value": "{alias.color.announcement.foreground.value}"
-    }
+	},
+	"contrast": {
+      "faint": { "value": "{alias.color.base.faint.value}" },
+      "soft": { "value": "{alias.color.base.soft.value}" },
+      "tinged": { "value": "{alias.color.base.tinged.value}" },
+      "dim": { "value": "{alias.color.base.dim.value}" },
+      "neutral": { "value": "{alias.color.base.neutral.value}" },
+      "tinted": { "value": "{alias.color.base.tinted.value}" }
+	}
   }
 }
