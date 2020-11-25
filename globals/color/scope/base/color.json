@@ -36,11 +36,11 @@
 	"on-success": {
 	  "value": "{alias.color.success.foreground.value}"
 	},
-    "error": {
-      "value": "{alias.color.error.background.value}"
+    "alert": {
+      "value": "{alias.color.alert.background.value}"
     },
-    "on-error": {
-	  "value": "{alias.color.error.foreground.value}"
+    "on-alert": {
+	  "value": "{alias.color.alert.foreground.value}"
 	},
 	"info": {
       "value": "{alias.color.info.background.value}"
