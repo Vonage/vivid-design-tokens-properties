@@ -68,27 +68,33 @@
           "value": "100%"
         },
         "1": {
-          "value": "16px"
+          "value": "12px"
         },
         "2": {
-          "value": "20px"
+          "value": "16px"
         },
         "3": {
-          "value": "24px"
+          "value": "14px"
         },
         "4": {
-          "value": "28px"
+          "value": "20px"
         },
         "5": {
-          "value": "36px"
+          "value": "24px"
         },
         "6": {
-          "value": "44px"
+          "value": "28px"
         },
         "7": {
-          "value": "52px"
+          "value": "36px"
         },
         "8": {
+          "value": "44px"
+        },
+        "9": {
+          "value": "52px"
+        },
+        "10": {
           "value": "68px"
         }
       }
