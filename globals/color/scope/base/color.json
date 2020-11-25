@@ -48,7 +48,7 @@
     "on-announcement": {
       "value": "{alias.color.announcement.foreground.value}"
 	},
-	"contrast": {
+    "contrast": {
       "faint": { "value": "{alias.color.base.faint.value}" },
       "soft": { "value": "{alias.color.base.soft.value}" },
       "tinged": { "value": "{alias.color.base.tinged.value}" },
