@@ -1,46 +1,60 @@
 {
   "color": {
     "base": {
-      "background": { "value": "{alias.color.base.background.value}" },
-      "foreground": { "value": "{alias.color.base.foreground.value}" },
+      "value": "{alias.color.base.background.value}"
+    },
+    "on-base": {
+      "value": "{alias.color.base.foreground.value}"
+    },
+    "surface": {
+      "value": "{alias.color.surface.background.value}"
+    },
+    "on-surface": {
+      "value": "{alias.color.surface.foreground.value}"
+    },
+    "primary": {
+      "value": "{alias.color.inverse.background.value}"
+    },
+    "on-primary": {
+      "value": "{alias.color.inverse.foreground.value}"
+    },
+    "cta": {
+      "value": "{alias.color.cta.background.value}"
+    },
+    "on-cta": {
+      "value": "{alias.color.cta.foreground.value}"
+    },
+    "success": {
+      "value": "{alias.color.success.background.value}"
+    },
+    "on-success": {
+      "value": "{alias.color.success.foreground.value}"
+    },
+    "alert": {
+      "value": "{alias.color.alert.background.value}"
+    },
+    "on-alert": {
+      "value": "{alias.color.alert.foreground.value}"
+    },
+    "info": {
+      "value": "{alias.color.info.background.value}"
+    },
+    "on-info": {
+      "value": "{alias.color.info.foreground.value}"
+    },
+    "announcement": {
+      "value": "{alias.color.announcement.background.value}"
+    },
+    "on-announcement": {
+      "value": "{alias.color.announcement.foreground.value}"
+	},
+    "contrast": {
       "faint": { "value": "{alias.color.base.faint.value}" },
       "soft": { "value": "{alias.color.base.soft.value}" },
       "tinged": { "value": "{alias.color.base.tinged.value}" },
       "dim": { "value": "{alias.color.base.dim.value}" },
       "neutral": { "value": "{alias.color.base.neutral.value}" },
       "tinted": { "value": "{alias.color.base.tinted.value}" }
-    },
-    "surface": {
-      "background": {
-        "value": "{alias.color.surface.background.value}"
-      },
-      "foreground": {
-        "value": "{alias.color.surface.foreground.value}"
-      }
-    },
-    "primary": {
-      "background": { "value": "{alias.color.inverse.background.value}" },
-      "foreground": { "value": "{alias.color.inverse.foreground.value}" }
-    },
-    "cta": {
-      "background": { "value": "{alias.color.cta.background.value}" },
-      "foreground": { "value": "{alias.color.cta.foreground.value}" }
-    },
-    "success": {
-      "background": { "value": "{alias.color.success.background.value}" },
-      "foreground": { "value": "{alias.color.success.foreground.value}" }
-    },
-    "alert": {
-      "background": { "value": "{alias.color.alert.background.value}" },
-      "foreground": { "value": "{alias.color.alert.foreground.value}" }
-    },
-    "info": {
-      "background": { "value": "{alias.color.info.background.value}" },
-      "foreground": { "value": "{alias.color.info.foreground.value}" }
-    },
-    "announcement": {
-      "background": { "value": "{alias.color.announcement.background.value}" },
-      "foreground": { "value": "{alias.color.announcement.foreground.value}" }
-    }
+	}
   }
 }
