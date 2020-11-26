@@ -20,12 +20,14 @@
 	},
 	"scripts": {
 		"lint": "eslint -c .eslintrc.json ./ci/**/*.js",
+		"test": "node ./test/test-dictionary-coherent.js",
 		"bump": "node ./ci/bump-version.js",
 		"fetch": "node ./ci/fetch-figma-data.js",
 		"parse": "node ./ci/parse-figma-data.js"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"eslint": "^7.13.0"
+		"eslint": "^7.14.0",
+		"style-dictionary": "^2.10.2"
 	}
 }
