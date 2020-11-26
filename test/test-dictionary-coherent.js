@@ -45,8 +45,7 @@ function getStyleDictionaryConfig(sources) {
 		source: sources,
 		platforms: {
 			web: {
-				transformGroup: 'css',
-				buildPath: `./tmp/`
+				transformGroup: 'css'
 			}
 		}
 	};
