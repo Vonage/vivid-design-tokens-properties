@@ -1,6 +1,5 @@
 import fs from 'fs';
 import https from 'https';
-import process from 'process';
 import { RAW_DATA_PATH } from './commons.js';
 
 const

@@ -34,6 +34,12 @@ jobs:
           FIGMA_FILE_TOKEN: ${{ secrets.FIGMA_FILE_TOKEN }}
           FIGMA_AUTH_TOKEN: ${{ secrets.FIGMA_AUTH_TOKEN }}
 
+      - name: Install dependencies
+        run: npm install
+
+      - name: Test
+        run: npm test
+
       - name: Delete temporary trigger tag
         run: git push origin --delete release-${{ steps.extractVersion.outputs.version }}
 
