@@ -1,6 +1,4 @@
 import fs from 'fs';
-import process from 'process';
-import console from 'console';
 
 try {
 	console.info('starting package version update...');

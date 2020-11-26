@@ -19,7 +19,7 @@
 		"url": "https://github.com/Vonage/vivid-design-tokens-properties/issues"
 	},
 	"scripts": {
-		"lint": "eslint -c .eslintrc.json ./ci/**/*.js",
+		"lint": "eslint -c .eslintrc.json ./ci/**/*.js ./test/**/*.js",
 		"test": "node ./test/test-dictionary-coherent.js",
 		"bump": "node ./ci/bump-version.js",
 		"fetch": "node ./ci/fetch-figma-data.js",
