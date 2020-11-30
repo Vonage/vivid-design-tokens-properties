@@ -6,7 +6,7 @@ testTypography();
 
 function testSchemes() {
 	for (const scheme of ['dark', 'light']) {
-		for (const alt of ['alternate', 'base']) {
+		for (const alt of ['alternate', 'main']) {
 			console.log(`${os.EOL}testing scheme '${scheme}:${alt}'...`);
 			try {
 				const config = getStyleDictionaryConfig([
