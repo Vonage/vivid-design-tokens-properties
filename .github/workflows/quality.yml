@@ -25,8 +25,13 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Build & Test
+      - name: Build
         run: |
           npm run fetch
           npm run parse
-          npm test
+        env:
+          FIGMA_FILE_TOKEN: ${{ secrets.FIGMA_FILE_TOKEN }}
+          FIGMA_AUTH_TOKEN: ${{ secrets.FIGMA_AUTH_TOKEN }}
+
+      - name: Test
+        run: npm test
