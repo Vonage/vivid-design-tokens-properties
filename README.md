@@ -36,7 +36,7 @@ Part of our automation process we __fetch__ data from Figma.
 This one is pretty straight forward process. It's whole logic is found [here](./ci/fetch-figma-data.js).
 
 Next step is __parsing__ and transfromation to our own data structures.
-The parsers manager script is found [here](./ci/parse-figma-data.js) and in general is not expected to be toughed much.
+The parsers manager script is found [here](./ci/parse-figma-data.js) and in general is not expected to be touched much.
 It's concern is to:
 * scan `ci/parsers` folder
 * import each script from there and validate it is a well-formed parser (see below)
@@ -45,4 +45,6 @@ It's concern is to:
 Well formed parser is expected to have a `default` export of type `object` having the following properties at the least:
 * `name` - string - parser name
 * `parse` - function - actual parsing function
-* `target` - string - path to write the parse result
+
+The parser's `parse` method will be given the whole Figma data when called.
+It is the parser's responsibility to traverse that data, __extract__ anything it needs, __transform__ to the relevant target structure and __dump__ (counterpart of the 'load' in ETL notation) the result to the output (disk, our sources repo, in our case).
