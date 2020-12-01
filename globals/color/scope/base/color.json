@@ -13,10 +13,10 @@
 			"value": "{alias.color.on-surface.value}"
 		},
 		"primary": {
-			"value": "{alias.color.inverse.value}"
+			"value": "{alias.color.primary.value}"
 		},
 		"on-primary": {
-			"value": "{alias.color.on-inverse.value}"
+			"value": "{alias.color.on-primary.value}"
 		},
 		"cta": {
 			"value": "{alias.color.cta.value}"
