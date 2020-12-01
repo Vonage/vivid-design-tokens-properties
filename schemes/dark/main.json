@@ -37,25 +37,25 @@
         "value": "alias.color.palette.blue.500.value"
       },
       "on-alert": {
-        "value": "alias.color.palette.white.value"
+        "value": "alias.color.palette.black.value"
       },
       "on-announcement": {
-        "value": "alias.color.palette.white.value"
+        "value": "alias.color.palette.black.value"
       },
       "on-base": {
         "value": "alias.color.palette.white.value"
       },
       "on-cta": {
-        "value": "alias.color.palette.white.value"
+        "value": "alias.color.palette.black.value"
       },
       "on-info": {
-        "value": "alias.color.palette.white.value"
+        "value": "alias.color.palette.black.value"
       },
       "on-primary": {
         "value": "alias.color.palette.black.value"
       },
       "on-success": {
-        "value": "alias.color.palette.white.value"
+        "value": "alias.color.palette.black.value"
       },
       "on-surface": {
         "value": "alias.color.palette.white.value"
@@ -73,7 +73,7 @@
         "value": "alias.color.palette.grey.950.value"
       },
       "warning": {
-        "value": "alias.color.palette.yellow.500.value"
+        "value": "alias.color.palette.yellow.600.value"
       }
     }
   }
