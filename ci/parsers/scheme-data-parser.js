@@ -41,7 +41,7 @@ function collectPaletteMap(data) {
 	return paletteData.children
 		.filter(child => child.type === PALETTE_PRINCIPAL)
 		.reduce((acc, val) => {
-			acc[val.styles.fill] = `alias.color.${val.name}.value`;
+			acc[val.styles.fill] = `{alias.color.${val.name}.value}`;
 			return acc;
 		}, {});
 }
