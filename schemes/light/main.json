@@ -69,7 +69,9 @@
       "success": {
         "value": "alias.color.palette.green.500.value"
       },
-      "surface": {},
+      "surface": {
+        "value": "alias.color.palette.grey.50.value"
+      },
       "warning": {
         "value": "alias.color.palette.yellow.300.value"
       }
