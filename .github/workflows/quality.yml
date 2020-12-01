@@ -11,7 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: master
           token: ${{ secrets.CI_AT }}
 
       - name: Setup NodeJS 14
@@ -24,6 +23,14 @@ jobs:
 
       - name: Lint
         run: npm run lint
+
+      - name: Build
+        run: |
+          npm run fetch
+          npm run parse
+        env:
+          FIGMA_FILE_TOKEN: ${{ secrets.FIGMA_FILE_TOKEN }}
+          FIGMA_AUTH_TOKEN: ${{ secrets.FIGMA_AUTH_TOKEN }}
 
       - name: Test
         run: npm test
