@@ -1,72 +1,78 @@
 {
-	"color": {
-		"base": {
-			"value": "{alias.color.base.value}"
-		},
-		"on-base": {
-			"value": "{alias.color.on-base.value}"
-		},
-		"surface": {
-			"value": "{alias.color.surface.value}"
-		},
-		"on-surface": {
-			"value": "{alias.color.on-surface.value}"
-		},
-		"primary": {
-			"value": "{alias.color.primary.value}"
-		},
-		"on-primary": {
-			"value": "{alias.color.on-primary.value}"
-		},
-		"cta": {
-			"value": "{alias.color.cta.value}"
-		},
-		"on-cta": {
-			"value": "{alias.color.on-cta.value}"
-		},
-		"success": {
-			"value": "{alias.color.success.value}"
-		},
-		"on-success": {
-			"value": "{alias.color.on-success.value}"
-		},
-		"alert": {
-			"value": "{alias.color.alert.value}"
-		},
-		"on-alert": {
-			"value": "{alias.color.on-alert.value}"
-		},
-		"info": {
-			"value": "{alias.color.info.value}"
-		},
-		"on-info": {
-			"value": "{alias.color.on-info.value}"
-		},
-		"announcement": {
-			"value": "{alias.color.announcement.value}"
-		},
-		"on-announcement": {
-			"value": "{alias.color.on-announcement.value}"
-		},
-		"contrast": {
-			"faint": {
-				"value": "{alias.color.contrast.faint.value}"
-			},
-			"soft": {
-				"value": "{alias.color.contrast.soft.value}"
-			},
-			"tinged": {
-				"value": "{alias.color.contrast.tinged.value}"
-			},
-			"dim": {
-				"value": "{alias.color.contrast.dim.value}"
-			},
-			"neutral": {
-				"value": "{alias.color.contrast.neutral.value}"
-			},
-			"tinted": {
-				"value": "{alias.color.contrast.tinted.value}"
-			}
-		}
-	}
+  "color": {
+    "base": {
+      "value": "{alias.color.base.value}"
+    },
+    "on-base": {
+      "value": "{alias.color.on-base.value}"
+    },
+    "surface": {
+      "value": "{alias.color.surface.value}"
+    },
+    "on-surface": {
+      "value": "{alias.color.on-surface.value}"
+    },
+    "primary": {
+      "value": "{alias.color.primary.value}"
+    },
+    "on-primary": {
+      "value": "{alias.color.on-primary.value}"
+    },
+    "cta": {
+      "value": "{alias.color.cta.value}"
+    },
+    "on-cta": {
+      "value": "{alias.color.on-cta.value}"
+    },
+    "success": {
+      "value": "{alias.color.success.value}"
+    },
+    "on-success": {
+      "value": "{alias.color.on-success.value}"
+    },
+    "alert": {
+      "value": "{alias.color.alert.value}"
+    },
+    "on-alert": {
+      "value": "{alias.color.on-alert.value}"
+    },
+    "warning": {
+      "value": "{alias.color.warning.value}"
+    },
+    "on-warning": {
+      "value": "{alias.color.on-warning.value}"
+    },
+    "info": {
+      "value": "{alias.color.info.value}"
+    },
+    "on-info": {
+      "value": "{alias.color.on-info.value}"
+    },
+    "announcement": {
+      "value": "{alias.color.announcement.value}"
+    },
+    "on-announcement": {
+      "value": "{alias.color.on-announcement.value}"
+    },
+    "contrast": {
+      "faint": {
+        "value": "{alias.color.contrast.faint.value}"
+      },
+      "soft": {
+        "value": "{alias.color.contrast.soft.value}"
+      },
+      "tinged": {
+        "value": "{alias.color.contrast.tinged.value}"
+      },
+      "dim": {
+        "value": "{alias.color.contrast.dim.value}"
+      },
+      "neutral": {
+        "value": "{alias.color.contrast.neutral.value}"
+      },
+      "tinted": {
+        "value": "{alias.color.contrast.tinted.value}"
+      }
+    }
+  }
 }
