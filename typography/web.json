@@ -510,7 +510,41 @@
         }
       }
     },
-    "headline": {
+    "headline-1": {
+      "font": {
+        "family": {
+          "value": "{alias.font.family.0.value}"
+        },
+        "size": {
+          "value": "{alias.font.size.8.value}"
+        },
+        "stretch": {
+          "value": "{alias.font.stretch.1.value}"
+        },
+        "weight": {
+          "value": "{alias.font.weight.2.value}"
+        }
+      },
+      "letter": {
+        "spacing": {
+          "value": "{alias.letter.spacing.0.value}"
+        }
+      },
+      "line": {
+        "height": {
+          "value": "{alias.line.height.11.value}"
+        }
+      },
+      "text": {
+        "decoration": {
+          "value": "{alias.text.decoration.0.value}"
+        },
+        "transform": {
+          "value": "{alias.text.transform.0.value}"
+        }
+      }
+    },
+    "headline-2": {
       "font": {
         "family": {
           "value": "{alias.font.family.0.value}"
@@ -550,40 +584,6 @@
           "value": "{alias.font.family.0.value}"
         },
         "size": {
-          "value": "{alias.font.size.5.value}"
-        },
-        "stretch": {
-          "value": "{alias.font.stretch.1.value}"
-        },
-        "weight": {
-          "value": "{alias.font.weight.2.value}"
-        }
-      },
-      "letter": {
-        "spacing": {
-          "value": "{alias.letter.spacing.0.value}"
-        }
-      },
-      "line": {
-        "height": {
-          "value": "{alias.line.height.8.value}"
-        }
-      },
-      "text": {
-        "decoration": {
-          "value": "{alias.text.decoration.0.value}"
-        },
-        "transform": {
-          "value": "{alias.text.transform.0.value}"
-        }
-      }
-    },
-    "subtitle-2": {
-      "font": {
-        "family": {
-          "value": "{alias.font.family.0.value}"
-        },
-        "size": {
           "value": "{alias.font.size.4.value}"
         },
         "stretch": {
@@ -612,7 +612,7 @@
         }
       }
     },
-    "subtitle-3": {
+    "subtitle-2": {
       "font": {
         "family": {
           "value": "{alias.font.family.0.value}"
@@ -646,7 +646,7 @@
         }
       }
     },
-    "title": {
+    "title-1": {
       "font": {
         "family": {
           "value": "{alias.font.family.0.value}"
@@ -669,6 +669,40 @@
       "line": {
         "height": {
           "value": "{alias.line.height.9.value}"
+        }
+      },
+      "text": {
+        "decoration": {
+          "value": "{alias.text.decoration.0.value}"
+        },
+        "transform": {
+          "value": "{alias.text.transform.0.value}"
+        }
+      }
+    },
+    "title-2": {
+      "font": {
+        "family": {
+          "value": "{alias.font.family.0.value}"
+        },
+        "size": {
+          "value": "{alias.font.size.5.value}"
+        },
+        "stretch": {
+          "value": "{alias.font.stretch.1.value}"
+        },
+        "weight": {
+          "value": "{alias.font.weight.2.value}"
+        }
+      },
+      "letter": {
+        "spacing": {
+          "value": "{alias.letter.spacing.0.value}"
+        }
+      },
+      "line": {
+        "height": {
+          "value": "{alias.line.height.8.value}"
         }
       },
       "text": {

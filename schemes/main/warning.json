@@ -1,0 +1,7 @@
+{
+  "alias": {
+    "color": {
+      "value": "{alias.color.palette.yellow.300.value}"
+    }
+  }
+}
