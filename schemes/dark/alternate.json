@@ -62,6 +62,56 @@
           "value": "{alias.color.palette.grey.400.value}"
         }
       },
+      "60": {
+        "alert": {
+          "value": "{alias.color.palette.red.500.value}"
+        },
+        "announcement": {
+          "value": "{alias.color.palette.magenta.500.value}"
+        },
+        "cta": {
+          "value": "{alias.color.palette.purple.500.value}"
+        },
+        "info": {
+          "value": "{alias.color.palette.blue.500.value}"
+        },
+        "neutral": {
+          "value": "{alias.color.palette.grey.500.value}"
+        },
+        "on-alert": {
+          "value": "{alias.color.palette.white.value}"
+        },
+        "on-announcement": {
+          "value": "{alias.color.palette.white.value}"
+        },
+        "on-cta": {
+          "value": "{alias.color.palette.white.value}"
+        },
+        "on-info": {
+          "value": "{alias.color.palette.white.value}"
+        },
+        "on-neutral": {
+          "value": "{alias.color.palette.white.value}"
+        },
+        "on-primary": {
+          "value": "{alias.color.palette.white.value}"
+        },
+        "on-success": {
+          "value": "{alias.color.palette.white.value}"
+        },
+        "on-warning": {
+          "value": "{alias.color.palette.black.value}"
+        },
+        "primary": {
+          "value": "{alias.color.palette.black.value}"
+        },
+        "success": {
+          "value": "{alias.color.palette.green.500.value}"
+        },
+        "warning": {
+          "value": "{alias.color.palette.yellow.300.value}"
+        }
+      },
       "70": {
         "neutral": {
           "value": "{alias.color.palette.grey.600.value}"
@@ -77,59 +127,11 @@
           "value": "{alias.color.palette.grey.800.value}"
         }
       },
-      "alert": {
-        "value": "{alias.color.palette.red.500.value}"
-      },
-      "announcement": {
-        "value": "{alias.color.palette.magenta.500.value}"
-      },
       "base": {
-        "value": "{alias.color.palette.white.value}"
-      },
-      "cta": {
-        "value": "{alias.color.palette.purple.500.value}"
-      },
-      "info": {
-        "value": "{alias.color.palette.blue.500.value}"
-      },
-      "neutral": {
-        "value": "{alias.color.palette.grey.500.value}"
-      },
-      "on-alert": {
-        "value": "{alias.color.palette.white.value}"
-      },
-      "on-announcement": {
         "value": "{alias.color.palette.white.value}"
       },
       "on-base": {
         "value": "{alias.color.palette.black.value}"
-      },
-      "on-cta": {
-        "value": "{alias.color.palette.white.value}"
-      },
-      "on-info": {
-        "value": "{alias.color.palette.white.value}"
-      },
-      "on-neutral": {
-        "value": "{alias.color.palette.white.value}"
-      },
-      "on-primary": {
-        "value": "{alias.color.palette.white.value}"
-      },
-      "on-success": {
-        "value": "{alias.color.palette.white.value}"
-      },
-      "on-warning": {
-        "value": "{alias.color.palette.black.value}"
-      },
-      "primary": {
-        "value": "{alias.color.palette.black.value}"
-      },
-      "success": {
-        "value": "{alias.color.palette.green.500.value}"
-      },
-      "warning": {
-        "value": "{alias.color.palette.yellow.300.value}"
       }
     }
   }
