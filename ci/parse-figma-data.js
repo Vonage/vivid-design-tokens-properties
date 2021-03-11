@@ -22,9 +22,12 @@ Promise
 		for (const parser of parsers) {
 			parseAndWrite(data, parser);
 		}
-	})
-	.finally(() => {
 		console.info('... parse done');
+	})
+	.catch(e => {
+		console.error('Figma parse failed with:');
+		console.error(e);
+		process.exit(1);
 	});
 
 //	private functions
