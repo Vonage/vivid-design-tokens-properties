@@ -56,138 +56,78 @@
 		},
 		"10": {
 			"neutral": {
-				"value": "{alias.color.neutral.value}"
-			},
-			"on-neutral": {
-				"value": "{alias.color.on-neutral.value}"
+				"value": "{alias.color.10.neutral.value}"
 			},
 			"cta": {
-				"value": "{alias.color.cta.value}"
-			},
-			"on-cta": {
-				"value": "{alias.color.on-cta.value}"
+				"value": "{alias.color.10.cta.value}"
 			},
 			"success": {
-				"value": "{alias.color.success.value}"
-			},
-			"on-success": {
-				"value": "{alias.color.on-success.value}"
+				"value": "{alias.color.10.success.value}"
 			},
 			"alert": {
-				"value": "{alias.color.alert.value}"
-			},
-			"on-alert": {
-				"value": "{alias.color.on-alert.value}"
+				"value": "{alias.color.10.alert.value}"
 			},
 			"warning": {
-				"value": "{alias.color.warning.value}"
-			},
-			"on-warning": {
-				"value": "{alias.color.on-warning.value}"
+				"value": "{alias.color.10.warning.value}"
 			},
 			"info": {
-				"value": "{alias.color.info.value}"
-			},
-			"on-info": {
-				"value": "{alias.color.on-info.value}"
+				"value": "{alias.color.10.info.value}"
 			},
 			"announcement": {
-				"value": "{alias.color.announcement.value}"
-			},
-			"on-announcement": {
-				"value": "{alias.color.on-announcement.value}"
+				"value": "{alias.color.10.announcement.value}"
 			}
 		},
 		"20": {
 			"neutral": {
-				"value": "{alias.color.neutral.value}"
-			},
-			"on-neutral": {
-				"value": "{alias.color.on-neutral.value}"
+				"value": "{alias.color.20.neutral.value}"
 			},
 			"cta": {
-				"value": "{alias.color.cta.value}"
-			},
-			"on-cta": {
-				"value": "{alias.color.on-cta.value}"
+				"value": "{alias.color.20.cta.value}"
 			},
 			"success": {
-				"value": "{alias.color.success.value}"
-			},
-			"on-success": {
-				"value": "{alias.color.on-success.value}"
+				"value": "{alias.color.20.success.value}"
 			},
 			"alert": {
-				"value": "{alias.color.alert.value}"
-			},
-			"on-alert": {
-				"value": "{alias.color.on-alert.value}"
+				"value": "{alias.color.20.alert.value}"
 			},
 			"warning": {
-				"value": "{alias.color.warning.value}"
-			},
-			"on-warning": {
-				"value": "{alias.color.on-warning.value}"
+				"value": "{alias.color.20.warning.value}"
 			},
 			"info": {
-				"value": "{alias.color.info.value}"
-			},
-			"on-info": {
-				"value": "{alias.color.on-info.value}"
+				"value": "{alias.color.20.info.value}"
 			},
 			"announcement": {
-				"value": "{alias.color.announcement.value}"
-			},
-			"on-announcement": {
-				"value": "{alias.color.on-announcement.value}"
+				"value": "{alias.color.20.announcement.value}"
 			}
 		},
 		"30": {
 			"neutral": {
-				"value": "{alias.color.neutral.value}"
-			},
-			"on-neutral": {
-				"value": "{alias.color.on-neutral.value}"
+				"value": "{alias.color.30.neutral.value}"
 			}
 		},
 		"40": {
 			"neutral": {
-				"value": "{alias.color.neutral.value}"
-			},
-			"on-neutral": {
-				"value": "{alias.color.on-neutral.value}"
+				"value": "{alias.color.40.neutral.value}"
 			}
 		},
 		"50": {
 			"neutral": {
-				"value": "{alias.color.neutral.value}"
-			},
-			"on-neutral": {
-				"value": "{alias.color.on-neutral.value}"
+				"value": "{alias.color.50.neutral.value}"
 			}
 		},
 		"70": {
 			"neutral": {
-				"value": "{alias.color.neutral.value}"
-			},
-			"on-neutral": {
-				"value": "{alias.color.on-neutral.value}"
+				"value": "{alias.color.70.neutral.value}"
 			}
 		},
 		"80": {
 			"neutral": {
-				"value": "{alias.color.neutral.value}"
-			},
-			"on-neutral": {
-				"value": "{alias.color.on-neutral.value}"
+				"value": "{alias.color.80.neutral.value}"
 			}
 		},
 		"90": {
 			"neutral": {
-				"value": "{alias.color.neutral.value}"
-			},
-			"on-neutral": {
-				"value": "{alias.color.on-neutral.value}"
+				"value": "{alias.color.90.neutral.value}"
 			}
 		}
 	}
