@@ -12,6 +12,12 @@
 		"on-primary": {
 			"value": "{alias.color.on-primary.value}"
 		},
+		"neutral": {
+			"value": "{alias.color.neutral.value}"
+		},
+		"on-neutral": {
+			"value": "{alias.color.on-neutral.value}"
+		},
 		"cta": {
 			"value": "{alias.color.cta.value}"
 		},
@@ -47,6 +53,142 @@
 		},
 		"on-announcement": {
 			"value": "{alias.color.on-announcement.value}"
+		},
+		"10": {
+			"neutral": {
+				"value": "{alias.color.neutral.value}"
+			},
+			"on-neutral": {
+				"value": "{alias.color.on-neutral.value}"
+			},
+			"cta": {
+				"value": "{alias.color.cta.value}"
+			},
+			"on-cta": {
+				"value": "{alias.color.on-cta.value}"
+			},
+			"success": {
+				"value": "{alias.color.success.value}"
+			},
+			"on-success": {
+				"value": "{alias.color.on-success.value}"
+			},
+			"alert": {
+				"value": "{alias.color.alert.value}"
+			},
+			"on-alert": {
+				"value": "{alias.color.on-alert.value}"
+			},
+			"warning": {
+				"value": "{alias.color.warning.value}"
+			},
+			"on-warning": {
+				"value": "{alias.color.on-warning.value}"
+			},
+			"info": {
+				"value": "{alias.color.info.value}"
+			},
+			"on-info": {
+				"value": "{alias.color.on-info.value}"
+			},
+			"announcement": {
+				"value": "{alias.color.announcement.value}"
+			},
+			"on-announcement": {
+				"value": "{alias.color.on-announcement.value}"
+			}
+		},
+		"20": {
+			"neutral": {
+				"value": "{alias.color.neutral.value}"
+			},
+			"on-neutral": {
+				"value": "{alias.color.on-neutral.value}"
+			},
+			"cta": {
+				"value": "{alias.color.cta.value}"
+			},
+			"on-cta": {
+				"value": "{alias.color.on-cta.value}"
+			},
+			"success": {
+				"value": "{alias.color.success.value}"
+			},
+			"on-success": {
+				"value": "{alias.color.on-success.value}"
+			},
+			"alert": {
+				"value": "{alias.color.alert.value}"
+			},
+			"on-alert": {
+				"value": "{alias.color.on-alert.value}"
+			},
+			"warning": {
+				"value": "{alias.color.warning.value}"
+			},
+			"on-warning": {
+				"value": "{alias.color.on-warning.value}"
+			},
+			"info": {
+				"value": "{alias.color.info.value}"
+			},
+			"on-info": {
+				"value": "{alias.color.on-info.value}"
+			},
+			"announcement": {
+				"value": "{alias.color.announcement.value}"
+			},
+			"on-announcement": {
+				"value": "{alias.color.on-announcement.value}"
+			}
+		},
+		"30": {
+			"neutral": {
+				"value": "{alias.color.neutral.value}"
+			},
+			"on-neutral": {
+				"value": "{alias.color.on-neutral.value}"
+			}
+		},
+		"40": {
+			"neutral": {
+				"value": "{alias.color.neutral.value}"
+			},
+			"on-neutral": {
+				"value": "{alias.color.on-neutral.value}"
+			}
+		},
+		"50": {
+			"neutral": {
+				"value": "{alias.color.neutral.value}"
+			},
+			"on-neutral": {
+				"value": "{alias.color.on-neutral.value}"
+			}
+		},
+		"70": {
+			"neutral": {
+				"value": "{alias.color.neutral.value}"
+			},
+			"on-neutral": {
+				"value": "{alias.color.on-neutral.value}"
+			}
+		},
+		"80": {
+			"neutral": {
+				"value": "{alias.color.neutral.value}"
+			},
+			"on-neutral": {
+				"value": "{alias.color.on-neutral.value}"
+			}
+		},
+		"90": {
+			"neutral": {
+				"value": "{alias.color.neutral.value}"
+			},
+			"on-neutral": {
+				"value": "{alias.color.on-neutral.value}"
+			}
 		}
 	}
 }

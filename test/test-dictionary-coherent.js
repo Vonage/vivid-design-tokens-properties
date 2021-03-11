@@ -12,7 +12,7 @@ function testSchemes() {
 				const config = getStyleDictionaryConfig([
 					`./globals/color/**/*.json`,
 					`./schemes/${scheme}/${alt}.json`
-				]);
+				], 'schemes.scss');
 				StyleDictionaryPackage.extend(config).buildPlatform('web');
 				console.log('... PASSED');
 			} catch (e) {
@@ -30,7 +30,7 @@ function testTypography() {
 		const config = getStyleDictionaryConfig([
 			'./globals/typography/**/*.json',
 			'./typography/**/*.json'
-		]);
+		], 'typography.scss');
 		StyleDictionaryPackage.extend(config).buildPlatform('web');
 		console.log('... PASSED');
 	} catch (e) {
@@ -40,12 +40,18 @@ function testTypography() {
 	}
 }
 
-function getStyleDictionaryConfig(sources) {
+function getStyleDictionaryConfig(sources, output = 'tmp.scss', format = 'scss/variables') {
 	return {
 		source: sources,
 		platforms: {
 			web: {
-				transformGroup: 'css'
+				transformGroup: 'css',
+				files: [
+					{
+						destination: `tmp/${output}`,
+						format: format
+					}
+				]
 			}
 		}
 	};
