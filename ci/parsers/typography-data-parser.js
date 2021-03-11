@@ -67,7 +67,11 @@ function extractTypography(data) {
 	const tCategories = { typography: {} };
 
 	const tmpCategories = {};
-	const typographyData = data.document.children.find(c => c.name === TYPOGRAPHY_FRAME_NAME);
+	const typographyData = data.document.children.find(c => c.name.includes(TYPOGRAPHY_FRAME_NAME));
+	if (!typographyData || !Array.isArray(typographyData.children)) {
+		throw new Error(`input data is invalid, '${TYPOGRAPHY_FRAME_NAME}' frame is missing`);
+	}
+
 	const typographies = typographyData.children.filter(c => c.name.startsWith(TYPOGRAPHY_PREFIX));
 	for (const typography of typographies) {
 		const categoryKey = typography.name.replace(TYPOGRAPHY_PREFIX, '');

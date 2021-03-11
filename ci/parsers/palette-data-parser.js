@@ -25,7 +25,11 @@ function extractPalette(data) {
 	};
 
 	const colorsMap = {};
-	const paletteData = data.document.children.find(c => c.name === PALETTE_FRAME_NAME);
+	const paletteData = data.document.children.find(c => c.name.includes(PALETTE_FRAME_NAME));
+	if (!paletteData || !Array.isArray(paletteData.children)) {
+		throw new Error(`input data is invalid, '${PALETTE_FRAME_NAME}' frame is missing`);
+	}
+
 	for (const color of paletteData.children) {
 		if (color.type !== PALETTE_PRINCIPAL || !color.name.startsWith(PALETTE_PREFIX)) {
 			continue;
