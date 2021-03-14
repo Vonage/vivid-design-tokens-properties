@@ -54,6 +54,12 @@
 		"cta-20": {
 			"value": "{alias.color.20.cta.value}"
 		},
+		"cta-30": {
+			"value": "{alias.color.30.cta.value}"
+		},
+		"cta-70": {
+			"value": "{alias.color.70.cta.value}"
+		},
 		"success": {
 			"value": "{alias.color.60.success.value}"
 		},
@@ -65,6 +71,12 @@
 		},
 		"success-20": {
 			"value": "{alias.color.20.success.value}"
+		},
+		"success-30": {
+			"value": "{alias.color.30.success.value}"
+		},
+		"success-70": {
+			"value": "{alias.color.70.success.value}"
 		},
 		"alert": {
 			"value": "{alias.color.60.alert.value}"
@@ -78,6 +90,12 @@
 		"alert-20": {
 			"value": "{alias.color.20.alert.value}"
 		},
+		"alert-30": {
+			"value": "{alias.color.30.alert.value}"
+		},
+		"alert-70": {
+			"value": "{alias.color.70.alert.value}"
+		},
 		"warning": {
 			"value": "{alias.color.60.warning.value}"
 		},
@@ -89,6 +107,12 @@
 		},
 		"warning-20": {
 			"value": "{alias.color.20.warning.value}"
+		},
+		"warning-30": {
+			"value": "{alias.color.30.warning.value}"
+		},
+		"warning-70": {
+			"value": "{alias.color.70.warning.value}"
 		},
 		"info": {
 			"value": "{alias.color.60.info.value}"
@@ -102,6 +126,12 @@
 		"info-20": {
 			"value": "{alias.color.20.info.value}"
 		},
+		"info-30": {
+			"value": "{alias.color.30.info.value}"
+		},
+		"info-70": {
+			"value": "{alias.color.70.info.value}"
+		},
 		"announcement": {
 			"value": "{alias.color.60.announcement.value}"
 		},
@@ -113,6 +143,12 @@
 		},
 		"announcement-20": {
 			"value": "{alias.color.20.announcement.value}"
+		},
+		"announcement-30": {
+			"value": "{alias.color.30.announcement.value}"
+		},
+		"announcement-70": {
+			"value": "{alias.color.70.announcement.value}"
 		}
 	}
 }
