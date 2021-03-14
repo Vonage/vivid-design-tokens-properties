@@ -48,8 +48,26 @@
         }
       },
       "30": {
+        "alert": {
+          "value": "{alias.color.palette.red.700.value}"
+        },
+        "announcement": {
+          "value": "{alias.color.palette.magenta.700.value}"
+        },
+        "cta": {
+          "value": "{alias.color.palette.purple.700.value}"
+        },
+        "info": {
+          "value": "{alias.color.palette.blue.700.value}"
+        },
         "neutral": {
           "value": "{alias.color.palette.grey.700.value}"
+        },
+        "success": {
+          "value": "{alias.color.palette.green.700.value}"
+        },
+        "warning": {
+          "value": "{alias.color.palette.yellow.700.value}"
         }
       },
       "40": {
@@ -113,8 +131,26 @@
         }
       },
       "70": {
+        "alert": {
+          "value": "{alias.color.palette.red.300.value}"
+        },
+        "announcement": {
+          "value": "{alias.color.palette.magenta.300.value}"
+        },
+        "cta": {
+          "value": "{alias.color.palette.purple.300.value}"
+        },
+        "info": {
+          "value": "{alias.color.palette.blue.300.value}"
+        },
         "neutral": {
           "value": "{alias.color.palette.grey.300.value}"
+        },
+        "success": {
+          "value": "{alias.color.palette.green.300.value}"
+        },
+        "warning": {
+          "value": "{alias.color.palette.yellow.300.value}"
         }
       },
       "80": {
