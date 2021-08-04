@@ -1,10 +1,10 @@
 {
 	"color": {
-		"base": {
-			"value": "{alias.color.base.value}"
+		"canvas": {
+			"value": "{alias.color.canvas.value}"
 		},
-		"on-base": {
-			"value": "{alias.color.on-base.value}"
+		"on-canvas": {
+			"value": "{alias.color.on-canvas.value}"
 		},
 		"primary": {
 			"value": "{alias.color.60.primary.value}"
