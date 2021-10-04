@@ -1,8 +1,32 @@
 import os from 'os';
 import StyleDictionaryPackage from 'style-dictionary';
+import elevationParser from '../ci/parsers/elevation-data-parser.js';
+import { expectedResult, rawData } from "./elevation-test-data.js";
 
 testSchemes();
 testTypography();
+testElevations();
+
+function testElevations() {
+	function mockWriteJson(data, path) {
+		results.push({
+			data, path
+		});
+	}
+
+	const results = [];
+	elevationParser.parse(rawData, mockWriteJson);
+
+	results.forEach((result, index) => {
+		if (result.path !== `./elevations/${expectedResult[index].path}.json` ||
+		JSON.stringify(result.data) !== JSON.stringify(expectedResult[index].dpsData)) {
+			console.log('... FAILED');
+			console.error(`Failed to parse ${result.path}`);
+			process.exit(-1);
+		}
+	});
+	console.log('... PASSED');
+}
 
 function testSchemes() {
 	for (const scheme of ['dark', 'light']) {
