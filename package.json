@@ -20,13 +20,24 @@
 	},
 	"scripts": {
 		"lint": "eslint -c .eslintrc.json ./ci/**/*.js ./test/**/*.js",
-		"test": "node ./test/test-dictionary-coherent.js",
+		"test": "node ./test/test-dictionary-coherent.js && jest",
 		"bump": "node ./ci/bump-version.js",
 		"fetch": "node ./ci/fetch-figma-data.js",
 		"parse": "node ./ci/parse-figma-data.js"
 	},
 	"devDependencies": {
+		"@babel/plugin-transform-modules-commonjs": "^7.15.4",
 		"eslint": "^7.22.0",
+		"jest": "^27.2.4",
 		"style-dictionary": "^3.0.1"
+	},
+	"babel": {
+		"env": {
+			"test": {
+				"plugins": [
+					"@babel/plugin-transform-modules-commonjs"
+				]
+			}
+		}
 	}
 }
