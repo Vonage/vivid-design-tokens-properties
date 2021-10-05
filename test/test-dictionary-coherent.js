@@ -5,28 +5,6 @@ import { expectedResult, rawData } from "./elevation-test-data.js";
 
 testSchemes();
 testTypography();
-testElevations();
-
-function testElevations() {
-	function mockWriteJson(data, path) {
-		results.push({
-			data, path
-		});
-	}
-
-	const results = [];
-	elevationParser.parse(rawData, mockWriteJson);
-
-	results.forEach((result, index) => {
-		if (result.path !== `./elevations/${expectedResult[index].path}.json` ||
-		JSON.stringify(result.data) !== JSON.stringify(expectedResult[index].dpsData)) {
-			console.log('... FAILED');
-			console.error(`Failed to parse ${result.path}`);
-			process.exit(-1);
-		}
-	});
-	console.log('... PASSED');
-}
 
 function testSchemes() {
 	for (const scheme of ['dark', 'light']) {
@@ -64,7 +42,7 @@ function testTypography() {
 	}
 }
 
-function getStyleDictionaryConfig(sources, output = 'tmp.scss', format = 'scss/variables') {
+export function getStyleDictionaryConfig(sources, output = 'tmp.scss', format = 'scss/variables') {
 	return {
 		source: sources,
 		platforms: {
