@@ -11,6 +11,8 @@ describe(`Elevation Tokens`, function () {
     });
 
     it(`should transpile in styledDictionary`, function () {
+        const log = console.log;
+        console.log = jest.fn();
         for (const scheme of ['dark', 'light']) {
             for (const alt of ['alternate', 'main']) {
                 const config = getStyleDictionaryConfig([
@@ -20,6 +22,7 @@ describe(`Elevation Tokens`, function () {
                 expect(() => StyleDictionaryPackage.extend(config).buildPlatform('web')).not.toThrow();
             }
         }
+        console.log = log;
     });
 
     it(`should generate the correct elevations json`, function () {
