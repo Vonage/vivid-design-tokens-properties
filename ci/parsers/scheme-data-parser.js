@@ -37,7 +37,7 @@ function extractSchemes(data) {
 
 			const altName = alteration.name;
 			console.info(`\t\tcollecting '${schemeName}:${altName}' scheme...`);
-			const values = exctractValues(alteration, paletteData, `${schemeName}:${altName}`)[altName];
+			const values = extractValues(alteration, paletteData, `${schemeName}:${altName}`)[altName];
 
 			const result = { alias: { color: {} } };
 			copySorted(values, result.alias.color);
@@ -64,12 +64,12 @@ function collectPaletteMap(data) {
 		}, {});
 }
 
-function exctractValues(figmaEntry, paletteData, schemeAltName, result = {}) {
+function extractValues(figmaEntry, paletteData, schemeAltName, result = {}) {
 	if (figmaEntry.children && figmaEntry.children.length) {
 		const next = result[figmaEntry.name.trim()] = {};
 		for (const child of figmaEntry.children) {
 			if (child.type === SCHEME_PRINCIPAL) {
-				exctractValues(child, paletteData, schemeAltName, next);
+				extractValues(child, paletteData, schemeAltName, next);
 			}
 		}
 	} else {

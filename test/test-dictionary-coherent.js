@@ -1,6 +1,6 @@
 import os from 'os';
 import StyleDictionaryPackage from 'style-dictionary';
-import {getStyleDictionaryConfig} from "./utils";
+import {getStyleDictionaryConfig} from "./utils.js";
 
 testSchemes();
 testTypography();
