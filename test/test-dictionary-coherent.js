@@ -1,7 +1,6 @@
 import os from 'os';
 import StyleDictionaryPackage from 'style-dictionary';
-import elevationParser from '../ci/parsers/elevation-data-parser.js';
-import { expectedResult, rawData } from "./elevation-test-data.js";
+import {getStyleDictionaryConfig} from "./utils";
 
 testSchemes();
 testTypography();
@@ -40,21 +39,4 @@ function testTypography() {
 		console.error(e);
 		process.exit(-1);
 	}
-}
-
-export function getStyleDictionaryConfig(sources, output = 'tmp.scss', format = 'scss/variables') {
-	return {
-		source: sources,
-		platforms: {
-			web: {
-				transformGroup: 'css',
-				files: [
-					{
-						destination: `tmp/${output}`,
-						format: format
-					}
-				]
-			}
-		}
-	};
 }

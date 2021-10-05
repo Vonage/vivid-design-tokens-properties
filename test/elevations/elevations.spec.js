@@ -1,6 +1,9 @@
-import elevationTokens from './tokens';
+import elevationTokens from './skeleton';
 import StyleDictionaryPackage from 'style-dictionary';
-import {getStyleDictionaryConfig} from "../../test/test-dictionary-coherent";
+import {getStyleDictionaryConfig} from "../utils";
+
+import elevationParser from '../../ci/parsers/elevation-data-parser.js';
+import { rawData } from "./elevation-test-data.js";
 
 describe(`Elevation Tokens`, function () {
     it(`should create the tokens`, function () {
@@ -17,5 +20,18 @@ describe(`Elevation Tokens`, function () {
                 expect(() => StyleDictionaryPackage.extend(config).buildPlatform('web')).not.toThrow();
             }
         }
+    });
+
+    it(`should generate the correct elevations json`, function () {
+        function mockWriteJson(data, path) {
+            results.push({
+                data, path
+            });
+        }
+
+        const results = [];
+        elevationParser.parse(rawData, mockWriteJson);
+
+        expect(JSON.stringify(results, null, 2)).toMatchSnapshot();
     });
 });
