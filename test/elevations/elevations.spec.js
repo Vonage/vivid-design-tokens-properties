@@ -1,10 +1,7 @@
 import elevationShadowTokens from '../../globals/shadow/elevation';
 import elevationColorTokens from '../../globals/color/elevation';
-import StyleDictionaryPackage from 'style-dictionary';
-import {getStyleDictionaryConfig} from "../utils";
 
-import elevationParser from '../../ci/parsers/elevation-data-parser.js';
-import { rawData } from "./elevation-test-data.js";
+import elevationParser from '../../ci/parsers/elevation-figma-data-parser.js';
 
 describe(`Elevation Tokens`, function () {
     it(`should create the shadow tokens blueprint`, function () {
