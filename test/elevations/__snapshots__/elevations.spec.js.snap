@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Elevation Tokens should create the color tokens 1`] = `
+exports[`Elevation Tokens should create the color tokens blueprint 1`] = `
 "{
   \\"color\\": {
     \\"elevation\\": {
@@ -39,7 +39,7 @@ exports[`Elevation Tokens should create the color tokens 1`] = `
 }"
 `;
 
-exports[`Elevation Tokens should create the shadow tokens 1`] = `
+exports[`Elevation Tokens should create the shadow tokens blueprint 1`] = `
 "{
   \\"shadow\\": {
     \\"elevation\\": {

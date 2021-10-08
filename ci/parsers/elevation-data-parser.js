@@ -42,17 +42,22 @@ function extractSchemes(data, writeResult = writeJson) {
                         .reduce((output, dpSettings) => {
                             const dp = `dp-${LEVELS[dpSettings.name.trim()]}`;
                             const background = `rgba(${dpSettings.backgroundColor.r * 255}, ${dpSettings.backgroundColor.g * 255}, ${dpSettings.backgroundColor.b * 255}, ${dpSettings.backgroundColor.a})`;
+                            output.color.elevation[dp] = {
+                                canvas: {value: background},
+                            };
+
                             const dropShadows = `${dpSettings.effects.reduce((str, value) => {
                                 str += `drop-shadow(${!value.offset.x ? value.offset.x : value.offset.x + 'px'} ${!value.offset.y ? value.offset.y : value.offset.y + 'px'} ${!value.radius ? value.radius : value.radius + 'px'} rgba(${value.color.r * 255}, ${value.color.g * 255}, ${value.color.b * 255}, ${value.color.a})) `
                                 return str;
                             }, '')}`;
-                            output.scheme.elevation[dp] = {
-                                canvas: {value: background},
+                            output.shadow.elevation[dp] = {
                                 filter: {value: dropShadows.trim()}
                             };
+
                             return output;
                         }, {
-                            scheme: {elevation: {}}
+                            color: {elevation: {}},
+                            shadow: {elevation: {}}
                         });
                     return {
                         name: alterationName,
@@ -69,7 +74,7 @@ function extractSchemes(data, writeResult = writeJson) {
         const schemeName = elevationSchemeData.name;
         elevationSchemeData.schemeData.forEach(alternativeData => {
             const alternativeName = alternativeData.name;
-            writeResult(alternativeData.dpsData, `./elevations/${schemeName}/${alternativeName}.json`)
+            writeResult({ alias: { ...alternativeData.dpsData } }, `./elevations/${schemeName}/${alternativeName}.json`)
         })
     });
 

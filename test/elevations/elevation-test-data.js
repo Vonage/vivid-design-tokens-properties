@@ -6,218 +6,6 @@ export const rawData = {
         "type": "CANVAS",
         "children": [
           {
-            "id": "1:514",
-            "name": "main",
-            "type": "TEXT",
-            "blendMode": "PASS_THROUGH",
-            "absoluteBoundingBox": {
-              "x": -1.0,
-              "y": -2155.0,
-              "width": 1700.0,
-              "height": 88.0
-            },
-            "constraints": {
-              "vertical": "TOP",
-              "horizontal": "LEFT_RIGHT"
-            },
-            "fills": [
-              {
-                "blendMode": "NORMAL",
-                "type": "SOLID",
-                "color": {
-                  "r": 0.0,
-                  "g": 0.0,
-                  "b": 0.0,
-                  "a": 1.0
-                }
-              }
-            ],
-            "strokes": [],
-            "strokeWeight": 1.0,
-            "strokeAlign": "OUTSIDE",
-            "styles": {
-              "fill": "1:2",
-              "text": "1:3"
-            },
-            "effects": [],
-            "characters": "main",
-            "style": {
-              "fontFamily": "Spezia",
-              "fontPostScriptName": "Spezia-WideMedium",
-              "fontWeight": 400,
-              "textAutoResize": "HEIGHT",
-              "fontSize": 66.0,
-              "textAlignHorizontal": "CENTER",
-              "textAlignVertical": "CENTER",
-              "letterSpacing": 0.0,
-              "lineHeightPx": 88.0,
-              "lineHeightPercent": 113.77777862548828,
-              "lineHeightPercentFontSize": 133.33332824707031,
-              "lineHeightUnit": "PIXELS"
-            },
-            "characterStyleOverrides": [],
-            "styleOverrideTable": {}
-          },
-          {
-            "id": "1:515",
-            "name": "alternate",
-            "type": "TEXT",
-            "blendMode": "PASS_THROUGH",
-            "absoluteBoundingBox": {
-              "x": -1701.0,
-              "y": -2155.0,
-              "width": 1700.0,
-              "height": 88.0
-            },
-            "constraints": {
-              "vertical": "TOP",
-              "horizontal": "LEFT_RIGHT"
-            },
-            "fills": [
-              {
-                "blendMode": "NORMAL",
-                "type": "SOLID",
-                "color": {
-                  "r": 0.0,
-                  "g": 0.0,
-                  "b": 0.0,
-                  "a": 1.0
-                }
-              }
-            ],
-            "strokes": [],
-            "strokeWeight": 1.0,
-            "strokeAlign": "OUTSIDE",
-            "styles": {
-              "fill": "1:2",
-              "text": "1:3"
-            },
-            "effects": [],
-            "characters": "alternate",
-            "style": {
-              "fontFamily": "Spezia",
-              "fontPostScriptName": "Spezia-WideMedium",
-              "fontWeight": 400,
-              "textAutoResize": "HEIGHT",
-              "fontSize": 66.0,
-              "textAlignHorizontal": "CENTER",
-              "textAlignVertical": "CENTER",
-              "letterSpacing": 0.0,
-              "lineHeightPx": 88.0,
-              "lineHeightPercent": 113.77777862548828,
-              "lineHeightPercentFontSize": 133.33332824707031,
-              "lineHeightUnit": "PIXELS"
-            },
-            "characterStyleOverrides": [],
-            "styleOverrideTable": {}
-          },
-          {
-            "id": "1:516",
-            "name": "main",
-            "type": "TEXT",
-            "blendMode": "PASS_THROUGH",
-            "absoluteBoundingBox": {
-              "x": -1.0,
-              "y": 283.0,
-              "width": 1700.0,
-              "height": 88.0
-            },
-            "constraints": {
-              "vertical": "TOP",
-              "horizontal": "LEFT_RIGHT"
-            },
-            "fills": [
-              {
-                "blendMode": "NORMAL",
-                "type": "SOLID",
-                "color": {
-                  "r": 0.0,
-                  "g": 0.0,
-                  "b": 0.0,
-                  "a": 1.0
-                }
-              }
-            ],
-            "strokes": [],
-            "strokeWeight": 1.0,
-            "strokeAlign": "OUTSIDE",
-            "styles": {
-              "fill": "1:2",
-              "text": "1:3"
-            },
-            "effects": [],
-            "characters": "main",
-            "style": {
-              "fontFamily": "Spezia",
-              "fontPostScriptName": "Spezia-WideMedium",
-              "fontWeight": 400,
-              "textAutoResize": "HEIGHT",
-              "fontSize": 66.0,
-              "textAlignHorizontal": "CENTER",
-              "textAlignVertical": "CENTER",
-              "letterSpacing": 0.0,
-              "lineHeightPx": 88.0,
-              "lineHeightPercent": 113.77777862548828,
-              "lineHeightPercentFontSize": 133.33332824707031,
-              "lineHeightUnit": "PIXELS"
-            },
-            "characterStyleOverrides": [],
-            "styleOverrideTable": {}
-          },
-          {
-            "id": "1:517",
-            "name": "alternate",
-            "type": "TEXT",
-            "blendMode": "PASS_THROUGH",
-            "absoluteBoundingBox": {
-              "x": -1701.0,
-              "y": 283.0,
-              "width": 1700.0,
-              "height": 88.0
-            },
-            "constraints": {
-              "vertical": "TOP",
-              "horizontal": "LEFT_RIGHT"
-            },
-            "fills": [
-              {
-                "blendMode": "NORMAL",
-                "type": "SOLID",
-                "color": {
-                  "r": 0.0,
-                  "g": 0.0,
-                  "b": 0.0,
-                  "a": 1.0
-                }
-              }
-            ],
-            "strokes": [],
-            "strokeWeight": 1.0,
-            "strokeAlign": "OUTSIDE",
-            "styles": {
-              "fill": "1:2",
-              "text": "1:3"
-            },
-            "effects": [],
-            "characters": "alternate",
-            "style": {
-              "fontFamily": "Spezia",
-              "fontPostScriptName": "Spezia-WideMedium",
-              "fontWeight": 400,
-              "textAutoResize": "HEIGHT",
-              "fontSize": 66.0,
-              "textAlignHorizontal": "CENTER",
-              "textAlignVertical": "CENTER",
-              "letterSpacing": 0.0,
-              "lineHeightPx": 88.0,
-              "lineHeightPercent": 113.77777862548828,
-              "lineHeightPercentFontSize": 133.33332824707031,
-              "lineHeightUnit": "PIXELS"
-            },
-            "characterStyleOverrides": [],
-            "styleOverrideTable": {}
-          },
-          {
             "id": "1:518",
             "name": "dark",
             "type": "FRAME",
@@ -938,30 +726,7 @@ export const rawData = {
                       }
                     ]
                   }
-                ],
-                "absoluteBoundingBox": {
-                  "x": -1701.0,
-                  "y": 372.0,
-                  "width": 1700.0,
-                  "height": 1782.0
-                },
-                "constraints": {
-                  "vertical": "SCALE",
-                  "horizontal": "LEFT_RIGHT"
-                },
-                "clipsContent": false,
-                "background": [],
-                "fills": [],
-                "strokes": [],
-                "strokeWeight": 1.0,
-                "strokeAlign": "INSIDE",
-                "backgroundColor": {
-                  "r": 0.0,
-                  "g": 0.0,
-                  "b": 0.0,
-                  "a": 0.0
-                },
-                "effects": []
+                ]
               },
               {
                 "id": "1:587",
@@ -1672,55 +1437,9 @@ export const rawData = {
                       "effect": "1:513"
                     }
                   }
-                ],
-                "absoluteBoundingBox": {
-                  "x": -1.0,
-                  "y": 372.0,
-                  "width": 1700.0,
-                  "height": 1782.0
-                },
-                "constraints": {
-                  "vertical": "SCALE",
-                  "horizontal": "LEFT_RIGHT"
-                },
-                "clipsContent": false,
-                "background": [],
-                "fills": [],
-                "strokes": [],
-                "strokeWeight": 1.0,
-                "strokeAlign": "INSIDE",
-                "backgroundColor": {
-                  "r": 0.0,
-                  "g": 0.0,
-                  "b": 0.0,
-                  "a": 0.0
-                },
-                "effects": []
+                ]
               }
             ],
-            "absoluteBoundingBox": {
-              "x": -1701.0,
-              "y": 372.0,
-              "width": 3400.0,
-              "height": 1782.0
-            },
-            "constraints": {
-              "vertical": "TOP",
-              "horizontal": "LEFT"
-            },
-            "clipsContent": true,
-            "background": [],
-            "fills": [],
-            "strokes": [],
-            "strokeWeight": 1.0,
-            "strokeAlign": "INSIDE",
-            "backgroundColor": {
-              "r": 0.0,
-              "g": 0.0,
-              "b": 0.0,
-              "a": 0.0
-            },
-            "effects": []
           },
           {
             "id": "1:595",
@@ -1745,94 +1464,12 @@ export const rawData = {
                       "y": -2066.0,
                       "width": 1700.0,
                       "height": 1782.0
-                    },
-                    "constraints": {
-                      "vertical": "SCALE",
-                      "horizontal": "LEFT_RIGHT"
-                    },
-                    "clipsContent": false,
-                    "background": [
-                      {
-                        "blendMode": "NORMAL",
-                        "type": "SOLID",
-                        "color": {
-                          "r": 0.050980392843484879,
-                          "g": 0.050980392843484879,
-                          "b": 0.050980392843484879,
-                          "a": 1.0
-                        }
-                      }
-                    ],
-                    "fills": [
-                      {
-                        "blendMode": "NORMAL",
-                        "type": "SOLID",
-                        "color": {
-                          "r": 0.050980392843484879,
-                          "g": 0.050980392843484879,
-                          "b": 0.050980392843484879,
-                          "a": 1.0
-                        }
-                      }
-                    ],
-                    "strokes": [],
-                    "strokeWeight": 1.0,
-                    "strokeAlign": "INSIDE",
-                    "backgroundColor": {
-                      "r": 0.050980392843484879,
-                      "g": 0.050980392843484879,
-                      "b": 0.050980392843484879,
-                      "a": 1.0
-                    },
-                    "styles": {
-                      "fills": "1:50"
-                    },
-                    "effects": []
+                    }
                   },
                   {
                     "id": "1:598",
                     "name": "30 ",
                     "type": "FRAME",
-                    "blendMode": "PASS_THROUGH",
-                    "children": [],
-                    "absoluteBoundingBox": {
-                      "x": -451.0,
-                      "y": -1275.0,
-                      "width": 200.0,
-                      "height": 200.0
-                    },
-                    "constraints": {
-                      "vertical": "TOP",
-                      "horizontal": "LEFT"
-                    },
-                    "clipsContent": false,
-                    "background": [
-                      {
-                        "blendMode": "NORMAL",
-                        "type": "SOLID",
-                        "color": {
-                          "r": 0.10980392247438431,
-                          "g": 0.10980392247438431,
-                          "b": 0.10980392247438431,
-                          "a": 1.0
-                        }
-                      }
-                    ],
-                    "fills": [
-                      {
-                        "blendMode": "NORMAL",
-                        "type": "SOLID",
-                        "color": {
-                          "r": 0.10980392247438431,
-                          "g": 0.10980392247438431,
-                          "b": 0.10980392247438431,
-                          "a": 1.0
-                        }
-                      }
-                    ],
-                    "strokes": [],
-                    "strokeWeight": 1.0,
-                    "strokeAlign": "INSIDE",
                     "backgroundColor": {
                       "r": 0.10980392247438431,
                       "g": 0.10980392247438431,
@@ -3226,30 +2863,7 @@ export const rawData = {
                 },
                 "effects": []
               }
-            ],
-            "absoluteBoundingBox": {
-              "x": -1701.0,
-              "y": -2066.0,
-              "width": 3400.0,
-              "height": 1782.0
-            },
-            "constraints": {
-              "vertical": "TOP",
-              "horizontal": "LEFT"
-            },
-            "clipsContent": true,
-            "background": [],
-            "fills": [],
-            "strokes": [],
-            "strokeWeight": 1.0,
-            "strokeAlign": "INSIDE",
-            "backgroundColor": {
-              "r": 0.0,
-              "g": 0.0,
-              "b": 0.0,
-              "a": 0.0
-            },
-            "effects": []
+            ]
           }
         ]
       }
