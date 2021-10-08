@@ -6,7 +6,7 @@ import StyleDictionaryPackage from "style-dictionary";
 
 describe(`Elevation E2E`, function () {
     it(`should transpile in styledDictionary`, function () {
-        const log = console.log;
+        const {log} = console;
         console.log = jest.fn();
         elevationParser.parse(rawData);
         for (const scheme of ['dark', 'light']) {

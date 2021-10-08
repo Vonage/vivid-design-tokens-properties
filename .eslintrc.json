@@ -4,13 +4,15 @@
 	"env": {
 		"node": true,
 		"es2017": true,
-		"jest/globals": true
+		"jest/globals": true,
+		"es6": true
 	},
 	"parserOptions": {
-		"ecmaVersion": 8,
+		"ecmaVersion": 9,
 		"sourceType": "module"
 	},
 	"rules": {
-		"no-prototype-builtins": 0
+		"no-prototype-builtins": 0,
+		"prefer-destructuring": "warn"
 	}
 }
