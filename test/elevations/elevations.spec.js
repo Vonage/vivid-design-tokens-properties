@@ -192,6 +192,7 @@ describe(`Elevation Tokens`, function () {
                     ]
                 }
             ]);
+
             const darkSchemeData = createASchemeDefinition('dark', [
                 {
                     name: 'main',
@@ -392,17 +393,18 @@ describe(`Elevation Tokens`, function () {
                     }
                 }
             };
+
             const expectedLightMerged = {
                 alias: {
                     ...expectedLightShadow, ...expectedLightColor
                 }
             };
-
             const expectedDarkMerged = {
                 alias: {
                     ...expectedDarkShadow, ...expectedDarkColor
                 }
             };
+
             const results = [];
             elevationParser.parse(figmaRawData, mockWriteJson);
 

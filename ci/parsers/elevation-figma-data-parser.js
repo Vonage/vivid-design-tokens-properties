@@ -26,55 +26,69 @@ const filterByType = data => CHILD_TYPE === data.type;
 
 const getDocumentFragment = documentChild => documentChild.name.includes(CANVAS_NAME);
 
+function getDropShadowsFromFigmaConfig(dpSettings) {
+    return `${dpSettings.effects.reduce((str, value) => {
+        str += `drop-shadow(${!value.offset.x ? value.offset.x : value.offset.x + 'px'} ${!value.offset.y ? value.offset.y : value.offset.y + 'px'} ${!value.radius ? value.radius : value.radius + 'px'} rgba(${value.color.r * 255}, ${value.color.g * 255}, ${value.color.b * 255}, ${value.color.a})) `
+        return str;
+    }, '')}`;
+}
+
+function getBackgroundFromFigmaConfig(dpSettings) {
+    return `rgba(${dpSettings.backgroundColor.r * 255}, ${dpSettings.backgroundColor.g * 255}, ${dpSettings.backgroundColor.b * 255}, ${dpSettings.backgroundColor.a})`;
+}
+
+function convertToCssValues(output, dpSettings) {
+    const dp = `dp-${LEVELS[dpSettings.name.trim()]}`;
+    const background = getBackgroundFromFigmaConfig(dpSettings);
+    output.color.elevation[dp] = {
+        canvas: {value: background},
+    };
+
+    const dropShadows = getDropShadowsFromFigmaConfig(dpSettings);
+    output.shadow.elevation[dp] = {
+        filter: {value: dropShadows.trim()}
+    };
+
+    return output;
+}
+
+function mapSchemeAlterationsToValues(elevationSchemeAlterationData) {
+    const {name, children} = elevationSchemeAlterationData;
+    const dpsData = children
+        .filter(alterationChild => Object.keys(LEVELS).includes(alterationChild.name.trim()))
+        .reduce(convertToCssValues, {
+            color: {elevation: {}},
+            shadow: {elevation: {}}
+        });
+    return {
+        name,
+        dpsData
+    }
+}
+
+function mapSchemesToValues(elevationSchemeData) {
+    const {name, children} = elevationSchemeData;
+    const schemeData = children
+        .filter(filterByType)
+        .map(mapSchemeAlterationsToValues)
+    return {
+        name,
+        schemeData
+    }
+}
+
 function extractSchemes(data, writeResult = writeJson) {
     const elevationSchemesData = data.document.children
         .find(getDocumentFragment)
         .children
         .filter(filterBySchemeNameAndType)
-        .map(elevationSchemeData => {
-            const schemeName = elevationSchemeData.name;
-            const schemeData = elevationSchemeData.children
-                .filter(filterByType)
-                .map(elevationSchemeAlterationData => {
-                    const alterationName = elevationSchemeAlterationData.name;
-                    const dpsData = elevationSchemeAlterationData.children
-                        .filter(alterationChild => Object.keys(LEVELS).includes(alterationChild.name.trim()))
-                        .reduce((output, dpSettings) => {
-                            const dp = `dp-${LEVELS[dpSettings.name.trim()]}`;
-                            const background = `rgba(${dpSettings.backgroundColor.r * 255}, ${dpSettings.backgroundColor.g * 255}, ${dpSettings.backgroundColor.b * 255}, ${dpSettings.backgroundColor.a})`;
-                            output.color.elevation[dp] = {
-                                canvas: {value: background},
-                            };
-
-                            const dropShadows = `${dpSettings.effects.reduce((str, value) => {
-                                str += `drop-shadow(${!value.offset.x ? value.offset.x : value.offset.x + 'px'} ${!value.offset.y ? value.offset.y : value.offset.y + 'px'} ${!value.radius ? value.radius : value.radius + 'px'} rgba(${value.color.r * 255}, ${value.color.g * 255}, ${value.color.b * 255}, ${value.color.a})) `
-                                return str;
-                            }, '')}`;
-                            output.shadow.elevation[dp] = {
-                                filter: {value: dropShadows.trim()}
-                            };
-
-                            return output;
-                        }, {
-                            color: {elevation: {}},
-                            shadow: {elevation: {}}
-                        });
-                    return {
-                        name: alterationName,
-                        dpsData
-                    }
-                })
-            return {
-                name: schemeName,
-                schemeData
-            }
-        });
+        .map(mapSchemesToValues);
 
     elevationSchemesData.forEach(elevationSchemeData => {
         const schemeName = elevationSchemeData.name;
         elevationSchemeData.schemeData.forEach(alternativeData => {
             const alternativeName = alternativeData.name;
-            writeResult({ alias: { ...alternativeData.dpsData } }, `./elevations/${schemeName}/${alternativeName}.json`)
+            writeResult({alias: {...alternativeData.dpsData}}, `./elevations/${schemeName}/${alternativeName}.json`)
         })
     });
 
