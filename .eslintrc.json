@@ -4,13 +4,10 @@
 	"env": {
 		"node": true,
 		"es2017": true,
-		"jest/globals": true,
-		"es6": true
+		"es6": true,
+		"jest/globals": true
 	},
-	"parserOptions": {
-		"ecmaVersion": 9,
-		"sourceType": "module"
-	},
+	"parser": "@babel/eslint-parser",
 	"rules": {
 		"no-prototype-builtins": 0,
 		"prefer-destructuring": "warn"

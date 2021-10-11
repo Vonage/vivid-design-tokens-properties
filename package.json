@@ -20,7 +20,7 @@
 		"url": "https://github.com/Vonage/vivid-design-tokens-properties/issues"
 	},
 	"scripts": {
-		"lint": "eslint -c .eslintrc.json ./ci/**/*.js ./test/**/*.js",
+		"lint": "eslint -c .eslintrc.json ./scripts/**/*.js ./test/**/*.js",
 		"test": "node ./test/test-dictionary-coherent.js && jest && yarn e2e",
 		"test:dev": "jest --watch",
 		"e2e": "jest --testMatch='**/?(*.)+(spec|test).e2e.[tj]s?(x)'",
@@ -30,6 +30,7 @@
 		"build:globals": "node ./scripts/build-globals.js"
 	},
 	"devDependencies": {
+		"@babel/eslint-parser": "^7.15.8",
 		"@babel/plugin-transform-modules-commonjs": "^7.15.4",
 		"eslint": "^7.32.0",
 		"eslint-plugin-jest": "^24.5.2",

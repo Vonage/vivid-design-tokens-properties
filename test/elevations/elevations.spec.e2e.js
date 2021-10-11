@@ -2,7 +2,6 @@ import elevationParser from "../../ci/parsers/elevation-figma-data-parser";
 import {rawData} from "./elevation-test-data";
 import StyleDictionaryPackage from "style-dictionary";
 import {getStyleDictionaryConfig} from "../utils";
-import elevationTokens from '../../globals/elevation/index.js';
 
 StyleDictionaryPackage.registerFilter({
     name: 'filter-alias',
