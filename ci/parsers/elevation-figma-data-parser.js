@@ -77,19 +77,21 @@ function mapSchemesToValues(elevationSchemeData) {
     }
 }
 
-function extractSchemes(data, writeResult = writeJson) {
-    const elevationSchemesData = data.document.children
-        .find(getDocumentFragment)
-        .children
-        .filter(filterBySchemeNameAndType)
-        .map(mapSchemesToValues);
-
-    elevationSchemesData.forEach(elevationSchemeData => {
+function writeElevationSchemeDataToFile(writeResult) {
+    return elevationSchemeData => {
         const schemeName = elevationSchemeData.name;
         elevationSchemeData.schemeData.forEach(alternativeData => {
             const alternativeName = alternativeData.name;
-            writeResult({alias: {...alternativeData.dpsData}}, `./elevations/${schemeName}/${alternativeName}.json`)
-        })
-    });
+            writeResult({alias: {...alternativeData.dpsData}}, `./globals/values/elevations/${schemeName}/${alternativeName}.json`)
+        });
+    }
+}
 
+function extractSchemes(data, writeResult = writeJson) {
+    data.document.children
+        .find(getDocumentFragment)
+        .children
+        .filter(filterBySchemeNameAndType)
+        .map(mapSchemesToValues)
+        .forEach(writeElevationSchemeDataToFile(writeResult));
 }

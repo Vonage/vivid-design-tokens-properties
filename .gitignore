@@ -3,5 +3,5 @@
 
 /tmp/*
 !/tmp/.githolder
-/elevations
+globals/values
 /coverage
