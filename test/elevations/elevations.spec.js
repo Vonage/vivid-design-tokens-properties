@@ -1,6 +1,6 @@
-import elevationTokens from '../../globals/elevation';
+import elevationTokens from '../../dist/elevation/elevation';
 
-import elevationParser from '../../ci/parsers/elevation-figma-data-parser.js';
+import elevationParser from '../../scripts/figma-parsers/parsers/elevation-figma-data-parser.js';
 
 describe(`Elevation Tokens`, function () {
     it(`should create the elevation tokens`, function () {
@@ -403,11 +403,11 @@ describe(`Elevation Tokens`, function () {
 
             expect(results.length).toEqual(4);
             expect(expectedLightMerged).toEqual(results[0].data);
-            expect(results[0].path).toEqual(`./globals/values/elevations/light/main.json`);
-            expect(results[1].path).toEqual(`./globals/values/elevations/light/alternate.json`);
+            expect(results[0].path).toEqual(`./dist/elevation/values/light/main.json`);
+            expect(results[1].path).toEqual(`./dist/elevation/values/light/alternate.json`);
             expect(expectedDarkMerged).toEqual(results[2].data);
-            expect(results[2].path).toEqual(`./globals/values/elevations/dark/main.json`);
-            expect(results[3].path).toEqual(`./globals/values/elevations/dark/alternate.json`);
+            expect(results[2].path).toEqual(`./dist/elevation/values/dark/main.json`);
+            expect(results[3].path).toEqual(`./dist/elevation/values/dark/alternate.json`);
         });
 
         it(`should generate the correct elevations values json from Figma`, function () {
@@ -529,7 +529,7 @@ describe(`Elevation Tokens`, function () {
             elevationParser.parse(figmaRawData, mockWriteJson);
 
             expect(results.length).toEqual(1);
-            expect(results[0].path).toEqual(`./globals/values/elevations/light/main.json`);
+            expect(results[0].path).toEqual(`./dist/elevation/values/light/main.json`);
             expect(expectedMerged).toEqual(results[0].data);
 
         });

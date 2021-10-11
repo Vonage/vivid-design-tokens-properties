@@ -19,10 +19,11 @@ describe(`Elevation E2E`, function () {
         for (const scheme of ['dark', 'light']) {
             for (const alt of ['alternate', 'main']) {
                 const config = getStyleDictionaryConfig([
-                    `./globals/values/elevations/${scheme}/${alt}.json`,
+                    `./dist/elevations/values/${scheme}/${alt}.json`,
+                    `./dist/elevations/elevation.json`,
                 ], 'elevations.scss');
                 config.platforms.web.files[0].filter = 'filter-alias';
-                config.tokens = elevationTokens;
+                // config.tokens = elevationTokens;
                 expect(() => StyleDictionaryPackage.extend(config).buildPlatform('web')).not.toThrow();
             }
         }

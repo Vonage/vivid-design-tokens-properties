@@ -3,5 +3,5 @@
 
 /tmp/*
 !/tmp/.githolder
-globals/values
 /coverage
+/dist

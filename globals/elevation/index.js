@@ -7,3 +7,5 @@ export default {
         ...elevationFilterTokens
     }
 }
+
+export const SAVE_PATH = 'dist/elevation/elevation.json';

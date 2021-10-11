@@ -1,4 +1,4 @@
-import { copySorted, writeJson } from '../utils.js';
+import { copySorted, writeJson } from '../../utils.js';
 
 const
 	PALETTE_FRAME_NAME = 'design.tokens.color',

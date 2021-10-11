@@ -9,7 +9,7 @@
 		"platfroms",
 		"schemes",
 		"typography",
-		"elevations"
+		"dist"
 	],
 	"type": "module",
 	"repository": {
@@ -26,7 +26,8 @@
 		"e2e": "jest --testMatch='**/?(*.)+(spec|test).e2e.[tj]s?(x)'",
 		"bump": "node ./ci/bump-version.js",
 		"fetch": "node ./ci/fetch-figma-data.js",
-		"parse": "node ./ci/parse-figma-data.js"
+		"parse": "node ./ci/parse-figma-data.js",
+		"build:globals": "node ./scripts/build-globals.js"
 	},
 	"devDependencies": {
 		"@babel/plugin-transform-modules-commonjs": "^7.15.4",

@@ -29,6 +29,7 @@ jobs:
         run: |
           npm run fetch
           npm run parse
+          npm run build:globals
           npm run bump ${{ steps.extractVersion.outputs.version }}
         env:
           FIGMA_FILE_TOKEN: ${{ secrets.FIGMA_FILE_TOKEN }}

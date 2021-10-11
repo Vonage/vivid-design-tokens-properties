@@ -28,6 +28,7 @@ jobs:
         run: |
           npm run fetch
           npm run parse
+          npm run build:globals
         env:
           FIGMA_FILE_TOKEN: ${{ secrets.FIGMA_FILE_TOKEN }}
           FIGMA_AUTH_TOKEN: ${{ secrets.FIGMA_AUTH_TOKEN }}

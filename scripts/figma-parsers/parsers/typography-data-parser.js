@@ -1,4 +1,4 @@
-import { clearFolder, copySorted, writeJson } from '../utils.js';
+import { clearFolder, copySorted, writeJson } from '../../utils.js';
 
 const
 	TYPOGRAPHY_GLOBAL_OUTPUT_FOLDER = './globals/typography',

@@ -1,4 +1,4 @@
-import {writeJson} from '../utils.js';
+import {writeJson} from '../../utils.js';
 
 const
     CANVAS_NAME = 'design.tokens.elevation',
@@ -81,7 +81,7 @@ function writeElevationSchemeDataToFile(writeResult) {
         const schemeName = elevationSchemeData.name;
         elevationSchemeData.schemeData.forEach(alternativeData => {
             const alternativeName = alternativeData.name;
-            writeResult({alias: {...alternativeData.dpsData}}, `./globals/values/elevations/${schemeName}/${alternativeName}.json`)
+            writeResult({alias: {...alternativeData.dpsData}}, `./dist/elevation/values/${schemeName}/${alternativeName}.json`)
         });
     }
 }

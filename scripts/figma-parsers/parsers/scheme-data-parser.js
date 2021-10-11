@@ -1,4 +1,4 @@
-import { copySorted, writeJson } from '../utils.js';
+import { copySorted, writeJson } from '../../utils.js';
 import { PALETTE_FRAME_NAME, PALETTE_PRINCIPAL } from './palette-data-parser.js';
 
 const
