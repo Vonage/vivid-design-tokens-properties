@@ -1,18 +1,24 @@
+function generateAlias(category, name, level, property) {
+    return `{alias.${category}.${name}.${level}.${property}.value}`;
+}
+
 export default function generateTokens({
                                            category,
-                                           name,
+                                           type,
                                            flavours,
                                            properties,
-                                           tokensSkeleton = {[category]: {[name]: {}}}
+                                           aliasFunction = generateAlias,
                                        }) {
     return flavours.reduce((tokensSkeletonOutput, level) => {
-        tokensSkeletonOutput[category][name][level] = properties.reduce((levelProps, property) => {
+        tokensSkeletonOutput[type][level] = properties.reduce((levelProps, property) => {
             levelProps[property] = {
-                value: `{alias.${category}.${name}.${level}.${property}.value}`
+                value: aliasFunction(category, type, level, property)
             }
 
             return levelProps;
         }, {});
         return tokensSkeletonOutput;
-    }, tokensSkeleton);
+    }, {
+        [type]: {}
+    });
 }

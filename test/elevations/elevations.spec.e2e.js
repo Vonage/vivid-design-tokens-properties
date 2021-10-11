@@ -1,8 +1,15 @@
 import elevationParser from "../../ci/parsers/elevation-figma-data-parser";
 import {rawData} from "./elevation-test-data";
-import {getStyleDictionaryConfig} from "../utils";
 import StyleDictionaryPackage from "style-dictionary";
+import {getStyleDictionaryConfig} from "../utils";
+import elevationTokens from '../../globals/elevation/index.js';
 
+StyleDictionaryPackage.registerFilter({
+    name: 'filter-alias',
+    matcher: function(prop) {
+        return prop.attributes.category !== 'alias';
+    }
+});
 
 describe(`Elevation E2E`, function () {
     it(`should transpile in styledDictionary`, function () {
@@ -12,10 +19,10 @@ describe(`Elevation E2E`, function () {
         for (const scheme of ['dark', 'light']) {
             for (const alt of ['alternate', 'main']) {
                 const config = getStyleDictionaryConfig([
-                    `./globals/shadow/elevations.js`,
-                    `./globals/color/elevations.js`,
-                    `./elevations/${scheme}/${alt}.json`
+                    `./globals/values/elevations/${scheme}/${alt}.json`,
                 ], 'elevations.scss');
+                config.platforms.web.files[0].filter = 'filter-alias';
+                config.tokens = elevationTokens;
                 expect(() => StyleDictionaryPackage.extend(config).buildPlatform('web')).not.toThrow();
             }
         }

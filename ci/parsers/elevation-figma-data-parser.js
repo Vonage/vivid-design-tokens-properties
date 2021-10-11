@@ -40,12 +40,12 @@ function getBackgroundFromFigmaConfig(dpSettings) {
 function convertToCssValues(output, dpSettings) {
     const dp = `dp-${LEVELS[dpSettings.name.trim()]}`;
     const background = getBackgroundFromFigmaConfig(dpSettings);
-    output.color.elevation[dp] = {
+    output.elevation.color[dp] = {
         canvas: {value: background},
     };
 
     const dropShadows = getDropShadowsFromFigmaConfig(dpSettings);
-    output.shadow.elevation[dp] = {
+    output.elevation.shadow[dp] = {
         filter: {value: dropShadows.trim()}
     };
 
@@ -57,8 +57,7 @@ function mapSchemeAlterationsToValues(elevationSchemeAlterationData) {
     const dpsData = children
         .filter(alterationChild => Object.keys(LEVELS).includes(alterationChild.name.trim()))
         .reduce(convertToCssValues, {
-            color: {elevation: {}},
-            shadow: {elevation: {}}
+            elevation: {color: {}, shadow: {}}
         });
     return {
         name,

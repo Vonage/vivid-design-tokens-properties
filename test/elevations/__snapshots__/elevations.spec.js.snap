@@ -1,76 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Elevation Tokens should create the color tokens blueprint 1`] = `
+exports[`Elevation Tokens should create the elevation tokens 1`] = `
 "{
-  \\"color\\": {
-    \\"elevation\\": {
+  \\"elevation\\": {
+    \\"color\\": {
       \\"dp-2\\": {
         \\"canvas\\": {
-          \\"value\\": \\"{alias.color.elevation.dp-2.canvas.value}\\"
+          \\"value\\": \\"{alias.elevation.color.dp-2.canvas.value}\\"
         }
       },
       \\"dp-4\\": {
         \\"canvas\\": {
-          \\"value\\": \\"{alias.color.elevation.dp-4.canvas.value}\\"
+          \\"value\\": \\"{alias.elevation.color.dp-4.canvas.value}\\"
         }
       },
       \\"dp-8\\": {
         \\"canvas\\": {
-          \\"value\\": \\"{alias.color.elevation.dp-8.canvas.value}\\"
+          \\"value\\": \\"{alias.elevation.color.dp-8.canvas.value}\\"
         }
       },
       \\"dp-12\\": {
         \\"canvas\\": {
-          \\"value\\": \\"{alias.color.elevation.dp-12.canvas.value}\\"
+          \\"value\\": \\"{alias.elevation.color.dp-12.canvas.value}\\"
         }
       },
       \\"dp-16\\": {
         \\"canvas\\": {
-          \\"value\\": \\"{alias.color.elevation.dp-16.canvas.value}\\"
+          \\"value\\": \\"{alias.elevation.color.dp-16.canvas.value}\\"
         }
       },
       \\"dp-24\\": {
         \\"canvas\\": {
-          \\"value\\": \\"{alias.color.elevation.dp-24.canvas.value}\\"
+          \\"value\\": \\"{alias.elevation.color.dp-24.canvas.value}\\"
         }
       }
-    }
-  }
-}"
-`;
-
-exports[`Elevation Tokens should create the shadow tokens blueprint 1`] = `
-"{
-  \\"shadow\\": {
-    \\"elevation\\": {
+    },
+    \\"shadow\\": {
       \\"dp-2\\": {
         \\"filter\\": {
-          \\"value\\": \\"{alias.shadow.elevation.dp-2.filter.value}\\"
+          \\"value\\": \\"{alias.elevation.shadow.dp-2.filter.value}\\"
         }
       },
       \\"dp-4\\": {
         \\"filter\\": {
-          \\"value\\": \\"{alias.shadow.elevation.dp-4.filter.value}\\"
+          \\"value\\": \\"{alias.elevation.shadow.dp-4.filter.value}\\"
         }
       },
       \\"dp-8\\": {
         \\"filter\\": {
-          \\"value\\": \\"{alias.shadow.elevation.dp-8.filter.value}\\"
+          \\"value\\": \\"{alias.elevation.shadow.dp-8.filter.value}\\"
         }
       },
       \\"dp-12\\": {
         \\"filter\\": {
-          \\"value\\": \\"{alias.shadow.elevation.dp-12.filter.value}\\"
+          \\"value\\": \\"{alias.elevation.shadow.dp-12.filter.value}\\"
         }
       },
       \\"dp-16\\": {
         \\"filter\\": {
-          \\"value\\": \\"{alias.shadow.elevation.dp-16.filter.value}\\"
+          \\"value\\": \\"{alias.elevation.shadow.dp-16.filter.value}\\"
         }
       },
       \\"dp-24\\": {
         \\"filter\\": {
-          \\"value\\": \\"{alias.shadow.elevation.dp-24.filter.value}\\"
+          \\"value\\": \\"{alias.elevation.shadow.dp-24.filter.value}\\"
         }
       }
     }
