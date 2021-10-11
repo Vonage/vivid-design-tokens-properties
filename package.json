@@ -24,9 +24,9 @@
 		"test": "node ./test/test-dictionary-coherent.js && jest && yarn e2e",
 		"test:dev": "jest --watch",
 		"e2e": "jest --testMatch='**/?(*.)+(spec|test).e2e.[tj]s?(x)'",
-		"bump": "node ./ci/bump-version.js",
-		"fetch": "node ./ci/fetch-figma-data.js",
-		"parse": "node ./ci/parse-figma-data.js",
+		"bump": "node ./scripts/bump-version.js",
+		"fetch": "node ./scripts/figma-parsers/fetch-figma-data.js",
+		"parse": "node ./scripts/figma-parsers/parse-figma-data.js",
 		"build:globals": "node ./scripts/build-globals.js"
 	},
 	"devDependencies": {

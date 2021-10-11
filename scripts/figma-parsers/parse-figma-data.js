@@ -46,7 +46,7 @@ async function loadData() {
 }
 
 async function loadParsers() {
-	const parserPaths = fs.readdirSync('./ci/' + PARSERS_DIR).filter(parserPath => parserPath.endsWith('.js'));
+	const parserPaths = fs.readdirSync('./scripts/figma-parsers/' + PARSERS_DIR).filter(parserPath => parserPath.endsWith('.js'));
 	console.info(`\tfound ${parserPaths.length} parser/s, loading...`)
 	const parserReadyPromises = parserPaths.map(pp => import(PARSERS_DIR + pp));
 	return Promise
