@@ -1,4 +1,4 @@
-import elevationParser from "../../ci/parsers/elevation-figma-data-parser";
+import elevationParser from "../../scripts/figma-parsers/parsers/elevation-figma-data-parser";
 import {rawData} from "./elevation-test-data";
 import StyleDictionaryPackage from "style-dictionary";
 import {getStyleDictionaryConfig} from "../utils";
