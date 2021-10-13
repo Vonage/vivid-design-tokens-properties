@@ -1,0 +1,21 @@
+import colorCanvasDp from './color-surface-dp.js';
+import {join} from 'path';
+import * as fs from 'fs';
+
+const colorJSON = JSON.parse(fs.readFileSync(join(__dirname, './color.json')).toString());
+const colorPalette = JSON.parse(fs.readFileSync(join(__dirname, './palette.json')).toString());
+
+const category = "color";
+const colors = {
+    [category]: {
+        ...colorCanvasDp,
+        ...colorJSON.color,
+    },
+    alias: {
+        ...colorPalette.alias
+    }
+};
+export default colors;
+
+export const SAVE_PATH = 'dist/color/color.json';
+

@@ -41,7 +41,7 @@ function extractSchemes(data) {
 
 			const result = { alias: { color: {} } };
 			copySorted(values, result.alias.color);
-			writeJson(result, `./schemes/${schemeName}/${altName}.json`);
+			writeJson(result, `./dist/themes/${schemeName}/color/${altName}.json`);
 			console.info(`\t\t...'${schemeName}:${altName}' scheme DONE`);
 		}
 	}

@@ -38,16 +38,12 @@ function getBackgroundFromFigmaConfig(dpSettings) {
 }
 
 function convertToCssValues(output, dpSettings) {
-    const dp = `dp-${LEVELS[dpSettings.name.trim()]}`;
+    const dp = `${LEVELS[dpSettings.name.trim()]}dp`;
     const background = getBackgroundFromFigmaConfig(dpSettings);
-    output.elevation.color[dp] = {
-        canvas: {value: background},
-    };
+    output.color[`surface-${dp}`] = {value: background};
 
     const dropShadows = getDropShadowsFromFigmaConfig(dpSettings);
-    output.elevation.shadow[dp] = {
-        filter: {value: dropShadows.trim()}
-    };
+    output.shadow[`surface-${dp}`] = {value: dropShadows.trim()};
 
     return output;
 }
@@ -57,7 +53,7 @@ function mapSchemeAlterationsToValues(elevationSchemeAlterationData) {
     const dpsData = children
         .filter(alterationChild => Object.keys(LEVELS).includes(alterationChild.name.trim()))
         .reduce(convertToCssValues, {
-            elevation: {color: {}, shadow: {}}
+            color: {}, shadow: {}
         });
     return {
         name,
@@ -81,7 +77,10 @@ function writeElevationSchemeDataToFile(writeResult) {
         const schemeName = elevationSchemeData.name;
         elevationSchemeData.schemeData.forEach(alternativeData => {
             const alternativeName = alternativeData.name;
-            writeResult({alias: {...alternativeData.dpsData}}, `./dist/elevation/values/${schemeName}/${alternativeName}.json`)
+            writeResult({alias: {shadow: {...alternativeData.dpsData.shadow}}},
+                `./dist/themes/${schemeName}/shadow/${alternativeName}.json`)
+            writeResult({alias: {color: {...alternativeData.dpsData.color}}},
+                `./dist/themes/${schemeName}/color/surface-dp/${alternativeName}.json`)
         });
     }
 }

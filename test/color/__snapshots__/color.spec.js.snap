@@ -1,0 +1,486 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Color should create the color tokens 1`] = `
+Object {
+  "alias": Object {
+    "color": Object {
+      "palette": Object {
+        "black": Object {
+          "value": "rgb(0,0,0)",
+        },
+        "blue": Object {
+          "100": Object {
+            "value": "rgb(211,233,252)",
+          },
+          "200": Object {
+            "value": "rgb(157,210,254)",
+          },
+          "300": Object {
+            "value": "rgb(101,186,255)",
+          },
+          "400": Object {
+            "value": "rgb(41,151,240)",
+          },
+          "50": Object {
+            "value": "rgb(232,244,251)",
+          },
+          "500": Object {
+            "value": "rgb(2,118,213)",
+          },
+          "600": Object {
+            "value": "rgb(14,101,194)",
+          },
+          "700": Object {
+            "value": "rgb(9,74,158)",
+          },
+          "800": Object {
+            "value": "rgb(14,48,109)",
+          },
+          "900": Object {
+            "value": "rgb(7,25,57)",
+          },
+          "950": Object {
+            "value": "rgb(4,13,29)",
+          },
+        },
+        "green": Object {
+          "100": Object {
+            "value": "rgb(207,238,212)",
+          },
+          "200": Object {
+            "value": "rgb(134,224,144)",
+          },
+          "300": Object {
+            "value": "rgb(83,202,106)",
+          },
+          "400": Object {
+            "value": "rgb(48,168,73)",
+          },
+          "50": Object {
+            "value": "rgb(225,248,229)",
+          },
+          "500": Object {
+            "value": "rgb(28,135,49)",
+          },
+          "600": Object {
+            "value": "rgb(22,118,41)",
+          },
+          "700": Object {
+            "value": "rgb(21,89,35)",
+          },
+          "800": Object {
+            "value": "rgb(24,58,30)",
+          },
+          "900": Object {
+            "value": "rgb(10,30,17)",
+          },
+          "950": Object {
+            "value": "rgb(6,15,9)",
+          },
+        },
+        "grey": Object {
+          "100": Object {
+            "value": "rgb(230,230,230)",
+          },
+          "200": Object {
+            "value": "rgb(204,204,204)",
+          },
+          "300": Object {
+            "value": "rgb(179,179,179)",
+          },
+          "400": Object {
+            "value": "rgb(146,146,146)",
+          },
+          "50": Object {
+            "value": "rgb(242,242,242)",
+          },
+          "500": Object {
+            "value": "rgb(117,117,117)",
+          },
+          "600": Object {
+            "value": "rgb(102,102,102)",
+          },
+          "700": Object {
+            "value": "rgb(77,77,77)",
+          },
+          "800": Object {
+            "value": "rgb(51,51,51)",
+          },
+          "900": Object {
+            "value": "rgb(26,26,26)",
+          },
+          "950": Object {
+            "value": "rgb(13,13,13)",
+          },
+        },
+        "magenta": Object {
+          "100": Object {
+            "value": "rgb(255,220,247)",
+          },
+          "200": Object {
+            "value": "rgb(248,185,231)",
+          },
+          "300": Object {
+            "value": "rgb(251,143,216)",
+          },
+          "400": Object {
+            "value": "rgb(229,96,187)",
+          },
+          "50": Object {
+            "value": "rgb(255,237,251)",
+          },
+          "500": Object {
+            "value": "rgb(214,33,156)",
+          },
+          "600": Object {
+            "value": "rgb(187,30,137)",
+          },
+          "700": Object {
+            "value": "rgb(143,22,105)",
+          },
+          "800": Object {
+            "value": "rgb(98,2,86)",
+          },
+          "900": Object {
+            "value": "rgb(50,8,44)",
+          },
+          "950": Object {
+            "value": "rgb(29,3,26)",
+          },
+        },
+        "orange": Object {
+          "100": Object {
+            "value": "rgb(253,224,216)",
+          },
+          "200": Object {
+            "value": "rgb(248,191,177)",
+          },
+          "300": Object {
+            "value": "rgb(248,155,133)",
+          },
+          "400": Object {
+            "value": "rgb(237,107,74)",
+          },
+          "50": Object {
+            "value": "rgb(254,239,235)",
+          },
+          "500": Object {
+            "value": "rgb(211,66,4)",
+          },
+          "600": Object {
+            "value": "rgb(187,55,0)",
+          },
+          "700": Object {
+            "value": "rgb(137,48,0)",
+          },
+          "800": Object {
+            "value": "rgb(91,33,2)",
+          },
+          "900": Object {
+            "value": "rgb(45,19,5)",
+          },
+          "950": Object {
+            "value": "rgb(25,9,0)",
+          },
+        },
+        "purple": Object {
+          "100": Object {
+            "value": "rgb(236,226,250)",
+          },
+          "200": Object {
+            "value": "rgb(220,193,252)",
+          },
+          "300": Object {
+            "value": "rgb(203,161,250)",
+          },
+          "400": Object {
+            "value": "rgb(178,123,242)",
+          },
+          "50": Object {
+            "value": "rgb(245,240,253)",
+          },
+          "500": Object {
+            "value": "rgb(153,65,255)",
+          },
+          "600": Object {
+            "value": "rgb(135,30,255)",
+          },
+          "700": Object {
+            "value": "rgb(100,5,209)",
+          },
+          "800": Object {
+            "value": "rgb(68,2,145)",
+          },
+          "900": Object {
+            "value": "rgb(38,4,77)",
+          },
+          "950": Object {
+            "value": "rgb(20,6,35)",
+          },
+        },
+        "red": Object {
+          "100": Object {
+            "value": "rgb(254,223,223)",
+          },
+          "200": Object {
+            "value": "rgb(255,187,187)",
+          },
+          "300": Object {
+            "value": "rgb(254,150,150)",
+          },
+          "400": Object {
+            "value": "rgb(247,89,89)",
+          },
+          "50": Object {
+            "value": "rgb(255,238,242)",
+          },
+          "500": Object {
+            "value": "rgb(230,29,29)",
+          },
+          "600": Object {
+            "value": "rgb(205,13,13)",
+          },
+          "700": Object {
+            "value": "rgb(159,2,2)",
+          },
+          "800": Object {
+            "value": "rgb(110,0,0)",
+          },
+          "900": Object {
+            "value": "rgb(62,0,4)",
+          },
+          "950": Object {
+            "value": "rgb(37,0,4)",
+          },
+        },
+        "white": Object {
+          "value": "rgb(255,255,255)",
+        },
+        "yellow": Object {
+          "100": Object {
+            "value": "rgb(253,231,109)",
+          },
+          "200": Object {
+            "value": "rgb(255,195,33)",
+          },
+          "300": Object {
+            "value": "rgb(250,159,0)",
+          },
+          "400": Object {
+            "value": "rgb(224,121,2)",
+          },
+          "50": Object {
+            "value": "rgb(252,245,167)",
+          },
+          "500": Object {
+            "value": "rgb(190,87,2)",
+          },
+          "600": Object {
+            "value": "rgb(166,76,3)",
+          },
+          "700": Object {
+            "value": "rgb(128,56,7)",
+          },
+          "800": Object {
+            "value": "rgb(82,40,1)",
+          },
+          "900": Object {
+            "value": "rgb(42,21,2)",
+          },
+          "950": Object {
+            "value": "rgb(21,11,1)",
+          },
+        },
+      },
+    },
+  },
+  "color": Object {
+    "alert": Object {
+      "value": "{alias.color.60.alert.value}",
+    },
+    "alert-10": Object {
+      "value": "{alias.color.10.alert.value}",
+    },
+    "alert-20": Object {
+      "value": "{alias.color.20.alert.value}",
+    },
+    "alert-30": Object {
+      "value": "{alias.color.30.alert.value}",
+    },
+    "alert-70": Object {
+      "value": "{alias.color.70.alert.value}",
+    },
+    "alert-90": Object {
+      "value": "{alias.color.90.alert.value}",
+    },
+    "announcement": Object {
+      "value": "{alias.color.60.announcement.value}",
+    },
+    "announcement-10": Object {
+      "value": "{alias.color.10.announcement.value}",
+    },
+    "announcement-20": Object {
+      "value": "{alias.color.20.announcement.value}",
+    },
+    "announcement-30": Object {
+      "value": "{alias.color.30.announcement.value}",
+    },
+    "announcement-70": Object {
+      "value": "{alias.color.70.announcement.value}",
+    },
+    "announcement-90": Object {
+      "value": "{alias.color.90.announcement.value}",
+    },
+    "canvas": Object {
+      "value": "{alias.color.canvas.value}",
+    },
+    "cta": Object {
+      "value": "{alias.color.60.cta.value}",
+    },
+    "cta-10": Object {
+      "value": "{alias.color.10.cta.value}",
+    },
+    "cta-20": Object {
+      "value": "{alias.color.20.cta.value}",
+    },
+    "cta-30": Object {
+      "value": "{alias.color.30.cta.value}",
+    },
+    "cta-70": Object {
+      "value": "{alias.color.70.cta.value}",
+    },
+    "cta-90": Object {
+      "value": "{alias.color.90.cta.value}",
+    },
+    "info": Object {
+      "value": "{alias.color.60.info.value}",
+    },
+    "info-10": Object {
+      "value": "{alias.color.10.info.value}",
+    },
+    "info-20": Object {
+      "value": "{alias.color.20.info.value}",
+    },
+    "info-30": Object {
+      "value": "{alias.color.30.info.value}",
+    },
+    "info-70": Object {
+      "value": "{alias.color.70.info.value}",
+    },
+    "info-90": Object {
+      "value": "{alias.color.90.info.value}",
+    },
+    "neutral": Object {
+      "value": "{alias.color.60.neutral.value}",
+    },
+    "neutral-10": Object {
+      "value": "{alias.color.10.neutral.value}",
+    },
+    "neutral-20": Object {
+      "value": "{alias.color.20.neutral.value}",
+    },
+    "neutral-30": Object {
+      "value": "{alias.color.30.neutral.value}",
+    },
+    "neutral-40": Object {
+      "value": "{alias.color.40.neutral.value}",
+    },
+    "neutral-50": Object {
+      "value": "{alias.color.50.neutral.value}",
+    },
+    "neutral-70": Object {
+      "value": "{alias.color.70.neutral.value}",
+    },
+    "neutral-80": Object {
+      "value": "{alias.color.80.neutral.value}",
+    },
+    "neutral-90": Object {
+      "value": "{alias.color.90.neutral.value}",
+    },
+    "on-alert": Object {
+      "value": "{alias.color.60.on-alert.value}",
+    },
+    "on-announcement": Object {
+      "value": "{alias.color.60.on-announcement.value}",
+    },
+    "on-canvas": Object {
+      "value": "{alias.color.on-canvas.value}",
+    },
+    "on-cta": Object {
+      "value": "{alias.color.60.on-cta.value}",
+    },
+    "on-info": Object {
+      "value": "{alias.color.60.on-info.value}",
+    },
+    "on-neutral": Object {
+      "value": "{alias.color.60.on-neutral.value}",
+    },
+    "on-primary": Object {
+      "value": "{alias.color.60.on-primary.value}",
+    },
+    "on-success": Object {
+      "value": "{alias.color.60.on-success.value}",
+    },
+    "on-warning": Object {
+      "value": "{alias.color.60.on-warning.value}",
+    },
+    "primary": Object {
+      "value": "{alias.color.60.primary.value}",
+    },
+    "success": Object {
+      "value": "{alias.color.60.success.value}",
+    },
+    "success-10": Object {
+      "value": "{alias.color.10.success.value}",
+    },
+    "success-20": Object {
+      "value": "{alias.color.20.success.value}",
+    },
+    "success-30": Object {
+      "value": "{alias.color.30.success.value}",
+    },
+    "success-70": Object {
+      "value": "{alias.color.70.success.value}",
+    },
+    "success-90": Object {
+      "value": "{alias.color.90.success.value}",
+    },
+    "surface-12dp": Object {
+      "value": "{alias.color.surface.surface-12dp.value}",
+    },
+    "surface-16dp": Object {
+      "value": "{alias.color.surface.surface-16dp.value}",
+    },
+    "surface-24dp": Object {
+      "value": "{alias.color.surface.surface-24dp.value}",
+    },
+    "surface-2dp": Object {
+      "value": "{alias.color.surface.surface-2dp.value}",
+    },
+    "surface-4dp": Object {
+      "value": "{alias.color.surface.surface-4dp.value}",
+    },
+    "surface-8dp": Object {
+      "value": "{alias.color.surface.surface-8dp.value}",
+    },
+    "warning": Object {
+      "value": "{alias.color.60.warning.value}",
+    },
+    "warning-10": Object {
+      "value": "{alias.color.10.warning.value}",
+    },
+    "warning-20": Object {
+      "value": "{alias.color.20.warning.value}",
+    },
+    "warning-30": Object {
+      "value": "{alias.color.30.warning.value}",
+    },
+    "warning-70": Object {
+      "value": "{alias.color.70.warning.value}",
+    },
+    "warning-90": Object {
+      "value": "{alias.color.90.warning.value}",
+    },
+  },
+}
+`;

@@ -50,5 +50,5 @@ function extractPalette(data) {
 	}
 
 	copySorted(colorsMap, result.alias.color.palette);
-	writeJson(result, './globals/color/palette.json');
+	writeJson(result, './dist/themes/palette.json');
 }
