@@ -11,7 +11,7 @@ export default Object.freeze({
 	parse: extractSchemes
 });
 
-function extractSchemes(data) {
+function extractSchemes(data, writeToFile = writeJson) {
 	const paletteData = collectPaletteMap(data);
 	const schemeData = data.document.children.find(c => c.name.includes(SCHEME_FRAME_NAME));
 	if (!schemeData || !Array.isArray(schemeData.children)) {
@@ -41,7 +41,7 @@ function extractSchemes(data) {
 
 			const result = { alias: { color: {} } };
 			copySorted(values, result.alias.color);
-			writeJson(result, `./dist/themes/${schemeName}/color/${altName}.json`);
+			writeToFile(result, `./dist/themes/${schemeName}/color/${altName}.json`);
 			console.info(`\t\t...'${schemeName}:${altName}' scheme DONE`);
 		}
 	}

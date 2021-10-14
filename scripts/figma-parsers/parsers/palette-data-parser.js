@@ -15,7 +15,7 @@ export {
 	PALETTE_PRINCIPAL
 }
 
-function extractPalette(data) {
+function extractPalette(data, writeToFile = writeJson) {
 	const result = {
 		alias: {
 			color: {
@@ -50,5 +50,5 @@ function extractPalette(data) {
 	}
 
 	copySorted(colorsMap, result.alias.color.palette);
-	writeJson(result, './dist/themes/palette.json');
+	writeToFile(result, './dist/themes/palette.json');
 }

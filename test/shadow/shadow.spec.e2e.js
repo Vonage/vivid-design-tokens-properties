@@ -1,5 +1,5 @@
 import elevationParser from "../../scripts/figma-parsers/parsers/elevation-figma-data-parser";
-import {rawData} from "./shadow-test-data";
+import {rawData} from "../test-data";
 import StyleDictionaryPackage from "style-dictionary";
 import {getStyleDictionaryConfig} from "../utils";
 
