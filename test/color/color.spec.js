@@ -1,6 +1,6 @@
 import colorTokens from '../../globals/color/index.js';
 import schemesFigmaParser from '../../scripts/figma-parsers/parsers/scheme-figma-data-parser.js';
-import colorPaletteFigmaParser from '../../scripts/figma-parsers/parsers/palette-data-parser.js';
+import colorPaletteFigmaParser from '../../scripts/figma-parsers/parsers/palette-figma-data-parser.js';
 import {rawData} from "../test-data";
 
 describe(`Color`, function () {
@@ -58,7 +58,7 @@ describe(`Color`, function () {
 
             it(`should write to files according to scheme and alternatives`, function () {
                 colorPaletteFigmaParser.parse(rawData, mockJsonWrite);
-                const expectedPath = './dist/themes/palette.json';
+                const expectedPath = './dist/color/palette.json';
 
                 const calledPath = mockJsonWrite.mock.calls[0][1];
                 expect(calledPath).toEqual(expectedPath);

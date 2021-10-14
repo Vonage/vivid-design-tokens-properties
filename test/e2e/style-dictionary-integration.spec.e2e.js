@@ -1,7 +1,8 @@
 import elevationParser from "../../scripts/figma-parsers/parsers/elevation-figma-data-parser";
-import {rawData} from "../test-data";
 import StyleDictionaryPackage from "style-dictionary";
 import {getStyleDictionaryConfig} from "../utils";
+
+const rawData = require('./raw-data.json');
 
 StyleDictionaryPackage.registerFilter({
     name: 'filter-alias',
@@ -20,10 +21,9 @@ describe(`Elevation E2E`, function () {
                 const config = getStyleDictionaryConfig([
                     `./dist/color/**/*.json`,
                     `./dist/shadow/**/*.json`,
-                    `./themes/${scheme}/**/${alt}.json`,
+                    `./dist//themes/${scheme}/**/${alt}.json`,
                 ], 'elevations.scss');
                 config.platforms.web.files[0].filter = 'filter-alias';
-                // config.tokens = elevationTokens;
                 expect(() => StyleDictionaryPackage.extend(config).buildPlatform('web')).not.toThrow();
             }
         }

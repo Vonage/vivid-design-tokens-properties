@@ -50,5 +50,5 @@ function extractPalette(data, writeToFile = writeJson) {
 	}
 
 	copySorted(colorsMap, result.alias.color.palette);
-	writeToFile(result, './dist/themes/palette.json');
+	writeToFile(result, './dist/color/palette.json');
 }

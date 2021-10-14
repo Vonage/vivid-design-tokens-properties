@@ -2,7 +2,7 @@ import {subItems} from '../shadow/index.js';
 import generateTokens from '../utils/globalsGenerator.js';
 
 function aliasCallback(subItem) {
-    return `{alias.color.surface.${subItem}.value}`;
+    return `{alias.color.${subItem}.value}`;
 }
 
 const type = "surface";
