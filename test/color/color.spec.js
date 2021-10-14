@@ -30,7 +30,7 @@ describe(`Color`, function () {
             afterAll(function() {
                 console.info = originalInfo;
             });
-            
+
             it(`should write to files schemes count times alternatives`, function () {
                 schemesFigmaParser.parse(rawData, mockJsonWrite);
                 expect(mockJsonWrite.mock.calls).toHaveLength(4);

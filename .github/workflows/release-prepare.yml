@@ -16,10 +16,10 @@ jobs:
           ref: master
           token: ${{ secrets.CI_AT }}
 
-      - name: Setup NodeJS 14
+      - name: Setup NodeJS 15
         uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 15
 
       - name: Extract release version
         id: extractVersion
