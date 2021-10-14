@@ -1,5 +1,5 @@
 import { copySorted, writeJson } from '../../utils.js';
-import { PALETTE_FRAME_NAME, PALETTE_PRINCIPAL } from './palette-data-parser.js';
+import { PALETTE_FRAME_NAME, PALETTE_PRINCIPAL } from './palette-figma-data-parser.js';
 
 const
 	SCHEME_FRAME_NAME = 'design.tokens.scheme',

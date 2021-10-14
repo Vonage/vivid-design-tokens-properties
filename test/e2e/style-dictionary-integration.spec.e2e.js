@@ -18,8 +18,9 @@ describe(`Elevation E2E`, function () {
         for (const scheme of ['dark', 'light']) {
             for (const alt of ['alternate', 'main']) {
                 const config = getStyleDictionaryConfig([
-                    `./dist/elevations/values/${scheme}/${alt}.json`,
-                    `./dist/elevations/elevation.json`,
+                    `./dist/color/**/*.json`,
+                    `./dist/shadow/**/*.json`,
+                    `./themes/${scheme}/**/${alt}.json`,
                 ], 'elevations.scss');
                 config.platforms.web.files[0].filter = 'filter-alias';
                 // config.tokens = elevationTokens;

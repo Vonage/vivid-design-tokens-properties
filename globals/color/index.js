@@ -4,16 +4,12 @@ import * as fs from 'fs';
 import { dirName } from './__dirname.cjs';
 
 const colorJSON = JSON.parse(fs.readFileSync(join(dirName, './color.json')).toString());
-const colorPalette = JSON.parse(fs.readFileSync(join(dirName, './palette.json')).toString());
 
 const category = "color";
 const colors = {
     [category]: {
         ...colorCanvasDp,
         ...colorJSON.color,
-    },
-    alias: {
-        ...colorPalette.alias
     }
 };
 export default colors;

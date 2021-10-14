@@ -1,7 +1,0 @@
-{
-  "alias": {
-    "color": {
-      "value": "{alias.color.palette.black.value}"
-    }
-  }
-}
