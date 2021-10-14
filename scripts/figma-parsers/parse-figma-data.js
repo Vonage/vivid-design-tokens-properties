@@ -13,7 +13,7 @@ const PARSERS_DIR = './parsers/';
 //	main flow start
 //
 console.info('parsing data...');
-Promise
+export default Promise
 	.all([
 		loadData(),
 		loadParsers()

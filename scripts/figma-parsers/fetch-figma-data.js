@@ -19,7 +19,7 @@ if (!authToken) {
 
 //	main flow
 console.info('fetching data...');
-fetchData()
+export default fetchData()
 	.catch(e => {
 		console.error(e);
 		process.exitCode = 1;
