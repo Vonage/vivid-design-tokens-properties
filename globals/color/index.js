@@ -1,9 +1,10 @@
 import colorCanvasDp from './color-surface-dp.js';
 import {join} from 'path';
 import * as fs from 'fs';
+import { dirName } from './__dirname.cjs';
 
-const colorJSON = JSON.parse(fs.readFileSync(join(__dirname, './color.json')).toString());
-const colorPalette = JSON.parse(fs.readFileSync(join(__dirname, './palette.json')).toString());
+const colorJSON = JSON.parse(fs.readFileSync(join(dirName, './color.json')).toString());
+const colorPalette = JSON.parse(fs.readFileSync(join(dirName, './palette.json')).toString());
 
 const category = "color";
 const colors = {
