@@ -8,6 +8,9 @@ on:
 jobs:
   release-prepare:
     runs-on: ubuntu-latest
+    env:
+      FIGMA_FILE_TOKEN: ${{ secrets.FIGMA_FILE_TOKEN }}
+      FIGMA_AUTH_TOKEN: ${{ secrets.FIGMA_AUTH_TOKEN }}
 
     steps:
       - name: Checkout
@@ -31,9 +34,6 @@ jobs:
           npm run parse
           npm run build:globals
           npm run bump ${{ steps.extractVersion.outputs.version }}
-        env:
-          FIGMA_FILE_TOKEN: ${{ secrets.FIGMA_FILE_TOKEN }}
-          FIGMA_AUTH_TOKEN: ${{ secrets.FIGMA_AUTH_TOKEN }}
 
       - name: Install dependencies
         run: npm install
