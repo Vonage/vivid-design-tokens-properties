@@ -19,7 +19,7 @@
 	},
 	"scripts": {
 		"lint": "eslint -c .eslintrc.json ./scripts/**/*.js ./test/**/*.js",
-		"test": "node ./test/test-dictionary-coherent.js && jest && yarn e2e",
+		"test": "jest && yarn e2e && node ./test/test-dictionary-coherent.js",
 		"test:dev": "jest --watch",
 		"e2e": "node ./test/e2e/style-dictionary-integration.spec.e2e.js",
 		"bump": "node ./scripts/bump-version.js",

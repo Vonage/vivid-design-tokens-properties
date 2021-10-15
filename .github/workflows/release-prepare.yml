@@ -28,18 +28,18 @@ jobs:
         id: extractVersion
         run: echo "::set-output name=version::$(echo ${GITHUB_REF##*/release-})"
 
+      - name: Install dependencies
+        run: npm install
+
+      - name: Test
+        run: npm test
+
       - name: Update tokens data & bump package version to ${{ steps.extractVersion.outputs.version }}
         run: |
           npm run fetch
           npm run parse
           npm run build:globals
           npm run bump ${{ steps.extractVersion.outputs.version }}
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Test
-        run: npm test
 
       - name: Delete temporary trigger tag
         run: git push origin --delete release-${{ steps.extractVersion.outputs.version }}
