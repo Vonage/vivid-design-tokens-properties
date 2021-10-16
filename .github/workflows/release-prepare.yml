@@ -8,6 +8,9 @@ on:
 jobs:
   release-prepare:
     runs-on: ubuntu-latest
+    env:
+      FIGMA_FILE_TOKEN: ${{ secrets.FIGMA_FILE_TOKEN }}
+      FIGMA_AUTH_TOKEN: ${{ secrets.FIGMA_AUTH_TOKEN }}
 
     steps:
       - name: Checkout
@@ -16,29 +19,27 @@ jobs:
           ref: master
           token: ${{ secrets.CI_AT }}
 
-      - name: Setup NodeJS 14
+      - name: Setup NodeJS 15
         uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 15
 
       - name: Extract release version
         id: extractVersion
         run: echo "::set-output name=version::$(echo ${GITHUB_REF##*/release-})"
-
-      - name: Update tokens data & bump package version to ${{ steps.extractVersion.outputs.version }}
-        run: |
-          npm run fetch
-          npm run parse
-          npm run bump ${{ steps.extractVersion.outputs.version }}
-        env:
-          FIGMA_FILE_TOKEN: ${{ secrets.FIGMA_FILE_TOKEN }}
-          FIGMA_AUTH_TOKEN: ${{ secrets.FIGMA_AUTH_TOKEN }}
 
       - name: Install dependencies
         run: npm install
 
       - name: Test
         run: npm test
+
+      - name: Update tokens data & bump package version to ${{ steps.extractVersion.outputs.version }}
+        run: |
+          npm run fetch
+          npm run parse
+          npm run build:globals
+          npm run bump ${{ steps.extractVersion.outputs.version }}
 
       - name: Delete temporary trigger tag
         run: git push origin --delete release-${{ steps.extractVersion.outputs.version }}

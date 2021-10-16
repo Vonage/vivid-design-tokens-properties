@@ -6,9 +6,8 @@
 	"license": "ISC",
 	"files": [
 		"globals",
-		"platfroms",
-		"schemes",
-		"typography"
+		"typography",
+		"dist"
 	],
 	"type": "module",
 	"repository": {
@@ -19,14 +18,30 @@
 		"url": "https://github.com/Vonage/vivid-design-tokens-properties/issues"
 	},
 	"scripts": {
-		"lint": "eslint -c .eslintrc.json ./ci/**/*.js ./test/**/*.js",
-		"test": "node ./test/test-dictionary-coherent.js",
-		"bump": "node ./ci/bump-version.js",
-		"fetch": "node ./ci/fetch-figma-data.js",
-		"parse": "node ./ci/parse-figma-data.js"
+		"lint": "eslint -c .eslintrc.json ./scripts/**/*.js ./test/**/*.js",
+		"test": "jest && yarn e2e && node ./test/test-dictionary-coherent.js",
+		"test:dev": "jest --watch",
+		"e2e": "node ./test/e2e/style-dictionary-integration.spec.e2e.js",
+		"bump": "node ./scripts/bump-version.js",
+		"fetch": "node ./scripts/figma-parsers/fetch-figma-data.js",
+		"parse": "node ./scripts/figma-parsers/parse-figma-data.js",
+		"build:globals": "node ./scripts/build-globals.js"
 	},
 	"devDependencies": {
-		"eslint": "^7.22.0",
-		"style-dictionary": "^3.0.1"
+		"@babel/eslint-parser": "^7.15.8",
+		"@babel/plugin-transform-modules-commonjs": "^7.15.4",
+		"eslint": "^7.32.0",
+		"eslint-plugin-jest": "^24.5.2",
+		"jest": "^27.2.4",
+		"style-dictionary": "^3.0.2"
+	},
+	"babel": {
+		"env": {
+			"test": {
+				"plugins": [
+					"@babel/plugin-transform-modules-commonjs"
+				]
+			}
+		}
 	}
 }

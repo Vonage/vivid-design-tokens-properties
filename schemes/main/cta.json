@@ -1,7 +1,0 @@
-{
-  "alias": {
-    "color": {
-      "value": "{alias.color.palette.purple.500.value}"
-    }
-  }
-}

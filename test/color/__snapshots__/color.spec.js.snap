@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Color should create the color tokens 1`] = `
+Object {
+  "color": Object {
+    "alert": Object {
+      "value": "{alias.color.60.alert.value}",
+    },
+    "alert-10": Object {
+      "value": "{alias.color.10.alert.value}",
+    },
+    "alert-20": Object {
+      "value": "{alias.color.20.alert.value}",
+    },
+    "alert-30": Object {
+      "value": "{alias.color.30.alert.value}",
+    },
+    "alert-70": Object {
+      "value": "{alias.color.70.alert.value}",
+    },
+    "alert-90": Object {
+      "value": "{alias.color.90.alert.value}",
+    },
+    "announcement": Object {
+      "value": "{alias.color.60.announcement.value}",
+    },
+    "announcement-10": Object {
+      "value": "{alias.color.10.announcement.value}",
+    },
+    "announcement-20": Object {
+      "value": "{alias.color.20.announcement.value}",
+    },
+    "announcement-30": Object {
+      "value": "{alias.color.30.announcement.value}",
+    },
+    "announcement-70": Object {
+      "value": "{alias.color.70.announcement.value}",
+    },
+    "announcement-90": Object {
+      "value": "{alias.color.90.announcement.value}",
+    },
+    "canvas": Object {
+      "value": "{alias.color.canvas.value}",
+    },
+    "cta": Object {
+      "value": "{alias.color.60.cta.value}",
+    },
+    "cta-10": Object {
+      "value": "{alias.color.10.cta.value}",
+    },
+    "cta-20": Object {
+      "value": "{alias.color.20.cta.value}",
+    },
+    "cta-30": Object {
+      "value": "{alias.color.30.cta.value}",
+    },
+    "cta-70": Object {
+      "value": "{alias.color.70.cta.value}",
+    },
+    "cta-90": Object {
+      "value": "{alias.color.90.cta.value}",
+    },
+    "info": Object {
+      "value": "{alias.color.60.info.value}",
+    },
+    "info-10": Object {
+      "value": "{alias.color.10.info.value}",
+    },
+    "info-20": Object {
+      "value": "{alias.color.20.info.value}",
+    },
+    "info-30": Object {
+      "value": "{alias.color.30.info.value}",
+    },
+    "info-70": Object {
+      "value": "{alias.color.70.info.value}",
+    },
+    "info-90": Object {
+      "value": "{alias.color.90.info.value}",
+    },
+    "neutral": Object {
+      "value": "{alias.color.60.neutral.value}",
+    },
+    "neutral-10": Object {
+      "value": "{alias.color.10.neutral.value}",
+    },
+    "neutral-20": Object {
+      "value": "{alias.color.20.neutral.value}",
+    },
+    "neutral-30": Object {
+      "value": "{alias.color.30.neutral.value}",
+    },
+    "neutral-40": Object {
+      "value": "{alias.color.40.neutral.value}",
+    },
+    "neutral-50": Object {
+      "value": "{alias.color.50.neutral.value}",
+    },
+    "neutral-70": Object {
+      "value": "{alias.color.70.neutral.value}",
+    },
+    "neutral-80": Object {
+      "value": "{alias.color.80.neutral.value}",
+    },
+    "neutral-90": Object {
+      "value": "{alias.color.90.neutral.value}",
+    },
+    "on-alert": Object {
+      "value": "{alias.color.60.on-alert.value}",
+    },
+    "on-announcement": Object {
+      "value": "{alias.color.60.on-announcement.value}",
+    },
+    "on-canvas": Object {
+      "value": "{alias.color.on-canvas.value}",
+    },
+    "on-cta": Object {
+      "value": "{alias.color.60.on-cta.value}",
+    },
+    "on-info": Object {
+      "value": "{alias.color.60.on-info.value}",
+    },
+    "on-neutral": Object {
+      "value": "{alias.color.60.on-neutral.value}",
+    },
+    "on-primary": Object {
+      "value": "{alias.color.60.on-primary.value}",
+    },
+    "on-success": Object {
+      "value": "{alias.color.60.on-success.value}",
+    },
+    "on-warning": Object {
+      "value": "{alias.color.60.on-warning.value}",
+    },
+    "primary": Object {
+      "value": "{alias.color.60.primary.value}",
+    },
+    "success": Object {
+      "value": "{alias.color.60.success.value}",
+    },
+    "success-10": Object {
+      "value": "{alias.color.10.success.value}",
+    },
+    "success-20": Object {
+      "value": "{alias.color.20.success.value}",
+    },
+    "success-30": Object {
+      "value": "{alias.color.30.success.value}",
+    },
+    "success-70": Object {
+      "value": "{alias.color.70.success.value}",
+    },
+    "success-90": Object {
+      "value": "{alias.color.90.success.value}",
+    },
+    "surface-12dp": Object {
+      "value": "{alias.color.surface-12dp.value}",
+    },
+    "surface-16dp": Object {
+      "value": "{alias.color.surface-16dp.value}",
+    },
+    "surface-24dp": Object {
+      "value": "{alias.color.surface-24dp.value}",
+    },
+    "surface-2dp": Object {
+      "value": "{alias.color.surface-2dp.value}",
+    },
+    "surface-4dp": Object {
+      "value": "{alias.color.surface-4dp.value}",
+    },
+    "surface-8dp": Object {
+      "value": "{alias.color.surface-8dp.value}",
+    },
+    "warning": Object {
+      "value": "{alias.color.60.warning.value}",
+    },
+    "warning-10": Object {
+      "value": "{alias.color.10.warning.value}",
+    },
+    "warning-20": Object {
+      "value": "{alias.color.20.warning.value}",
+    },
+    "warning-30": Object {
+      "value": "{alias.color.30.warning.value}",
+    },
+    "warning-70": Object {
+      "value": "{alias.color.70.warning.value}",
+    },
+    "warning-90": Object {
+      "value": "{alias.color.90.warning.value}",
+    },
+  },
+}
+`;

@@ -1,9 +1,0 @@
-{
-  "alias": {
-    "color": {
-      "surface": {
-        "value": "{alias.color.palette.grey.50.value}"
-      }
-    }
-  }
-}

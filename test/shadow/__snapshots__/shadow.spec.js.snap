@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Elevation Tokens should create the elevation tokens 1`] = `
+"{
+  \\"shadow\\": {
+    \\"surface-2dp\\": {
+      \\"value\\": \\"{alias.shadow.surface-2dp.value}\\"
+    },
+    \\"surface-4dp\\": {
+      \\"value\\": \\"{alias.shadow.surface-4dp.value}\\"
+    },
+    \\"surface-8dp\\": {
+      \\"value\\": \\"{alias.shadow.surface-8dp.value}\\"
+    },
+    \\"surface-12dp\\": {
+      \\"value\\": \\"{alias.shadow.surface-12dp.value}\\"
+    },
+    \\"surface-16dp\\": {
+      \\"value\\": \\"{alias.shadow.surface-16dp.value}\\"
+    },
+    \\"surface-24dp\\": {
+      \\"value\\": \\"{alias.shadow.surface-24dp.value}\\"
+    }
+  }
+}"
+`;
