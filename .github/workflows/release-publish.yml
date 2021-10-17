@@ -8,6 +8,9 @@ on:
 jobs:
   release-publish:
     runs-on: ubuntu-latest
+    env:
+      FIGMA_FILE_TOKEN: ${{ secrets.FIGMA_FILE_TOKEN }}
+      FIGMA_AUTH_TOKEN: ${{ secrets.FIGMA_AUTH_TOKEN }}
 
     steps:
       - name: Checkout
@@ -20,6 +23,14 @@ jobs:
         with:
           node-version: 15
           registry-url: 'https://npm.pkg.github.com'
+
+      - name: Update tokens data & bump package version to ${{ steps.extractVersion.outputs.version }}
+        run: |
+          npm install
+          npm run fetch
+          npm run parse
+          npm run build:globals
+          npm run bump ${{ steps.extractVersion.outputs.version }}
 
       - name: Publish design tokens
         run: npm publish
