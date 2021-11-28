@@ -1,0 +1,62 @@
+{
+  "sizing": {
+    "4px": {
+      "xxxs": {
+        "value": "{alias.sizing.4px.xxxs.value}"
+      },
+      "xxs": {
+        "value": "{alias.sizing.4px.xxs.value}"
+      },
+      "xs": {
+        "value": "{alias.sizing.4px.xs.value}"
+      },
+      "sm": {
+        "value": "{alias.sizing.4px.sm.value}"
+      },
+      "md": {
+        "value": "{alias.sizing.4px.md.value}"
+      },
+      "lg": {
+        "value": "{alias.sizing.4px.lg.value}"
+      },
+      "xl": {
+        "value": "{alias.sizing.4px.xl.value}"
+      },
+      "xxl": {
+        "value": "{alias.sizing.4px.xxl.value}"
+      },
+      "xxxl": {
+        "value": "{alias.sizing.4px.xxxl.value}"
+      }
+    },
+    "8px": {
+      "xxxs": {
+        "value": "{alias.sizing.8px.xxxs.value}"
+      },
+      "xxs": {
+        "value": "{alias.sizing.8px.xxs.value}"
+      },
+      "xs": {
+        "value": "{alias.sizing.8px.xs.value}"
+      },
+      "sm": {
+        "value": "{alias.sizing.8px.sm.value}"
+      },
+      "md": {
+        "value": "{alias.sizing.8px.md.value}"
+      },
+      "lg": {
+        "value": "{alias.sizing.8px.lg.value}"
+      },
+      "xl": {
+        "value": "{alias.sizing.8px.xl.value}"
+      },
+      "xxl": {
+        "value": "{alias.sizing.8px.xxl.value}"
+      },
+      "xxxl": {
+        "value": "{alias.sizing.8px.xxxl.value}"
+      }
+    }
+  }
+}
