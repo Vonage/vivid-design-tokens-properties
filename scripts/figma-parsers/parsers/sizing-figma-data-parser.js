@@ -32,7 +32,7 @@ const getDocumentFragment = documentChild => documentChild.name.includes(CANVAS_
 function convertToCssValues(output, settings) {
     const sizing = `${LEVELS[settings.name.trim()]}`;
     const sizeValue = settings.absoluteBoundingBox.width;
-    output.sizing[`${sizing}`] = { value: sizeValue };
+    output.sizing[`${sizing}`] = { value: `${sizeValue}px` };
     return output;
 }
 
@@ -56,13 +56,13 @@ function writeSizingScaleDataToFile(writeResult) {
         const sizingData = sizingScaleData.sizingData;
         switch (scaleName) {
             case '4px scale':
-                scalesData.alias.sizing['4px'] = { ...sizingData.sizing };
+                scalesData.alias.sizing['4px-scale'] = { ...sizingData.sizing };
                 break;
             case '8px scale':
-                scalesData.alias.sizing['8px'] = { ...sizingData.sizing };
+                scalesData.alias.sizing['8px-scale'] = { ...sizingData.sizing };
                 break;
         }
-        writeResult(scalesData, `./dist/sizing/sizing.json`);
+        writeResult(scalesData, `./dist/sizing/sizing.values.json`);
     }
 }
 
