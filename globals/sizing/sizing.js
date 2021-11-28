@@ -5,8 +5,6 @@ function aliasCallback(property, subItem) {
     return `{alias.sizing.${subItem}.${property}.value}`;
 }
 
-const type = "sizing";
-
 export default generateTokens({
-    subItems, type, properties, aliasCallback
+    subItems, properties, aliasCallback
 });
