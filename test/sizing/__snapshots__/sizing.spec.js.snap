@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sizing Tokens should create the sizing tokens 1`] = `
+"{
+  \\"sizing\\": {
+    \\"4px-scale\\": {
+      \\"3xs\\": {
+        \\"value\\": \\"{alias.sizing.4px-scale.3xs.value}\\"
+      },
+      \\"2xs\\": {
+        \\"value\\": \\"{alias.sizing.4px-scale.2xs.value}\\"
+      },
+      \\"xs\\": {
+        \\"value\\": \\"{alias.sizing.4px-scale.xs.value}\\"
+      },
+      \\"sm\\": {
+        \\"value\\": \\"{alias.sizing.4px-scale.sm.value}\\"
+      },
+      \\"md\\": {
+        \\"value\\": \\"{alias.sizing.4px-scale.md.value}\\"
+      },
+      \\"lg\\": {
+        \\"value\\": \\"{alias.sizing.4px-scale.lg.value}\\"
+      },
+      \\"xl\\": {
+        \\"value\\": \\"{alias.sizing.4px-scale.xl.value}\\"
+      },
+      \\"2xl\\": {
+        \\"value\\": \\"{alias.sizing.4px-scale.2xl.value}\\"
+      },
+      \\"3xl\\": {
+        \\"value\\": \\"{alias.sizing.4px-scale.3xl.value}\\"
+      }
+    },
+    \\"8px-scale\\": {
+      \\"3xs\\": {
+        \\"value\\": \\"{alias.sizing.8px-scale.3xs.value}\\"
+      },
+      \\"2xs\\": {
+        \\"value\\": \\"{alias.sizing.8px-scale.2xs.value}\\"
+      },
+      \\"xs\\": {
+        \\"value\\": \\"{alias.sizing.8px-scale.xs.value}\\"
+      },
+      \\"sm\\": {
+        \\"value\\": \\"{alias.sizing.8px-scale.sm.value}\\"
+      },
+      \\"md\\": {
+        \\"value\\": \\"{alias.sizing.8px-scale.md.value}\\"
+      },
+      \\"lg\\": {
+        \\"value\\": \\"{alias.sizing.8px-scale.lg.value}\\"
+      },
+      \\"xl\\": {
+        \\"value\\": \\"{alias.sizing.8px-scale.xl.value}\\"
+      },
+      \\"2xl\\": {
+        \\"value\\": \\"{alias.sizing.8px-scale.2xl.value}\\"
+      },
+      \\"3xl\\": {
+        \\"value\\": \\"{alias.sizing.8px-scale.3xl.value}\\"
+      }
+    }
+  }
+}"
+`;
