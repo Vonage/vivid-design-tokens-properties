@@ -5,15 +5,15 @@ const
     SCALES_NAMES = ['4px scale', '8px scale'],
     CHILD_TYPE = 'FRAME',
     LEVELS = {
-        'xxxs': '3xs',
-        'xxs': '2xs',
+        '3xs': '3xs',
+        '2xs': '2xs',
         'xs': 'xs',
-        's': 'sm',
-        'm': 'md',
-        'l': 'lg',
+        'sm': 'sm',
+        'md': 'md',
+        'lg': 'lg',
         'xl': 'xl',
-        'xxl': '2xl',
-        'xxxl': '3xl',
+        '2xl': '2xl',
+        '3xl': '3xl',
     };
 
 export default Object.freeze({

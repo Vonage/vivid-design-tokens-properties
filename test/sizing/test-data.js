@@ -14,7 +14,7 @@ export const rawData = {
             children: [
               {
                 id: "602:127",
-                name: "xxxs",
+                name: "3xs",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -73,7 +73,7 @@ export const rawData = {
               },
               {
                 id: "602:128",
-                name: "xxs",
+                name: "2xs",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -191,7 +191,7 @@ export const rawData = {
               },
               {
                 id: "602:130",
-                name: "s",
+                name: "sm",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -250,7 +250,7 @@ export const rawData = {
               },
               {
                 id: "602:131",
-                name: "m",
+                name: "md",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -309,7 +309,7 @@ export const rawData = {
               },
               {
                 id: "602:132",
-                name: "l",
+                name: "lg",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -427,7 +427,7 @@ export const rawData = {
               },
               {
                 id: "602:134",
-                name: "xxl",
+                name: "2xl",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -486,7 +486,7 @@ export const rawData = {
               },
               {
                 id: "602:135",
-                name: "xxxl",
+                name: "3xl",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -600,7 +600,7 @@ export const rawData = {
             children: [
               {
                 id: "602:137",
-                name: "xxxs",
+                name: "3xs",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -659,7 +659,7 @@ export const rawData = {
               },
               {
                 id: "602:138",
-                name: "xxs",
+                name: "2xs",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -777,7 +777,7 @@ export const rawData = {
               },
               {
                 id: "602:140",
-                name: "s",
+                name: "sm",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -836,7 +836,7 @@ export const rawData = {
               },
               {
                 id: "602:141",
-                name: "m",
+                name: "md",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -895,7 +895,7 @@ export const rawData = {
               },
               {
                 id: "602:142",
-                name: "l",
+                name: "lg",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -1013,7 +1013,7 @@ export const rawData = {
               },
               {
                 id: "602:144",
-                name: "xxl",
+                name: "2xl",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
@@ -1072,7 +1072,7 @@ export const rawData = {
               },
               {
                 id: "602:145",
-                name: "xxxl",
+                name: "3xl",
                 type: "FRAME",
                 blendMode: "PASS_THROUGH",
                 children: [
