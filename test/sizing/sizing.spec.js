@@ -21,7 +21,13 @@ describe(`Sizing Tokens`, function () {
         });
 
         describe(`Sizing`, function () {
-            it(`should write to JSON once`, function () {
+            it(`should write to JSON only once`, function () {
+                mockWriteJson = jest.fn(mockWriteJson);
+                sizingParser.parse(rawData, mockWriteJson);
+                expect(mockWriteJson.mock.calls).toHaveLength(1);
+            });
+
+            it(`should write to JSON with length equal to 1`, function () {
                 sizingParser.parse(rawData, mockWriteJson);
                 expect(results.length).toEqual(1);
             });
