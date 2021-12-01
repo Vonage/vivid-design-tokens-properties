@@ -8,7 +8,7 @@ export const rawData = {
         children: [
           {
             id: "602:126",
-            name: "4px scale",
+            name: "4px-scale",
             type: "FRAME",
             blendMode: "PASS_THROUGH",
             children: [
@@ -594,7 +594,7 @@ export const rawData = {
           },
           {
             id: "602:136",
-            name: "8px scale",
+            name: "8px-scale",
             type: "FRAME",
             blendMode: "PASS_THROUGH",
             children: [
@@ -1318,7 +1318,7 @@ export const rawData = {
           },
           {
             id: "602:147",
-            name: "4px Scale",
+            name: "4px-scale",
             type: "TEXT",
             blendMode: "PASS_THROUGH",
             absoluteBoundingBox: {
@@ -1433,7 +1433,7 @@ export const rawData = {
             },
             effects: [
             ],
-            characters: "4px Scale",
+            characters: "4px-scale",
             style: {
               fontFamily: "Spezia",
               fontPostScriptName: "Spezia-WideMedium",

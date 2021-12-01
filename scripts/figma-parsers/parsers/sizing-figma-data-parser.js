@@ -2,7 +2,7 @@ import { writeJson } from '../../utils.js';
 
 const
     CANVAS_NAME = 'design.tokens.sizing',
-    SCALES_NAMES = ['4px scale', '8px scale'],
+    SCALES_NAMES = ['4px-scale', '8px-scale'],
     CHILD_TYPE = 'FRAME',
     LEVELS = {
         '3xs': '3xs',
@@ -18,7 +18,7 @@ const
 
 export default Object.freeze({
     name: 'Sizing parser',
-    parse: extractScales
+    parse: extractSizings
 });
 
 function filterByScalesNameAndType(sizingChild) {
@@ -32,45 +32,33 @@ const getDocumentFragment = documentChild => documentChild.name.includes(CANVAS_
 function convertToCssValues(output, settings) {
     const sizing = `${LEVELS[settings.name.trim()]}`;
     const sizeValue = settings.absoluteBoundingBox.width;
-    output.sizing[`${sizing}`] = { value: `${sizeValue}px` };
+    output[`${sizing}`] = { value: `${sizeValue}px` };
     return output;
 }
 
-function mapScaleAlterationsToValues(sizingScaleAlterationData) {
-    const { name, children } = sizingScaleAlterationData;
-    const sizingData = children
-        .filter(alterationChild => Object.keys(LEVELS).includes(alterationChild.name.trim()))
-        .reduce(convertToCssValues, {
-            sizing: {}
-        });
-    return {
-        name,
-        sizingData
+function reduceSizingArray(scaleData) {
+    const reducedArray = [];
+    scaleData.forEach(scale => {
+        const { name, children } = scale;
+        reducedArray[name] = children
+            .filter(alterationChild => Object.keys(LEVELS).includes(alterationChild.name.trim()))
+            .reduce(convertToCssValues, {});
+    });
+    return reducedArray;
+}
+
+function writeSizingDataToFile(writeResult) {
+    return scaleData => {
+        writeResult({ alias: { sizing: { ...scaleData } } }, `./dist/sizing/sizing.values.json`);
     }
 }
 
-function writeSizingScaleDataToFile(writeResult) {
-    const scalesData = { alias: { sizing: {} } };
-    return sizingScaleData => {
-        const scaleName = sizingScaleData.name;
-        const sizingData = sizingScaleData.sizingData;
-        switch (scaleName) {
-            case '4px scale':
-                scalesData.alias.sizing['4px-scale'] = { ...sizingData.sizing };
-                break;
-            case '8px scale':
-                scalesData.alias.sizing['8px-scale'] = { ...sizingData.sizing };
-                break;
-        }
-        writeResult(scalesData, `./dist/sizing/sizing.values.json`);
-    }
-}
-
-function extractScales(data, writeResult = writeJson) {
-    data.document.children
+function extractSizings(data, writeResult = writeJson) {
+    const combinedData = data.document.children
         .find(getDocumentFragment)
         .children
-        .filter(filterByScalesNameAndType)
-        .map(mapScaleAlterationsToValues)
-        .forEach(writeSizingScaleDataToFile(writeResult));
+        .filter(filterByScalesNameAndType);
+
+    const reducedData = reduceSizingArray(combinedData);
+    writeSizingDataToFile(writeResult)(reducedData);
 }
