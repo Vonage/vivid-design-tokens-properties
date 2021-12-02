@@ -26,11 +26,6 @@ describe(`Sizing Tokens`, function () {
                 expect(mockWriteJson.mock.calls).toHaveLength(1);
             });
 
-            it(`should write to JSON with length equal to 1`, function () {
-                sizingParser.parse(rawData, mockWriteJson);
-                expect(results.length).toEqual(1);
-            });
-
             it(`should generate the correct sizing values json from Figma`, function () {
                 sizingParser.parse(rawData, mockWriteJson);
                 expect({ ...expectedResult }).toEqual(results[0].data);
