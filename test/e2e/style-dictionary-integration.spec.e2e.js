@@ -21,6 +21,17 @@ function testDictionary() {
         }
     });
 
+    const config = getStyleDictionaryConfig([
+        `./dist/sizing/**/*.json`,
+    ], `sizing.scss`);
+    config.platforms.web.files[0].filter = 'filter-alias';
+    try {
+        StyleDictionaryPackage.extend(config).buildPlatform('web');
+    } catch(e) {
+        process.exitCode = 1;
+        console.error(`Failed to build dictionary for sizing: ${e}`);
+    }
+
     for (const scheme of ['dark', 'light']) {
         for (const alt of ['alternate', 'main']) {
             const config = getStyleDictionaryConfig([

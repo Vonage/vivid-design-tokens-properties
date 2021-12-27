@@ -1,4 +1,5 @@
 import { copySorted, writeJson } from '../../utils.js';
+import {getDocumentFragment} from "../commons.js";
 
 const
 	PALETTE_FRAME_NAME = 'design.tokens.color',
@@ -25,7 +26,7 @@ function extractPalette(data, writeToFile = writeJson) {
 	};
 
 	const colorsMap = {};
-	const paletteData = data.document.children.find(c => c.name.includes(PALETTE_FRAME_NAME));
+	const paletteData = data.document.children.find(getDocumentFragment(PALETTE_FRAME_NAME));
 	if (!paletteData || !Array.isArray(paletteData.children)) {
 		throw new Error(`input data is invalid, '${PALETTE_FRAME_NAME}' frame is missing`);
 	}

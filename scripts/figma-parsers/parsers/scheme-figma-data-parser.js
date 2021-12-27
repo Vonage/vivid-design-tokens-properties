@@ -1,5 +1,6 @@
 import { copySorted, writeJson } from '../../utils.js';
 import { PALETTE_FRAME_NAME, PALETTE_PRINCIPAL } from './palette-figma-data-parser.js';
+import {getDocumentFragment} from "../commons.js";
 
 const
 	SCHEME_FRAME_NAME = 'design.tokens.scheme',
@@ -13,7 +14,7 @@ export default Object.freeze({
 
 function extractSchemes(data, writeToFile = writeJson) {
 	const paletteData = collectPaletteMap(data);
-	const schemeData = data.document.children.find(c => c.name.includes(SCHEME_FRAME_NAME));
+	const schemeData = data.document.children.find(getDocumentFragment(SCHEME_FRAME_NAME));
 	if (!schemeData || !Array.isArray(schemeData.children)) {
 		throw new Error(`input data is invalid, '${SCHEME_FRAME_NAME}' frame is missing`);
 	}

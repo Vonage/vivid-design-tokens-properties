@@ -1,4 +1,5 @@
 import {writeJson} from '../../utils.js';
+import {getDocumentFragment} from "../commons.js";
 
 const
     CANVAS_NAME = 'design.tokens.elevation',
@@ -24,8 +25,6 @@ function filterBySchemeNameAndType(elevationChild) {
 }
 
 const filterByType = data => CHILD_TYPE === data.type;
-
-const getDocumentFragment = documentChild => documentChild.name.includes(CANVAS_NAME);
 
 function getDropShadowsFromFigmaConfig(dpSettings) {
     return `${dpSettings.effects.reduce((str, value) => {
@@ -91,10 +90,15 @@ function writeElevationSchemeDataToFile(writeResult) {
 }
 
 function extractSchemes(data, writeResult = writeJson) {
-    data.document.children
-        .find(getDocumentFragment)
-        .children
-        .filter(filterBySchemeNameAndType)
-        .map(mapSchemesToValues)
-        .forEach(writeElevationSchemeDataToFile(writeResult));
+    try {
+        data.document.children
+            .find(getDocumentFragment(CANVAS_NAME))
+            .children
+            .filter(filterBySchemeNameAndType)
+            .map(mapSchemesToValues)
+            .forEach(writeElevationSchemeDataToFile(writeResult));
+    } catch(e) {
+        if (e.message.includes('children')) throw("Cannot read properties of undefined (reading 'children')");
+        else throw(e);
+    }
 }
