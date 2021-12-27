@@ -1,4 +1,5 @@
 import { writeJson } from '../../utils.js';
+import {getDocumentFragment} from "../commons.js";
 
 const
     CANVAS_NAME = 'design.tokens.sizing',
@@ -27,8 +28,6 @@ function filterByScalesNameAndType(sizingChild) {
 
 const filterByType = data => CHILD_TYPE === data.type;
 
-const getDocumentFragment = documentChild => documentChild.name.includes(CANVAS_NAME) && !documentChild.name.includes('- new');
-
 function convertToCssValues(output, settings) {
     const sizing = `${LEVELS[settings.name.trim()]}`;
     const sizeValue = settings.absoluteBoundingBox.width;
@@ -55,7 +54,7 @@ function writeSizingDataToFile(writeResult) {
 
 function extractSizings(data, writeResult = writeJson) {
     const combinedData = data.document.children
-        .find(getDocumentFragment)
+        .find(getDocumentFragment(CANVAS_NAME))
         .children
         .filter(filterByScalesNameAndType);
 
