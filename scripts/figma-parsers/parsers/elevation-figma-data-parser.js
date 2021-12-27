@@ -29,13 +29,17 @@ const getDocumentFragment = documentChild => documentChild.name.includes(CANVAS_
 
 function getDropShadowsFromFigmaConfig(dpSettings) {
     return `${dpSettings.effects.reduce((str, value) => {
-        str += `drop-shadow(${!value.offset.x ? value.offset.x : value.offset.x + 'px'} ${!value.offset.y ? value.offset.y : value.offset.y + 'px'} ${!value.radius ? value.radius : value.radius + 'px'} rgba(${value.color.r * 255}, ${value.color.g * 255}, ${value.color.b * 255}, ${value.color.a})) `
+        str += `drop-shadow(${!value.offset.x ? value.offset.x : value.offset.x + 'px'} ${!value.offset.y ? value.offset.y : value.offset.y + 'px'} ${!value.radius ? value.radius : value.radius + 'px'} rgba(${normalizeRGBValue(value.color.r)}, ${normalizeRGBValue(value.color.g)}, ${normalizeRGBValue(value.color.b)}, ${normalizeRGBValue(value.color.a, 1)})) `
         return str;
     }, '')}`;
 }
 
+function normalizeRGBValue(value, normalizeTo = 255) {
+    return Number((value * normalizeTo).toFixed(3));
+}
+
 function getBackgroundFromFigmaConfig(dpSettings) {
-    return `rgba(${dpSettings.backgroundColor.r * 255}, ${dpSettings.backgroundColor.g * 255}, ${dpSettings.backgroundColor.b * 255}, ${dpSettings.backgroundColor.a})`;
+    return `rgba(${normalizeRGBValue(dpSettings.backgroundColor.r)}, ${normalizeRGBValue(dpSettings.backgroundColor.g)}, ${normalizeRGBValue(dpSettings.backgroundColor.b)}, ${normalizeRGBValue(dpSettings.backgroundColor.a, 1)})`;
 }
 
 function convertToCssValues(output, dpSettings) {

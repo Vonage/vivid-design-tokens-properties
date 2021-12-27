@@ -142,7 +142,7 @@ describe(`Elevation Tokens`, function () {
                 const expectedShadow = {
                     "shadow": {
                         "surface-2dp": {
-                                value: "drop-shadow(0 1px 4px rgba(102, 204, 0, 0.10000000149011612)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05000000074505806)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.05000000074505806))"
+                                value: "drop-shadow(0 1px 4px rgba(102, 204, 0, 0.1)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.05))"
                         }
                     }
                 };
@@ -340,7 +340,7 @@ describe(`Elevation Tokens`, function () {
                 const expectedLightShadow = {
                     shadow: {
                             "surface-2dp": {
-                                    value: "drop-shadow(0 1px 4px rgba(102, 204, 0, 0.10000000149011612)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05000000074505806)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.05000000074505806))"
+                                    value: "drop-shadow(0 1px 4px rgba(102, 204, 0, 0.1)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.05))"
                             }
                     }
                 };
@@ -356,7 +356,7 @@ describe(`Elevation Tokens`, function () {
                 const expectedDarkShadow = {
                     shadow: {
                         "surface-2dp": {
-                                value: "drop-shadow(0 1px 4px rgba(102, 204, 0, 0.10000000149011612)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05000000074505806)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.05000000074505806))"
+                                value: "drop-shadow(0 1px 4px rgba(102, 204, 0, 0.1)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.05))"
                         }
                     }
                 };
