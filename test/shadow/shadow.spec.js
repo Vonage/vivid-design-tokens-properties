@@ -44,6 +44,91 @@ describe(`Elevation Tokens`, function () {
             results.length = 0;
         });
 
+        it(`should not parse elements with "- new"`, function () {
+            const schemeWithOneAlternative = [
+                {
+                    name: 'main',
+                    type: 'FRAME',
+                    children: [
+                        {
+                            name: '30',
+                            type: 'FRAME',
+                            "backgroundColor": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0,
+                                "a": 1.0
+                            },
+                            "styles": {
+                                "fills": "1:4",
+                                "effect": "1:502"
+                            },
+                            "effects": [
+                                {
+                                    "type": "DROP_SHADOW",
+                                    "visible": true,
+                                    "color": {
+                                        "r": 0.4,
+                                        "g": 0.8,
+                                        "b": 0.0,
+                                        "a": 0.10000000149011612
+                                    },
+                                    "blendMode": "NORMAL",
+                                    "offset": {
+                                        "x": 0.0,
+                                        "y": 1.0
+                                    },
+                                    "radius": 4.0,
+                                    "showShadowBehindNode": true
+                                },
+                                {
+                                    "type": "DROP_SHADOW",
+                                    "visible": true,
+                                    "color": {
+                                        "r": 0.0,
+                                        "g": 0.0,
+                                        "b": 0.0,
+                                        "a": 0.050000000745058060
+                                    },
+                                    "blendMode": "NORMAL",
+                                    "offset": {
+                                        "x": 0.0,
+                                        "y": 1.0
+                                    },
+                                    "radius": 2.0,
+                                    "showShadowBehindNode": true
+                                },
+                                {
+                                    "type": "DROP_SHADOW",
+                                    "visible": true,
+                                    "color": {
+                                        "r": 0.0,
+                                        "g": 0.0,
+                                        "b": 0.0,
+                                        "a": 0.050000000745058060
+                                    },
+                                    "blendMode": "NORMAL",
+                                    "offset": {
+                                        "x": 0.0,
+                                        "y": 2.0
+                                    },
+                                    "radius": 1.0,
+                                    "showShadowBehindNode": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ];
+
+            const lightSchemeDataWithOneAlternatives = createASchemeDefinition('light', schemeWithOneAlternative);
+
+            const elevationTokensFigmaData = createElevationFigmaDefinitions([lightSchemeDataWithOneAlternatives]);
+            elevationTokensFigmaData.name += ' - new';
+            const figmaRawData = createRawData([elevationTokensFigmaData]);
+            expect(() => elevationParser.parse(figmaRawData, mockWriteJson)).toThrowError("Cannot read properties of undefined (reading 'children')");
+        });
+        
         describe(`One alternative and One Scheme`, function () {
 
             const schemeWithOneAlternative = [
