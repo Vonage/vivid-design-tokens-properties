@@ -128,7 +128,7 @@ describe(`Elevation Tokens`, function () {
             const figmaRawData = createRawData([elevationTokensFigmaData]);
             expect(() => elevationParser.parse(figmaRawData, mockWriteJson)).toThrowError("Cannot read properties of undefined (reading 'children')");
         });
-        
+
         describe(`One alternative and One Scheme`, function () {
 
             const schemeWithOneAlternative = [

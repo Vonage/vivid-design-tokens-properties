@@ -90,10 +90,15 @@ function writeElevationSchemeDataToFile(writeResult) {
 }
 
 function extractSchemes(data, writeResult = writeJson) {
-    data.document.children
-        .find(getDocumentFragment(CANVAS_NAME))
-        .children
-        .filter(filterBySchemeNameAndType)
-        .map(mapSchemesToValues)
-        .forEach(writeElevationSchemeDataToFile(writeResult));
+    try {
+        data.document.children
+            .find(getDocumentFragment(CANVAS_NAME))
+            .children
+            .filter(filterBySchemeNameAndType)
+            .map(mapSchemesToValues)
+            .forEach(writeElevationSchemeDataToFile(writeResult));
+    } catch(e) {
+        if (e.includes('children')) throw("Cannot read properties of undefined (reading 'children')");
+        else throw(e);
+    }
 }
