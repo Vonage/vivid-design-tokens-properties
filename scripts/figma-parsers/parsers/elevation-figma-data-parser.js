@@ -5,6 +5,7 @@ const
     SCHEMES_NAMES = ['light', 'dark'],
     CHILD_TYPE = 'FRAME',
     LEVELS = {
+        20: 0,
         30: 2,
         40: 4,
         50: 8,

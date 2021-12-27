@@ -153,6 +153,9 @@ Object {
     "success-90": Object {
       "value": "{alias.color.90.success.value}",
     },
+    "surface-0dp": Object {
+      "value": "{alias.color.surface-0dp.value}",
+    },
     "surface-12dp": Object {
       "value": "{alias.color.surface-12dp.value}",
     },

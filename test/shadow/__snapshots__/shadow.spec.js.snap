@@ -3,6 +3,9 @@
 exports[`Elevation Tokens should create the elevation tokens 1`] = `
 "{
   \\"shadow\\": {
+    \\"surface-0dp\\": {
+      \\"value\\": \\"{alias.shadow.surface-0dp.value}\\"
+    },
     \\"surface-2dp\\": {
       \\"value\\": \\"{alias.shadow.surface-2dp.value}\\"
     },
