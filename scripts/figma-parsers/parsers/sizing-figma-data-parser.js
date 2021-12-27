@@ -27,7 +27,7 @@ function filterByScalesNameAndType(sizingChild) {
 
 const filterByType = data => CHILD_TYPE === data.type;
 
-const getDocumentFragment = documentChild => documentChild.name.includes(CANVAS_NAME);
+const getDocumentFragment = documentChild => documentChild.name.includes(CANVAS_NAME) && !documentChild.name.includes('- new');
 
 function convertToCssValues(output, settings) {
     const sizing = `${LEVELS[settings.name.trim()]}`;
