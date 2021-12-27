@@ -98,7 +98,7 @@ function extractSchemes(data, writeResult = writeJson) {
             .map(mapSchemesToValues)
             .forEach(writeElevationSchemeDataToFile(writeResult));
     } catch(e) {
-        if (e.includes('children')) throw("Cannot read properties of undefined (reading 'children')");
+        if (e.message.includes('children')) throw("Cannot read properties of undefined (reading 'children')");
         else throw(e);
     }
 }

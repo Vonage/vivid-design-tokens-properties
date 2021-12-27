@@ -44,7 +44,7 @@ describe(`Elevation Tokens`, function () {
             results.length = 0;
         });
 
-        it(`should not parse elements with "- new"`, function () {
+        it(`should not parse elements with "- draft"`, function () {
             const schemeWithOneAlternative = [
                 {
                     name: 'main',
@@ -124,7 +124,7 @@ describe(`Elevation Tokens`, function () {
             const lightSchemeDataWithOneAlternatives = createASchemeDefinition('light', schemeWithOneAlternative);
 
             const elevationTokensFigmaData = createElevationFigmaDefinitions([lightSchemeDataWithOneAlternatives]);
-            elevationTokensFigmaData.name += ' - new';
+            elevationTokensFigmaData.name += ' - draft';
             const figmaRawData = createRawData([elevationTokensFigmaData]);
             expect(() => elevationParser.parse(figmaRawData, mockWriteJson)).toThrowError("Cannot read properties of undefined (reading 'children')");
         });
