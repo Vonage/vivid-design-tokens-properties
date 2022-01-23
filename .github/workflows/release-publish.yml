@@ -29,7 +29,7 @@ jobs:
           npm install
           npm run fetch
           npm run parse
-          npm run build:globals
+          npm run render:tokens
           
       - name: Publish design tokens
         run: npm publish

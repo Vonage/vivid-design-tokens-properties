@@ -31,7 +31,7 @@ jobs:
         run: |
           npm run fetch
           npm run parse
-          npm run build:globals
+          npm run render:tokens
 
       - name: Test
         run: npm test
