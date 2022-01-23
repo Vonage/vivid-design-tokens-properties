@@ -42,7 +42,7 @@ function getStyleDictionaryConfig() {
 
 // PROCESS THE DESIGN TOKENS FOR THE DIFFERENT SCHEMES AND PLATFORMS
 // TODO: [VIV-41] add accessible colors scheme
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+
 export const render = () => {
 	console.log('\n🔁\x1b[2mProcessing scheme variables coupling\x1b[0m');
 

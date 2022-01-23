@@ -51,7 +51,7 @@ const alternateConfig = curriedGetStyleDictionaryConfig(__, 'alternate');
 
 // PROCESS THE DESIGN TOKENS FOR THE DIFFERENT SCHEMES AND PLATFORMS
 // TODO: [VIV-41] add accessible colors scheme
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+
 export const render = () => {
 	removeDirSync(OUTPUT_FOLDER, { recursive: true });
 
