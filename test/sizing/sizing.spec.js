@@ -33,7 +33,7 @@ describe(`Sizing Tokens`, function () {
 
             it(`should save to correct files paths`, function () {
                 sizingParser.parse(rawData, mockWriteJson);
-                expect(results[0].path).toEqual(`./dist/sizing/sizing.values.json`);
+                expect(results[0].path).toEqual(`./tokens/sizing/sizing.values.json`);
             });
         });
     });

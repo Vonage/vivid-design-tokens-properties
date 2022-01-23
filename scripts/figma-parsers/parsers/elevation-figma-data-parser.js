@@ -82,9 +82,9 @@ function writeElevationSchemeDataToFile(writeResult) {
         elevationSchemeData.schemeData.forEach(alternativeData => {
             const alternativeName = alternativeData.name;
             writeResult({alias: {shadow: {...alternativeData.dpsData.shadow}}},
-                `./dist/themes/${schemeName}/shadow/${alternativeName}.json`)
+                `./tokens/themes/${schemeName}/shadow/${alternativeName}.json`)
             writeResult({alias: {color: {...alternativeData.dpsData.color}}},
-                `./dist/themes/${schemeName}/color/surface-dp/${alternativeName}.json`)
+                `./tokens/themes/${schemeName}/color/surface-dp/${alternativeName}.json`)
         });
     }
 }

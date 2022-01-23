@@ -39,10 +39,10 @@ describe(`Color`, function () {
             it(`should write to files according to scheme and alternatives`, function () {
                 schemesFigmaParser.parse(rawData, mockJsonWrite);
                 const expectedPaths = [
-                    `./dist/themes/dark/color/alternate.json`,
-                    `./dist/themes/dark/color/main.json`,
-                    `./dist/themes/light/color/alternate.json`,
-                    `./dist/themes/light/color/main.json`,
+                    `./tokens/themes/dark/color/alternate.json`,
+                    `./tokens/themes/dark/color/main.json`,
+                    `./tokens/themes/light/color/alternate.json`,
+                    `./tokens/themes/light/color/main.json`,
                 ];
 
                 const arePathsCorrect = getArePathsCorrect(expectedPaths);
@@ -58,7 +58,7 @@ describe(`Color`, function () {
 
             it(`should write to files according to scheme and alternatives`, function () {
                 colorPaletteFigmaParser.parse(rawData, mockJsonWrite);
-                const expectedPath = './dist/color/palette.json';
+                const expectedPath = './tokens/color/palette.json';
 
                 const calledPath = mockJsonWrite.mock.calls[0][1];
                 expect(calledPath).toEqual(expectedPath);

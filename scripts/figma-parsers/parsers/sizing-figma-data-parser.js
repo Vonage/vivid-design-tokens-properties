@@ -48,7 +48,7 @@ function reduceSizingArray(scaleData) {
 
 function writeSizingDataToFile(writeResult) {
     return scaleData => {
-        writeResult({ alias: { sizing: { ...scaleData } } }, `./dist/sizing/sizing.values.json`);
+        writeResult({ alias: { sizing: { ...scaleData } } }, `./tokens/sizing/sizing.values.json`);
     }
 }
 

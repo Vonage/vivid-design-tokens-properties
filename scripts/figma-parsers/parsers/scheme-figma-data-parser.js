@@ -42,7 +42,7 @@ function extractSchemes(data, writeToFile = writeJson) {
 
 			const result = { alias: { color: {} } };
 			copySorted(values, result.alias.color);
-			writeToFile(result, `./dist/themes/${schemeName}/color/${altName}.json`);
+			writeToFile(result, `./tokens/themes/${schemeName}/color/${altName}.json`);
 			console.info(`\t\t...'${schemeName}:${altName}' scheme DONE`);
 		}
 	}

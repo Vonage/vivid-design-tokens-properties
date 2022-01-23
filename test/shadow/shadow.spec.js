@@ -252,8 +252,8 @@ describe(`Elevation Tokens`, function () {
 
                 elevationParser.parse(figmaRawData, mockWriteJson);
 
-                expect(results[0].path).toEqual(`./dist/themes/light/shadow/main.json`);
-                expect(results[1].path).toEqual(`./dist/themes/light/color/surface-dp/main.json`);
+                expect(results[0].path).toEqual(`./tokens/themes/light/shadow/main.json`);
+                expect(results[1].path).toEqual(`./tokens/themes/light/color/surface-dp/main.json`);
             });
         });
 
@@ -475,14 +475,14 @@ describe(`Elevation Tokens`, function () {
             it(`should generate the correct shadow values json from Figma`, function () {
 
                 const expectedAddresses = [
-                    './dist/themes/light/shadow/main.json',
-                    './dist/themes/light/color/surface-dp/main.json',
-                    './dist/themes/light/shadow/alternate.json',
-                    './dist/themes/light/color/surface-dp/alternate.json',
-                    "./dist/themes/dark/shadow/main.json",
-                    "./dist/themes/dark/color/surface-dp/main.json",
-                    "./dist/themes/dark/shadow/alternate.json",
-                    "./dist/themes/dark/color/surface-dp/alternate.json",
+                    './tokens/themes/light/shadow/main.json',
+                    './tokens/themes/light/color/surface-dp/main.json',
+                    './tokens/themes/light/shadow/alternate.json',
+                    './tokens/themes/light/color/surface-dp/alternate.json',
+                    "./tokens/themes/dark/shadow/main.json",
+                    "./tokens/themes/dark/color/surface-dp/main.json",
+                    "./tokens/themes/dark/shadow/alternate.json",
+                    "./tokens/themes/dark/color/surface-dp/alternate.json",
                 ]
 
                 elevationParser.parse(figmaRawData, mockWriteJson);

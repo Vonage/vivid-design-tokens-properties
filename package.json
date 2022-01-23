@@ -25,7 +25,8 @@
 		"bump": "node ./scripts/bump-version.js",
 		"fetch": "node ./scripts/figma-parsers/fetch-figma-data.js",
 		"parse": "node ./scripts/figma-parsers/parse-figma-data.js",
-		"build:globals": "node ./scripts/build-globals.js"
+		"build:globals": "node ./scripts/build-globals.js",
+		"build:tokens": "node ./scripts/renderers/index.js"
 	},
 	"devDependencies": {
 		"@babel/eslint-parser": "^7.15.8",
@@ -33,6 +34,8 @@
 		"eslint": "^7.32.0",
 		"eslint-plugin-jest": "^24.5.2",
 		"jest": "^27.2.4",
+		"ramda": "^0.28.0",
+		"remove-dir-safe": "^2.0.0",
 		"style-dictionary": "^3.0.2"
 	},
 	"babel": {
