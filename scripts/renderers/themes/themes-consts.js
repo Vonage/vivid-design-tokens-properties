@@ -9,7 +9,7 @@ import { removeDirSync } from 'remove-dir-safe';
 const
 	propertiesPath = resolve('./tokens'),
 	CUSTOM_SCHEMES_FORMAT = 'custom/web/scss/schemes',
-	OUTPUT_FOLDER = 'dist/sass/schemes';
+	OUTPUT_FOLDER = 'dist/sass/themes';
 
 StyleDictionaryPackage.registerFormat({
 	name: CUSTOM_SCHEMES_FORMAT,

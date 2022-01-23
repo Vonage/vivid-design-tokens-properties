@@ -29,7 +29,7 @@ function getStyleDictionaryConfig() {
 				buildPath: `${resolve()}/`,
 				files: [
 					{
-						destination: 'dist/sass/semantic-variables/_scheme-variables.scss',
+						destination: 'dist/sass/themes/consts.scss',
 						format: 'custom/format/css-to-scss',
 						filter: token => token.attributes.category !== 'alias'
 					}
