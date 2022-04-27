@@ -39,6 +39,9 @@
 		"neutral-80": {
 			"value": "{alias.color.80.neutral.value}"
 		},
+		"neutral-80": {
+			"value": "{alias.color.80.neutral.value}"
+		},
 		"neutral-90": {
 			"value": "{alias.color.90.neutral.value}"
 		},
@@ -59,6 +62,9 @@
 		},
 		"cta-70": {
 			"value": "{alias.color.70.cta.value}"
+		},
+		"cta-80": {
+			"value": "{alias.color.80.cta.value}"
 		},
 		"cta-90": {
 			"value": "{alias.color.90.cta.value}"
@@ -81,6 +87,9 @@
 		"success-70": {
 			"value": "{alias.color.70.success.value}"
 		},
+		"success-80": {
+			"value": "{alias.color.80.success.value}"
+		},
 		"success-90": {
 			"value": "{alias.color.90.success.value}"
 		},
@@ -101,6 +110,9 @@
 		},
 		"alert-70": {
 			"value": "{alias.color.70.alert.value}"
+		},
+		"alert-80": {
+			"value": "{alias.color.80.alert.value}"
 		},
 		"alert-90": {
 			"value": "{alias.color.90.alert.value}"
@@ -123,6 +135,9 @@
 		"warning-70": {
 			"value": "{alias.color.70.warning.value}"
 		},
+		"warning-80": {
+			"value": "{alias.color.80.warning.value}"
+		},
 		"warning-90": {
 			"value": "{alias.color.90.warning.value}"
 		},
@@ -144,6 +159,9 @@
 		"info-70": {
 			"value": "{alias.color.70.info.value}"
 		},
+		"info-80": {
+			"value": "{alias.color.80.info.value}"
+		},
 		"info-90": {
 			"value": "{alias.color.90.info.value}"
 		},
@@ -164,6 +182,9 @@
 		},
 		"announcement-70": {
 			"value": "{alias.color.70.announcement.value}"
+		},
+		"announcement-80": {
+			"value": "{alias.color.80.announcement.value}"
 		},
 		"announcement-90": {
 			"value": "{alias.color.90.announcement.value}"
