@@ -14,5 +14,5 @@ const colors = {
 };
 export default colors;
 
-export const SAVE_PATH = 'dist/color/color.json';
+export const SAVE_PATH = 'tokens/color/color.json';
 

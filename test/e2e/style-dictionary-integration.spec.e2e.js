@@ -22,7 +22,7 @@ function testDictionary() {
     });
 
     const config = getStyleDictionaryConfig([
-        `./dist/sizing/**/*.json`,
+        `./tokens/sizing/**/*.json`,
     ], `sizing.scss`);
     config.platforms.web.files[0].filter = 'filter-alias';
     try {
@@ -35,9 +35,9 @@ function testDictionary() {
     for (const scheme of ['dark', 'light']) {
         for (const alt of ['alternate', 'main']) {
             const config = getStyleDictionaryConfig([
-                `./dist/color/**/*.json`,
-                `./dist/shadow/**/*.json`,
-                `./dist//themes/${scheme}/**/${alt}.json`,
+                `./tokens/color/**/*.json`,
+                `./tokens/shadow/**/*.json`,
+                `./tokens//themes/${scheme}/**/${alt}.json`,
             ], `${scheme}-${alt}.scss`);
             config.platforms.web.files[0].filter = 'filter-alias';
             try {

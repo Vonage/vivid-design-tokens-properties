@@ -4,5 +4,6 @@
 /tmp/*
 !/tmp/.githolder
 /coverage
+/tokens
 /dist
 /platforms

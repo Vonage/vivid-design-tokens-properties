@@ -38,7 +38,7 @@ jobs:
         run: |
           npm run fetch
           npm run parse
-          npm run build:globals
+          npm run render:tokens
           npm run bump ${{ steps.extractVersion.outputs.version }}
 
       - name: Delete temporary trigger tag
